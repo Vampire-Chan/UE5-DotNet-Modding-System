@@ -1,0 +1,178 @@
+# UE5 Game Project with .NET Modding System
+# Comprehensive .gitignore for Unreal Engine 5.6 + .NET Modding
+
+# ================================
+# UNREAL ENGINE FILES
+# ================================
+
+# Binaries (generated files - we'll selectively include modding DLLs)
+Binaries/
+!Binaries/Win64/DotNet/
+!Binaries/Win64/DotNet/**/*.dll
+!Binaries/Win64/DotNet/**/*.pdb
+!Binaries/Win64/DotNet/**/*.deps.json
+!Binaries/Win64/DotNet/**/*.runtimeconfig.json
+
+# Build intermediates
+Intermediate/
+Build/
+
+# Cache files
+DerivedDataCache/
+Saved/Autosaves/
+Saved/Backup/
+Saved/Crashes/
+Saved/Logs/
+Saved/Config/Windows*
+Saved/Screenshots/
+Saved/ShaderDebugInfo/
+Saved/UnrealBuildTool/
+Saved/SourceControl/
+
+# Keep important saved configs
+!Saved/Config/DefaultEngine.ini
+!Saved/Config/DefaultEditor.ini
+!Saved/Config/DefaultGame.ini
+!Saved/Config/DefaultInput.ini
+
+# Visual Studio cache
+.vs/
+*.sln.cache
+
+# ================================
+# .NET MODDING SYSTEM FILES
+# ================================
+
+# .NET build outputs (except our final DLLs)
+**/bin/Debug/
+**/bin/Release/
+**/obj/
+
+# Keep only final mod DLLs in our designated folder
+!Binaries/Win64/DotNet/**
+
+# NuGet packages
+packages/
+!packages/repositories.config
+
+# User-specific files
+*.user
+*.suo
+
+# ================================
+# DEVELOPMENT FILES TO KEEP
+# ================================
+
+# Keep all source code
+!Source/
+!Source/**/*.h
+!Source/**/*.cpp
+!Source/**/*.cs
+
+# Keep plugin source
+!Plugins/
+!Plugins/**/*.h
+!Plugins/**/*.cpp
+!Plugins/**/*.uplugin
+!Plugins/**/README.md
+
+# Keep modding template
+!ModdingTemplate/
+!ModdingTemplate/**/*.cs
+!ModdingTemplate/**/*.csproj
+!ModdingTemplate/**/*.sln
+!ModdingTemplate/**/README.md
+
+# Keep project files
+!*.uproject
+!Config/
+!Config/**/*.ini
+
+# Keep content (you said models aren't heavy)
+!Content/
+!Content/**/*.umap
+!Content/**/*.uasset
+
+# Ignore third-party UE5 assets (Fab.com downloads, etc.)
+Content/Village/
+
+# Keep data files
+!Data/
+!Data/**/*.xml
+!Data/**/*.txt
+!Data/**/*.md
+
+# Keep documentation
+!Documentation/
+!Documentation/**/*.md
+!*.md
+
+# ================================
+# SYSTEM FILES TO IGNORE
+# ================================
+
+# Windows
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Visual Studio
+*.vcxproj.user
+*.vcxproj.filters
+*.sln.docstates
+.vscode/
+
+# ================================
+# TEMPORARY FILES
+# ================================
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+*~
+
+# Crash dumps
+*.dmp
+
+# ================================
+# UNREAL SPECIFIC IGNORES
+# ================================
+
+# Starter Content (if you're not using it)
+# Content/StarterContent/
+
+# Android builds
+[Aa]ndroid/
+
+# iOS builds
+[Ii]OS/
+
+# Plugin binaries (except our custom DotNetScripting)
+Plugins/**/Binaries/
+!Plugins/DotNetScripting/Binaries/
+Plugins/**/Intermediate/
+
+# ================================
+# SPECIAL INCLUSIONS FOR OUR PROJECT
+# ================================
+
+# Include our custom documentation
+!Bridge_API_Extension_Guide.md
+!Build_Test_Results.md
+!Ped_Export_Implementation_Guide.md
+
+# Include our reference files
+!gta5_references/
+!gta5_references/**
+
+# Include needed assets
+!NeededStuff/
+!NeededStuff/**
