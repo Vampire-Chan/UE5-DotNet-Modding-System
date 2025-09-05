@@ -1,0 +1,32 @@
+<!-- This XML defines the Mesh Component to use what Material index is componentname_000, 001 which is mentioned as 0, 1, 2 in here. Uses same format for PedProps as well. Connected to Peds.xml and Pedvariations.xml -->
+<PedMesh>
+	<Ped Name="PlayerNiko">
+		<Component Name="Upper" AltName="uppr, upperbody"> <!--alt names used as fallbacks for all components-->
+			<Material Index="0" Name="M_Ped"/>
+			<Material Index="1" Name="M_Ped"/>
+			<Material Index="2" Name="M_PedAlpha"/> <!-- Incase of Transparency Effect -->
+		</Component>
+		<Component Name="Hair">
+			<Material Index="0" Name="M_PedHairAlpha"/> <!-- Incase of Hair Transparency Effect -->
+		</Component>
+		<Component Name="Head">
+			<Material Index="0" Name="M_Ped"/>
+			<Material Index="1" Name="M_Ped"/>
+			<Material Index="2" Name="M_Ped"/> 
+		</Component>
+		<Component Name="Lowr" AltName="lowerbody, lower">
+			<Material Index="0" Name="M_Ped"/>
+			<Material Index="1" Name="M_Ped"/>
+		</Component>
+		<Component Name="Hand">
+			<Material Index="0" Name="M_Ped"/>
+		</Component>
+		<Component Name="Feet">
+			<Material Index="0" Name="M_Ped"/>
+		</Component>
+		<Component Name="Teef">
+			<Material Index="0" Name="M_Ped"/>
+		</Component>
+	</Ped>
+	<!-- Continue for other Peds -->
+</PedMesh>

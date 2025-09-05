@@ -1,0 +1,39 @@
+<AnimationGroups>
+
+<!-- ========== PED/CHARACTER ANIMATIONS ========== -->
+<!-- AnimationDictionary will let you know where the Animation folder is for group of animation, the folder itself act as animationdict name and its animation as clips -->
+    <AnimationDictionary Name="player_movement" Path="Content/Animations/player_movement" EntityType="PED"/>
+    <AnimationDictionary Name="crouch_movement" Path="Content/Animations/crouch_movement" EntityType="PED"/>
+    <AnimationDictionary Name="vehicle_standard" Path="Content/Animations/vehicle_standard" EntityType="PED"/>
+    <AnimationDictionary Name="Jump_Standard" Path="Data/Animations/jump_std" EntityType="PED"/>
+    <AnimationDictionary Name="Climb_Standard" Path="Data/Animations/climb_std" EntityType="PED"/>
+    <AnimationDictionary Name="Move_Combat_Strafe" Path="Data/Animations/move_combat_strafe" EntityType="PED"/>
+    <AnimationDictionary Name="Move_Combat_Strafe_Crouch" Path="Data/Animations/move_combat_strafe_c" EntityType="PED"/>
+    <AnimationDictionary Name="Crouch_Standard" Path="Data/Animations/move_crouch" EntityType="PED"/>
+    
+    <!-- Combat Base Dictionary -->
+    <AnimationDictionary Name="Combat" Path="Data/Animations/move_combat_strafe" EntityType="PED"/>
+    
+    <!-- Weapon-Specific Combat Dictionaries (fallback to base combat for now) -->
+    <AnimationDictionary Name="Combat_Pistol" Path="Data/Animations/move_combat_strafe" EntityType="PED"/>
+    <AnimationDictionary Name="Combat_Rifle" Path="Data/Animations/move_combat_strafe" EntityType="PED"/>
+    <AnimationDictionary Name="Combat_Shotgun" Path="Data/Animations/move_combat_strafe" EntityType="PED"/>
+    <AnimationDictionary Name="Combat_SMG" Path="Data/Animations/move_combat_strafe" EntityType="PED"/>
+    <AnimationDictionary Name="Combat_Sniper" Path="Data/Animations/move_combat_strafe" EntityType="PED"/>
+    <AnimationDictionary Name="Combat_Melee" Path="Data/Animations/move_combat_strafe" EntityType="PED"/>
+    <AnimationDictionary Name="Combat_Thrown" Path="Data/Animations/move_combat_strafe" EntityType="PED"/>
+    <AnimationDictionary Name="Combat_Heavy" Path="Data/Animations/move_combat_strafe" EntityType="PED"/>
+
+<!-- ========== VEHICLE ANIMATIONS ========== -->
+    <AnimationDictionary Name="Vehicle_Standard" Path="Data/Animations/veh@std" EntityType="VEHICLE"/>
+
+<!-- ========== FUTURE EXTENSIONS ========== -->    
+    <!-- Extended Ped Animations - placeholders for future expansion -->
+    <AnimationDictionary Name="Ped_Idle_Variations" Path="Data/Animations/ped_idle" EntityType="PED"/>
+    <AnimationDictionary Name="Ped_Interactions" Path="Data/Animations/ped_interactions" EntityType="PED"/>
+    <AnimationDictionary Name="Ped_Emotes" Path="Data/Animations/ped_emotes" EntityType="PED"/>
+    <AnimationDictionary Name="Ped_Vehicle_Enter_Exit" Path="Data/Animations/ped_vehicle_enter_exit" EntityType="PED"/>
+    <AnimationDictionary Name="Ped_Death_Variations" Path="Data/Animations/ped_death" EntityType="PED"/>
+
+    <!--ExtraFile Path="pathtothefile"/--> <!--this will let you store animationgroup to be loaded from another file along with this. (think this of a grouping of things together)-->
+</AnimationGroups>

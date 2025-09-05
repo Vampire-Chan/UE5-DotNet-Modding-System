@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Speeches>
+    <!-- ========== UE5 PLAYER SPEECH SYSTEM ========== -->
+    <PedSpeech name="Niko_Voice">
+        <!-- Uses UE5 Audio Component with Voice Manager -->
+        
+        <!-- ========== COVER SPEECH (When hiding behind walls/objects) ========== -->
+        <SpeechGroup name="cover">
+            <SoundClass>PlayerSpeechCombatSoundClass</SoundClass>
+            <AudioComponent>PedVoiceSpeechComponent</AudioComponent>
+           
+            <Speech speechname="taking_cover">
+                <speechline>Content/Audio/Speeches/PlayerNiko/TAKING_COVER</speechline>
+                <alternatives>
+                    <alt1>TAKING_COVER_1</alt1>  <!-- WAV: "Cover my ass!" -->
+                    <alt2>TAKING_COVER_2</alt2>  <!-- WAV: "Get there and I'm here!" -->
+                    <alt3>TAKING_COVER_3</alt3>  <!-- WAV: "I'm behind this wall!" -->
+                    <alt4>TAKING_COVER_4</alt4>  <!-- WAV: "Good cover here!" -->
+                </alternatives>
+                <Priority>high</Priority>
+                <Cooldown>5.0</Cooldown>
+                <RealtimeEffects>COVER_MUFFLED</RealtimeEffects>
+            </Speech>
+
+            <Speech speechname="cover_under_fire">
+                <speechline>Content/Audio/Speeches/PlayerNiko/COVER_UNDER_FIRE</speechline>
+                <alternatives>
+                    <alt1>COVER_UNDER_FIRE_1</alt1>  <!-- WAV: "Fuck! This wall's gonna collapse!" -->
+                    <alt2>COVER_UNDER_FIRE_2</alt2>  <!-- WAV: "They're tearing this place apart!" -->
+                    <alt3>COVER_UNDER_FIRE_3</alt3>  <!-- WAV: "This cover won't hold much longer!" -->
+                    <alt4>COVER_UNDER_FIRE_4</alt4>  <!-- WAV: "This wall is getting shredded!" -->
+                </alternatives>
+                <Priority>high</Priority>
+                <Cooldown>3.0</Cooldown>
+                <RealtimeEffects>COVER_MUFFLED|COMBAT_STRESS</RealtimeEffects>
+            </Speech>
+
+            <Speech speechname="peeking_cover">
+                <speechline>Content/Audio/Speeches/PlayerNiko/PEEKING_COVER</speechline>
+                <alternatives>
+                    <alt1>PEEKING_COVER_1</alt1>  <!-- WAV: "Let me see what's out there" -->
+                    <alt2>PEEKING_COVER_2</alt2>  <!-- WAV: "Coast looks clear" -->
+                    <alt3>PEEKING_COVER_3</alt3>  <!-- WAV: "Time to move" -->
+                    <alt4>PEEKING_COVER_4</alt4>  <!-- WAV: "I think they're gone" -->
+                </alternatives>
+                <Priority>medium</Priority>
+                <Cooldown>4.0</Cooldown>
+                <RealtimeEffects>WHISPER_QUIET</RealtimeEffects>
+            </Speech>
+        </SpeechGroup>
+
+        <!-- ========== DRIVING SPEECH (When in vehicles) ========== -->
+        <SpeechGroup name="driving">
+            <SoundClass>PlayerSpeechVehicleSoundClass</SoundClass>
+            <AudioComponent>PlayerVoiceAudioComponent</AudioComponent>
+            
+            <Speech speechname="driving_taunt">
+                <speechline>Content/Audio/Speeches/PlayerNiko/DRIVING_TAUNT</speechline>
+                <alternatives>
+                    <alt1>DRIVING_TAUNT_1</alt1>  <!-- WAV: "Get out of my way!" -->
+                    <alt2>DRIVING_TAUNT_2</alt2>  <!-- WAV: "Move it, asshole!" -->
+                    <alt3>DRIVING_TAUNT_3</alt3>  <!-- WAV: "Coming through!" -->
+                    <alt4>DRIVING_TAUNT_4</alt4>  <!-- WAV: "Learn to drive!" -->
+                </alternatives>
+                <Priority>low</Priority>
+                <Cooldown>5.0</Cooldown>
+                <RealtimeEffects>VEHICLE_INTERIOR</RealtimeEffects>
+            </Speech>
+
+            <Speech speechname="driving_excitement">
+                <speechline>Content/Audio/Speeches/PlayerNiko/DRIVING_EXCITEMENT</speechline>
+                <alternatives>
+                    <alt1>DRIVING_EXCITEMENT_1</alt1>  <!-- WAV: "Yeah! This is what I'm talking about!" -->
+                    <alt2>DRIVING_EXCITEMENT_2</alt2>  <!-- WAV: "Now we're flying!" -->
+                    <alt3>DRIVING_EXCITEMENT_3</alt3>  <!-- WAV: "This baby can move!" -->
+                    <alt4>DRIVING_EXCITEMENT_4</alt4>  <!-- WAV: "Fuck yeah, speed!" -->
+                </alternatives>
+                <Priority>low</Priority>
+                <Cooldown>8.0</Cooldown>
+                <RealtimeEffects>VEHICLE_INTERIOR</RealtimeEffects>
+            </Speech>
+
+            <Speech speechname="driving_crash">
+                <speechline>Content/Audio/Speeches/PlayerNiko/DRIVING_CRASH</speechline>
+                <alternatives>
+                    <alt1>DRIVING_CRASH_1</alt1>  <!-- WAV: "Shit! That was close!" -->
+                    <alt2>DRIVING_CRASH_2</alt2>  <!-- WAV: "Almost lost it there!" -->
+                    <alt3>DRIVING_CRASH_3</alt3>  <!-- WAV: "That could've been bad!" -->
+                    <alt4>DRIVING_CRASH_4</alt4>  <!-- WAV: "Need to be more careful!" -->
+                </alternatives>
+                <Priority>medium</Priority>
+                <Cooldown>6.0</Cooldown>
+                <RealtimeEffects>VEHICLE_INTERIOR</RealtimeEffects>
+            </Speech>
+        </SpeechGroup>
+
+        <!-- ========== COMBAT SPEECH (During firefights) ========== -->
+        <SpeechGroup name="combat">
+            <SoundClass>PlayerSpeechCombatSoundClass</SoundClass>
+            <AudioComponent>PedVoiceSpeechComponent</AudioComponent>
+
+            <Speech speechname="combat_reloading">
+                <speechline>Content/Audio/Speeches/PlayerNiko/COMBAT_RELOADING</speechline>
+                <alternatives>
+                    <alt1>COMBAT_RELOADING_1</alt1>  <!-- WAV: "Reloading!" -->
+                    <alt2>COMBAT_RELOADING_2</alt2>  <!-- WAV: "Changing magazine!" -->
+                    <alt3>COMBAT_RELOADING_3</alt3>  <!-- WAV: "Need to reload!" -->
+                    <alt4>COMBAT_RELOADING_4</alt4>  <!-- WAV: "Give me a second!" -->
+                </alternatives>
+                <Priority>medium</Priority>
+                <Cooldown>3.0</Cooldown>
+                <RealtimeEffects>COMBAT_ENVIRONMENT</RealtimeEffects>
+            </Speech>
+
+            <Speech speechname="combat_injured">
+                <speechline>Content/Audio/Speeches/PlayerNiko/COMBAT_INJURED</speechline>
+                <alternatives>
+                    <alt1>COMBAT_INJURED_1</alt1>  <!-- WAV: "I'm hurt bad!" -->
+                    <alt2>COMBAT_INJURED_2</alt2>  <!-- WAV: "Need medical attention!" -->
+                    <alt3>COMBAT_INJURED_3</alt3>  <!-- WAV: "I'm bleeding out here!" -->
+                    <alt4>COMBAT_INJURED_4</alt4>  <!-- WAV: "This doesn't look good!" -->
+                </alternatives>
+                <Priority>high</Priority>
+                <Cooldown>8.0</Cooldown>
+                <RealtimeEffects>COMBAT_ENVIRONMENT</RealtimeEffects>
+            </Speech>
+
+            <Speech speechname="combat_kill">
+                <speechline>Content/Audio/Speeches/PlayerNiko/COMBAT_KILL</speechline>
+                <alternatives>
+                    <alt1>COMBAT_KILL_1</alt1>  <!-- WAV: "Got him!" -->
+                    <alt2>COMBAT_KILL_2</alt2>  <!-- WAV: "Target down!" -->
+                    <alt3>COMBAT_KILL_3</alt3>  <!-- WAV: "That's what you get!" -->
+                    <alt4>COMBAT_KILL_4</alt4>  <!-- WAV: "Clean shot!" -->
+                </alternatives>
+                <Priority>medium</Priority>
+                <Cooldown>4.0</Cooldown>
+                <RealtimeEffects>COMBAT_ENVIRONMENT</RealtimeEffects>
+            </Speech>
+        </SpeechGroup>
+    </PedSpeech>
+</Speeches>

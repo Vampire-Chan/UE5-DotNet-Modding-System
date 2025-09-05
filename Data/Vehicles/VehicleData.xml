@@ -1,0 +1,729 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VehicleData>
+    
+    <!-- ========== CAR HANDLING DATA ========== -->
+    
+    <!-- ========== AUTOMOBILE HANDLING ========== -->
+    <Handling name="adder_handling" type="automobile">
+        <fMass value="1800.0" />
+        <fInitialDragCoeff value="0.28" />
+        <fPercentSubmerged value="85.0" />
+        <vecCentreOfMassOffset x="0.0" y="0.0" z="-15.0" />
+        <vecInertiaMultiplier x="1.0" y="1.3" z="1.5" />
+        
+        <fDriveBiasFront value="0.20" />
+        <nInitialDriveGears value="6" />
+        <fInitialDriveForce value="8000.0" />
+        <fDriveInertia value="1.0" />
+        <fClutchChangeRateScaleUpShift value="3.0" />
+        <fClutchChangeRateScaleDownShift value="3.0" />
+        <fInitialDriveMaxFlatVel value="320.0" />
+        
+        <fBrakeForce value="4500.0" />
+        <fBrakeBiasFront value="0.45" />
+        <fHandBrakeForce value="3150.0" />
+        
+        <fSteeringLock value="42.0" />
+        <fTractionCurveMax value="2.5" />
+        <fTractionCurveMin value="2.38" />
+        <fTractionCurveLateral value="22.5" />
+        <fTractionSpringDeltaMax value="0.15" />
+        <fLowSpeedTractionLossMult value="1.5" />
+        <fCamberStiffnesss value="0.0" />
+        <fTractionBiasFront value="0.485" />
+        <fTractionLossMult value="1.0" />
+        
+        <fSuspensionForce value="48000.0" />
+        <fSuspensionCompDamp value="2800.0" />
+        <fSuspensionReboundDamp value="4200.0" />
+        <fSuspensionUpperLimit value="12.0" />
+        <fSuspensionLowerLimit value="-10.0" />
+        <fSuspensionRaise value="0.0" />
+        <fSuspensionBiasFront value="0.5" />
+        <fAntiRollBarForce value="18000.0" />
+        <fAntiRollBarBiasFront value="0.6" />
+        <fRollCentreHeightFront value="41.0" />
+        <fRollCentreHeightRear value="41.0" />
+        
+        <fCollisionDamageMult value="0.7" />
+        <fWeaponDamageMult value="1.0" />
+        <fDeformationDamageMult value="0.7" />
+        <fEngineDamageMult value="1.5" />
+        <fPetrolTankVolume value="65.0" />
+        <fOilVolume value="5.0" />
+        
+        <nMonetaryValue value="1000000" />
+        <strModelFlags>440010</strModelFlags>
+        <strHandlingFlags>0</strHandlingFlags>
+        <strDamageFlags>0</strDamageFlags>
+        <AIHandling>SPORTS_CAR</AIHandling>
+        
+        <DeformationProfile>
+            <OverallToughness>0.4</OverallToughness>
+            <ImpactThreshold>80.0</ImpactThreshold>
+            <CascadeMultiplier>1.5</CascadeMultiplier>
+            <StructuralIntegrity>0.6</StructuralIntegrity>
+            <MaterialType>Sports_Car_Body</MaterialType>
+        </DeformationProfile>
+        
+        <WeaponMounts />
+    </Handling>
+
+    <!-- ========== BIKE HANDLING ========== -->
+    <Handling name="sportbike_handling" type="bike">
+        <fMass value="250.0" />
+        <fInitialDragCoeff value="0.18" />
+        <fPercentSubmerged value="95.0" />
+        <vecCentreOfMassOffset x="0.0" y="0.0" z="-15.0" />
+        <vecInertiaMultiplier x="1.0" y="1.0" z="1.0" />
+        
+        <fDriveBiasFront value="0.0" />
+        <nInitialDriveGears value="5" />
+        <fInitialDriveForce value="10000.0" />
+        <fDriveInertia value="1.0" />
+        <fClutchChangeRateScaleUpShift value="2.0" />
+        <fClutchChangeRateScaleDownShift value="2.0" />
+        <fInitialDriveMaxFlatVel value="290.0" />
+        
+        <fBrakeForce value="5400.0" />
+        <fBrakeBiasFront value="0.6" />
+        <fHandBrakeForce value="5850.0" />
+        
+        <fSteeringLock value="42.0" />
+        <fTractionCurveMax value="2.15" />
+        <fTractionCurveMin value="2.13" />
+        <fTractionCurveLateral value="22.5" />
+        <fTractionSpringDeltaMax value="0.06" />
+        <fLowSpeedTractionLossMult value="0.8" />
+        <fCamberStiffnesss value="0.9" />
+        <fTractionBiasFront value="0.465" />
+        <fTractionLossMult value="1.0" />
+        
+        <fSuspensionForce value="35000.0" />
+        <fSuspensionCompDamp value="12400.0" />
+        <fSuspensionReboundDamp value="24750.0" />
+        <fSuspensionUpperLimit value="20.0" />
+        <fSuspensionLowerLimit value="-16.0" />
+        <fSuspensionRaise value="0.0" />
+        <fSuspensionBiasFront value="0.53" />
+        <fAntiRollBarForce value="0.0" />
+        <fAntiRollBarBiasFront value="0.0" />
+        <fRollCentreHeightFront value="25.0" />
+        <fRollCentreHeightRear value="25.0" />
+        
+        <fCollisionDamageMult value="0.5" />
+        <fWeaponDamageMult value="1.0" />
+        <fDeformationDamageMult value="0.8" />
+        <fEngineDamageMult value="1.5" />
+        <fPetrolTankVolume value="65.0" />
+        <fOilVolume value="5.0" />
+        
+        <nMonetaryValue value="20000" />
+        <strModelFlags>440010</strModelFlags>
+        <strHandlingFlags>1</strHandlingFlags>
+        <strDamageFlags>20</strDamageFlags>
+        <AIHandling>AVERAGE</AIHandling>
+        
+        <BikeSpecific>
+            <fLeanFwdCOMMult value="0.0" />
+            <fLeanFwdForceMult value="12.25" />
+            <fLeanBakCOMMult value="0.0" />
+            <fLeanBakForceMult value="13.0" />
+            <fMaxBankAngle value="42.0" />
+            <fFullAnimAngle value="38.0" />
+            <fDesLeanReturnFrac value="0.16" />
+            <fStickLeanMult value="1.0" />
+            <fBrakingStabilityMult value="-1.0" />
+            <fInAirSteerMult value="-2.5" />
+            <fWheelieBalancePoint value="8.0" />
+            <fStoppieBalancePoint value="-10.0" />
+            <fWheelieSteerMult value="-0.5" />
+            <fRearBalanceMult value="65.0" />
+        </BikeSpecific>
+        
+        <DeformationProfile>
+            <OverallToughness>0.2</OverallToughness>
+            <ImpactThreshold>30.0</ImpactThreshold>
+            <CascadeMultiplier>2.5</CascadeMultiplier>
+            <StructuralIntegrity>0.3</StructuralIntegrity>
+            <MaterialType>Motorcycle_Frame</MaterialType>
+        </DeformationProfile>
+    </Handling>
+
+    <!-- ========== BOAT HANDLING ========== -->
+    <Handling name="speedboat_handling" type="boat">
+        <fMass value="2000.0" />
+        <fInitialDragCoeff value="0.02" />
+        <fPercentSubmerged value="55.0" />
+        <vecCentreOfMassOffset x="2.5" y="-80.0" z="-40.0" />
+        <vecInertiaMultiplier x="1.0" y="1.0" z="1.0" />
+        
+        <fDriveBiasFront value="0.0" />
+        <nInitialDriveGears value="1" />
+        <fInitialDriveForce value="42500.0" />
+        <fDriveInertia value="1.5" />
+        <fClutchChangeRateScaleUpShift value="1.3" />
+        <fClutchChangeRateScaleDownShift value="1.3" />
+        <fInitialDriveMaxFlatVel value="270.0" />
+        
+        <fBrakeForce value="1800.0" />
+        <fBrakeBiasFront value="0.6" />
+        <fHandBrakeForce value="3150.0" />
+        
+        <fSteeringLock value="35.0" />
+        <fTractionCurveMax value="0.0" />
+        <fTractionCurveMin value="0.0" />
+        <fTractionCurveLateral value="6.0" />
+        <fTractionSpringDeltaMax value="0.1" />
+        <fLowSpeedTractionLossMult value="0.0" />
+        <fCamberStiffnesss value="0.0" />
+        <fTractionBiasFront value="0.95" />
+        <fTractionLossMult value="1.0" />
+        
+        <fSuspensionForce value="5000.0" />
+        <fSuspensionCompDamp value="15000.0" />
+        <fSuspensionReboundDamp value="0.0" />
+        <fSuspensionUpperLimit value="10.0" />
+        <fSuspensionLowerLimit value="10.0" />
+        <fSuspensionRaise value="0.0" />
+        <fSuspensionBiasFront value="0.0" />
+        <fAntiRollBarForce value="0.0" />
+        <fAntiRollBarBiasFront value="0.0" />
+        <fRollCentreHeightFront value="0.0" />
+        <fRollCentreHeightRear value="0.0" />
+        
+        <fCollisionDamageMult value="0.5" />
+        <fWeaponDamageMult value="1.0" />
+        <fDeformationDamageMult value="0.8" />
+        <fEngineDamageMult value="1.5" />
+        <fPetrolTankVolume value="10.0" />
+        <fOilVolume value="3.0" />
+        
+        <nMonetaryValue value="40000" />
+        <strModelFlags>8000000</strModelFlags>
+        <strHandlingFlags>0</strHandlingFlags>
+        <strDamageFlags>20</strDamageFlags>
+        <AIHandling>AVERAGE</AIHandling>
+        
+        <BoatSpecific>
+            <fBoxFrontMult value="0.9" />
+            <fBoxRearMult value="0.7" />
+            <fBoxSideMult value="0.9" />
+            <fSampleTop value="0.1" />
+            <fSampleBottom value="0.7" />
+            <fAquaplaneForce value="3.6" />
+            <fAquaplanePushWaterMult value="0.5" />
+            <fAquaplanePushWaterCap value="3.5" />
+            <fAquaplanePushWaterApply value="0.002" />
+            <fRudderForce value="1.8" />
+            <fRudderOffsetSubmerge value="0.0" />
+            <fRudderOffsetForce value="0.0" />
+            <fRudderOffsetForceZMult value="0.8" />
+            <fWaveAudioMult value="4.0" />
+            <vecMoveResistance x="6.5" y="500.0" z="80.0" />
+        </BoatSpecific>
+        
+        <DeformationProfile>
+            <OverallToughness>0.5</OverallToughness>
+            <ImpactThreshold>100.0</ImpactThreshold>
+            <CascadeMultiplier>1.3</CascadeMultiplier>
+            <StructuralIntegrity>0.7</StructuralIntegrity>
+            <MaterialType>Fiberglass_Hull</MaterialType>
+        </DeformationProfile>
+    </Handling>
+
+    <!-- ========== WATERBIKE HANDLING ========== -->
+    <Handling name="jetski_handling" type="waterbike">
+        <fMass value="320.0" />
+        <fInitialDragCoeff value="0.45" />
+        <fPercentSubmerged value="90.0" />
+        <vecCentreOfMassOffset x="0.0" y="0.0" z="-8.0" />
+        <vecInertiaMultiplier x="0.8" y="1.2" z="1.0" />
+        
+        <fInitialDriveForce value="3500.0" />
+        <fInitialDriveMaxFlatVel value="85.0" />
+        
+        <WaterbikeSpecific>
+            <fBuoyancyForce value="1.0" />
+            <fWaterResistance value="0.6" />
+            <fJetThrustDirection value="0.9" />
+            <fJetTurnRate value="4.0" />
+            <fStabilityFactor value="0.7" />
+            <fJumpForce value="2000.0" />
+        </WaterbikeSpecific>
+        
+        <fCollisionDamageMult value="1.3" />
+        <fWeaponDamageMult value="1.1" />
+        <fDeformationDamageMult value="1.6" />
+        <fEngineDamageMult value="1.8" />
+        <fPetrolTankVolume value="25.0" />
+        <fOilVolume value="1.5" />
+        
+        <DeformationProfile>
+            <OverallToughness>0.3</OverallToughness>
+            <ImpactThreshold>40.0</ImpactThreshold>
+            <CascadeMultiplier>2.0</CascadeMultiplier>
+            <StructuralIntegrity>0.4</StructuralIntegrity>
+            <MaterialType>Plastic_Hull</MaterialType>
+        </DeformationProfile>
+    </Handling>
+
+    <!-- ========== HELICOPTER HANDLING ========== -->
+    <Handling name="buzzard_handling" type="helicopter">
+        <fMass value="3800.0" />
+        <fInitialDragCoeff value="0.18" />
+        <fPercentSubmerged value="75.0" />
+        <vecCentreOfMassOffset x="0.0" y="20.0" z="0.0" />
+        <vecInertiaMultiplier x="1.0" y="1.0" z="1.0" />
+        
+        <fDriveBiasFront value="0.0" />
+        <nInitialDriveGears value="1" />
+        <fInitialDriveForce value="1500.0" />
+        <fDriveInertia value="1.0" />
+        <fClutchChangeRateScaleUpShift value="1.3" />
+        <fClutchChangeRateScaleDownShift value="1.3" />
+        <fInitialDriveMaxFlatVel value="320.0" />
+        
+        <fBrakeForce value="1800.0" />
+        <fBrakeBiasFront value="0.6" />
+        <fHandBrakeForce value="3150.0" />
+        
+        <fSteeringLock value="35.0" />
+        <fTractionCurveMax value="1.3" />
+        <fTractionCurveMin value="1.2" />
+        <fTractionCurveLateral value="12.0" />
+        <fTractionSpringDeltaMax value="0.1" />
+        <fLowSpeedTractionLossMult value="0.0" />
+        <fCamberStiffnesss value="0.0" />
+        <fTractionBiasFront value="0.5" />
+        <fTractionLossMult value="1.0" />
+        
+        <fSuspensionForce value="15000.0" />
+        <fSuspensionCompDamp value="7000.0" />
+        <fSuspensionReboundDamp value="15000.0" />
+        <fSuspensionUpperLimit value="70.0" />
+        <fSuspensionLowerLimit value="-10.0" />
+        <fSuspensionRaise value="0.0" />
+        <fSuspensionBiasFront value="0.35" />
+        <fAntiRollBarForce value="0.0" />
+        <fAntiRollBarBiasFront value="0.0" />
+        <fRollCentreHeightFront value="0.0" />
+        <fRollCentreHeightRear value="0.0" />
+        
+        <fCollisionDamageMult value="1.5" />
+        <fWeaponDamageMult value="0.5" />
+        <fDeformationDamageMult value="3.0" />
+        <fEngineDamageMult value="1.5" />
+        <fPetrolTankVolume value="100.0" />
+        <fOilVolume value="8.0" />
+        
+        <nMonetaryValue value="52000" />
+        <strModelFlags>2044000</strModelFlags>
+        <strHandlingFlags>401000</strHandlingFlags>
+        <strDamageFlags>20</strDamageFlags>
+        <AIHandling>AVERAGE</AIHandling>
+        
+        <HelicopterSpecific>
+            <fThrust value="0.55" />
+            <fThrustFallOff value="0.035" />
+            <fThrustVectoring value="0.4" />
+            <fYawMult value="-1.55" />
+            <fYawStabilise value="0.002" />
+            <fSideSlipMult value="0.004" />
+            <fRollMult value="1.95" />
+            <fRollStabilise value="0.01" />
+            <fPitchMult value="1.7" />
+            <fPitchStabilise value="0.001" />
+            <fFormLiftMult value="1.0" />
+            <fAttackLiftMult value="3.0" />
+            <fAttackDiveMult value="3.0" />
+            <fGearDownDragV value="0.1" />
+            <fGearDownLiftMult value="1.0" />
+            <fWindMult value="0.001" />
+            <fMoveRes value="0.035" />
+            <vecTurnRes x="0.7" y="0.6" z="0.7" />
+            <vecSpeedRes x="0.5" y="0.5" z="0.7" />
+        </HelicopterSpecific>
+        
+        <WeaponMounts>
+            <Mount seat_id="0" weapon="buzzard_mg" />
+            <Mount seat_id="0" weapon="buzzard_missiles" />
+        </WeaponMounts>
+        
+        <DeformationProfile>
+            <OverallToughness>0.8</OverallToughness>
+            <ImpactThreshold>200.0</ImpactThreshold>
+            <CascadeMultiplier>2.2</CascadeMultiplier>
+            <StructuralIntegrity>0.9</StructuralIntegrity>
+            <MaterialType>Military_Aircraft</MaterialType>
+        </DeformationProfile>
+    </Handling>
+
+    <!-- ========== PLANE HANDLING ========== -->
+    <Handling name="fighter_handling" type="plane">
+        <fMass value="8000.0" />
+        <fInitialDragCoeff value="0.036" />
+        <fPercentSubmerged value="75.0" />
+        <vecCentreOfMassOffset x="0.0" y="0.0" z="0.0" />
+        <vecInertiaMultiplier x="1.0" y="1.0" z="1.0" />
+        
+        <fDriveBiasFront value="1.0" />
+        <nInitialDriveGears value="1" />
+        <fInitialDriveForce value="5.0" />
+        <fDriveInertia value="1.0" />
+        <fClutchChangeRateScaleUpShift value="1.3" />
+        <fClutchChangeRateScaleDownShift value="1.3" />
+        <fInitialDriveMaxFlatVel value="657.2" />
+        
+        <fBrakeForce value="225.0" />
+        <fBrakeBiasFront value="0.6" />
+        <fHandBrakeForce value="3150.0" />
+        
+        <fSteeringLock value="30.0" />
+        <fTractionCurveMax value="2.15" />
+        <fTractionCurveMin value="1.8" />
+        <fTractionCurveLateral value="12.0" />
+        <fTractionSpringDeltaMax value="0.1" />
+        <fLowSpeedTractionLossMult value="0.0" />
+        <fCamberStiffnesss value="0.0" />
+        <fTractionBiasFront value="0.5" />
+        <fTractionLossMult value="1.0" />
+        
+        <fSuspensionForce value="32500.0" />
+        <fSuspensionCompDamp value="34000.0" />
+        <fSuspensionReboundDamp value="34000.0" />
+        <fSuspensionUpperLimit value="6.0" />
+        <fSuspensionLowerLimit value="-6.0" />
+        <fSuspensionRaise value="0.0" />
+        <fSuspensionBiasFront value="0.6" />
+        <fAntiRollBarForce value="0.0" />
+        <fAntiRollBarBiasFront value="0.0" />
+        <fRollCentreHeightFront value="0.0" />
+        <fRollCentreHeightRear value="0.0" />
+        
+        <fCollisionDamageMult value="1.5" />
+        <fWeaponDamageMult value="0.5" />
+        <fDeformationDamageMult value="4.0" />
+        <fEngineDamageMult value="1.5" />
+        <fPetrolTankVolume value="65.0" />
+        <fOilVolume value="5.0" />
+        
+        <nMonetaryValue value="45000" />
+        <strModelFlags>1000000</strModelFlags>
+        <strHandlingFlags>400100</strHandlingFlags>
+        <strDamageFlags>20</strDamageFlags>
+        <AIHandling>AVERAGE</AIHandling>
+        
+        <PlaneSpecific>
+            <fThrust value="2.0" />
+            <fThrustFallOff value="0.00012" />
+            <fThrustVectoring value="0.0" />
+            <fYawMult value="-0.001" />
+            <fYawStabilise value="0.002" />
+            <fSideSlipMult value="0.05" />
+            <fRollMult value="0.009" />
+            <fRollStabilise value="0.0" />
+            <fPitchMult value="0.002" />
+            <fPitchStabilise value="0.001" />
+            <fFormLiftMult value="0.00015" />
+            <fAttackLiftMult value="0.018" />
+            <fAttackDiveMult value="0.025" />
+            <fGearDownDragV value="0.1" />
+            <fGearDownLiftMult value="0.6" />
+            <fWindMult value="0.12" />
+            <fMoveRes value="0.01" />
+            <vecTurnRes x="0.05" y="0.5" z="0.4" />
+            <vecSpeedRes x="0.02" y="0.25" z="0.015" />
+        </PlaneSpecific>
+        
+        <WeaponMounts>
+            <Mount seat_id="0" weapon="fighter_cannon" />
+        </WeaponMounts>
+        
+        <DeformationProfile>
+            <OverallToughness>0.9</OverallToughness>
+            <ImpactThreshold>400.0</ImpactThreshold>
+            <CascadeMultiplier>1.8</CascadeMultiplier>
+            <StructuralIntegrity>0.95</StructuralIntegrity>
+            <MaterialType>Aircraft_Aluminum</MaterialType>
+        </DeformationProfile>
+    </Handling>
+
+    <!-- ========== VTOL HANDLING ========== -->
+    <Handling name="osprey_handling" type="vtol">
+        <fMass value="15000.0" />
+        <fInitialDragCoeff value="0.6" />
+        <fPercentSubmerged value="85.0" />
+        <vecCentreOfMassOffset x="0.0" y="0.0" z="-80.0" />
+        <vecInertiaMultiplier x="3.0" y="4.0" z="3.5" />
+        
+        <VTOLSpecific>
+            <fRotorLiftForce value="180000.0" />
+            <fRotorTiltSpeed value="2.0" />
+            <fRotorTiltAngleMax value="90.0" />
+            <fForwardThrust value="45000.0" />
+            <fVerticalThrust value="160000.0" />
+            <fTransitionSpeed value="60.0" />
+            <fHoverStability value="0.8" />
+            <fForwardFlightSpeed value="480.0" />
+            <fMaxVerticalSpeed value="25.0" />
+            <fAutoTransition value="true" />
+        </VTOLSpecific>
+        
+        <fCollisionDamageMult value="0.6" />
+        <fWeaponDamageMult value="0.8" />
+        <fDeformationDamageMult value="0.5" />
+        <fEngineDamageMult value="1.1" />
+        <fPetrolTankVolume value="1200.0" />
+        <fOilVolume value="35.0" />
+        
+        <WeaponMounts>
+            <Mount seat_id="1" weapon="door_gun_left" />
+            <Mount seat_id="2" weapon="door_gun_right" />
+        </WeaponMounts>
+        
+        <DeformationProfile>
+            <OverallToughness>0.85</OverallToughness>
+            <ImpactThreshold>350.0</ImpactThreshold>
+            <CascadeMultiplier>2.0</CascadeMultiplier>
+            <StructuralIntegrity>0.92</StructuralIntegrity>
+            <MaterialType>Military_Transport</MaterialType>
+        </DeformationProfile>
+    </Handling>
+
+    <!-- ========== HOVERCRAFT HANDLING ========== -->
+    <Handling name="hovercraft_handling" type="hovercraft">
+        <fMass value="2000.0" />
+        <fInitialDragCoeff value="0.18" />
+        <fPercentSubmerged value="60.0" />
+        <vecCentreOfMassOffset x="0.0" y="0.0" z="-20.0" />
+        <vecInertiaMultiplier x="1.5" y="2.0" z="1.7" />
+        
+        <HovercraftSpecific>
+            <fCushionLiftForce value="22000.0" />
+            <fCushionHeight value="60.0" />
+            <fCushionStability value="0.7" />
+            <fCushionDamping value="0.5" />
+            <fSkirtFlexibility value="0.8" />
+            <fWaterDrag value="0.3" />
+            <fLandDrag value="0.5" />
+            <fTurnRate value="2.2" />
+            <fSlideFactor value="1.4" />
+        </HovercraftSpecific>
+        
+        <fInitialDriveForce value="7000.0" />
+        <fInitialDriveMaxFlatVel value="140.0" />
+        <fSteeringLock value="30.0" />
+        
+        <fCollisionDamageMult value="0.9" />
+        <fWeaponDamageMult value="1.0" />
+        <fDeformationDamageMult value="1.0" />
+        <fEngineDamageMult value="1.2" />
+        <fPetrolTankVolume value="90.0" />
+        <fOilVolume value="6.0" />
+        
+        <DeformationProfile>
+            <OverallToughness>0.6</OverallToughness>
+            <ImpactThreshold>70.0</ImpactThreshold>
+            <CascadeMultiplier>1.2</CascadeMultiplier>
+            <StructuralIntegrity>0.7</StructuralIntegrity>
+            <MaterialType>Composite_Skirt</MaterialType>
+        </DeformationProfile>
+    </Handling>
+        
+        <!-- Damage & Deformation -->
+        <CollisionDamageMult>0.7</CollisionDamageMult>
+        <WeaponDamageMult>1.0</WeaponDamageMult>
+        <DeformationDamageMult>0.8</DeformationDamageMult>
+        <EngineDamageMult>1.5</EngineDamageMult>
+        <PetrolTankVolume>65.0</PetrolTankVolume>
+        <OilVolume>5.0</OilVolume>
+        
+        <!-- Deformation Profile -->
+        <DeformationProfile>
+            <OverallToughness>0.4</OverallToughness>
+            <ImpactThreshold>80.0</ImpactThreshold>
+            <CascadeMultiplier>1.5</CascadeMultiplier>
+            <StructuralIntegrity>0.6</StructuralIntegrity>
+            <MaterialType>Sports_Car_Body</MaterialType>
+        </DeformationProfile>
+        
+        <!-- Weapon Mounts (seat_id: weapon_name) -->
+        <WeaponMounts>
+            <!-- No weapons for civilian sports car -->
+        </WeaponMounts>
+    </Handling>
+
+    <Handling name="baller_handling">
+        <!-- Physics Properties -->
+        <Mass>2400.0</Mass>
+        <InitialDragCoeff>12.0</InitialDragCoeff>
+        <DownforceModifier>0.8</DownforceModifier>
+        <CentreOfMassOffset x="0.0" y="0.0" z="0.1" />
+        <InertiaMultiplier x="1.2" y="1.8" z="2.0" />
+        
+        <!-- Engine & Transmission -->
+        <PercentSubmerged>85.0</PercentSubmerged>
+        <Drive>AWD</Drive>
+        <nInitialDriveGears>8</nInitialDriveGears>
+        <InitialDriveForce>0.28</InitialDriveForce>
+        <DriveInertia>1.2</DriveInertia>
+        <ClutchChangeRateScaleUpShift>2.8</ClutchChangeRateScaleUpShift>
+        <ClutchChangeRateScaleDownShift>2.8</ClutchChangeRateScaleDownShift>
+        <InitialDriveMaxFlatVel>145.0</InitialDriveMaxFlatVel>
+        
+        <!-- Deformation Profile -->
+        <DeformationProfile>
+            <OverallToughness>0.7</OverallToughness>
+            <ImpactThreshold>150.0</ImpactThreshold>
+            <CascadeMultiplier>1.8</CascadeMultiplier>
+            <StructuralIntegrity>0.8</StructuralIntegrity>
+            <MaterialType>SUV_Body</MaterialType>
+        </DeformationProfile>
+        
+        <!-- Weapon Mounts -->
+        <WeaponMounts>
+            <!-- No weapons for civilian SUV -->
+        </WeaponMounts>
+    </Handling>
+
+    <Handling name="buzzard_handling">
+        <!-- Helicopter Physics Properties -->
+        <Mass>3500.0</Mass>
+        <InitialDragCoeff>10.0</InitialDragCoeff>
+        <CentreOfMassOffset x="0.0" y="0.0" z="-0.3" />
+        <InertiaMultiplier x="2.0" y="2.5" z="1.8" />
+        
+        <!-- Flight Properties -->
+        <LiftCoefficient>1.8</LiftCoefficient>
+        <RotorForce>1.2</RotorForce>
+        <RotorInertia>0.8</RotorInertia>
+        <TailRotorForce>0.6</TailRotorForce>
+        <MaxPitch>15.0</MaxPitch>
+        <MaxRoll>25.0</MaxRoll>
+        <MaxYaw>360.0</MaxYaw>
+        
+        <!-- Engine -->
+        <EngineType>Turboshaft</EngineType>
+        <EnginePower>2000.0</EnginePower>
+        <FuelConsumption>8.5</FuelConsumption>
+        
+        <!-- Deformation Profile -->
+        <DeformationProfile>
+            <OverallToughness>0.8</OverallToughness>
+            <ImpactThreshold>200.0</ImpactThreshold>
+            <CascadeMultiplier>2.2</CascadeMultiplier>
+            <StructuralIntegrity>0.9</StructuralIntegrity>
+            <MaterialType>Military_Aircraft</MaterialType>
+        </DeformationProfile>
+        
+        <!-- Weapon Mounts -->
+        <WeaponMounts>
+            <Mount seat_id="0" weapon="buzzard_mg" />
+            <Mount seat_id="0" weapon="buzzard_missiles" />
+        </WeaponMounts>
+    </Handling>
+
+    <Handling name="akuma_handling">
+        <!-- Motorcycle Physics Properties -->
+        <Mass>180.0</Mass>
+        <InitialDragCoeff>3.0</InitialDragCoeff>
+        <CentreOfMassOffset x="0.0" y="0.0" z="-0.1" />
+        <InertiaMultiplier x="0.8" y="1.0" z="1.2" />
+        
+        <!-- Engine & Transmission -->
+        <Drive>RWD</Drive>
+        <nInitialDriveGears>6</nInitialDriveGears>
+        <InitialDriveForce>0.45</InitialDriveForce>
+        <InitialDriveMaxFlatVel>180.0</InitialDriveMaxFlatVel>
+        
+        <!-- Motorcycle Specific -->
+        <LeanAngleMax>45.0</LeanAngleMax>
+        <LeanSpeed>3.0</LeanSpeed>
+        <CounterSteerForce>0.8</CounterSteerForce>
+        <GyroscopicEffect>1.2</GyroscopicEffect>
+        
+        <!-- Deformation Profile -->
+        <DeformationProfile>
+            <OverallToughness>0.1</OverallToughness>
+            <ImpactThreshold>25.0</ImpactThreshold>
+            <CascadeMultiplier>3.0</CascadeMultiplier>
+            <StructuralIntegrity>0.2</StructuralIntegrity>
+            <MaterialType>Motorcycle_Frame</MaterialType>
+        </DeformationProfile>
+        
+        <!-- Weapon Mounts -->
+        <WeaponMounts>
+            <!-- No weapons for civilian motorcycle -->
+        </WeaponMounts>
+    </Handling>
+
+    <Handling name="barracks_handling">
+        <!-- Heavy Military Truck Properties -->
+        <Mass>8500.0</Mass>
+        <InitialDragCoeff>18.0</InitialDragCoeff>
+        <CentreOfMassOffset x="0.0" y="0.0" z="0.3" />
+        <InertiaMultiplier x="2.5" y="3.0" z="2.8" />
+        
+        <!-- Engine & Transmission -->
+        <Drive>AWD</Drive>
+        <nInitialDriveGears>10</nInitialDriveGears>
+        <InitialDriveForce>0.8</InitialDriveForce>
+        <InitialDriveMaxFlatVel>120.0</InitialDriveMaxFlatVel>
+        
+        <!-- Heavy Vehicle Properties -->
+        <OffRoadTraction>1.8</OffRoadTraction>
+        <MudTraction>1.5</MudTraction>
+        <SandTraction>1.2</SandTraction>
+        
+        <!-- Deformation Profile -->
+        <DeformationProfile>
+            <OverallToughness>0.95</OverallToughness>
+            <ImpactThreshold>500.0</ImpactThreshold>
+            <CascadeMultiplier>0.8</CascadeMultiplier>
+            <StructuralIntegrity>0.95</StructuralIntegrity>
+            <MaterialType>Military_Armor</MaterialType>
+        </DeformationProfile>
+        
+        <!-- Weapon Mounts -->
+        <WeaponMounts>
+            <Mount seat_id="1" weapon="mounted_mg" />
+            <Mount seat_id="2" weapon="mounted_mg" />
+        </WeaponMounts>
+    </Handling>
+
+    <Handling name="jetmax_handling">
+        <!-- Speedboat Physics Properties -->
+        <Mass>1800.0</Mass>
+        <InitialDragCoeff>6.0</InitialDragCoeff>
+        <WaterDragCoeff>4.5</WaterDragCoeff>
+        <CentreOfMassOffset x="0.0" y="0.0" z="-0.2" />
+        <InertiaMultiplier x="1.2" y="1.8" z="1.5" />
+        
+        <!-- Marine Engine -->
+        <EngineType>Marine_Outboard</EngineType>
+        <EnginePower>350.0</EnginePower>
+        <PropellerEfficiency>0.85</PropellerEfficiency>
+        <MaxSpeed>85.0</MaxSpeed>
+        
+        <!-- Water Physics -->
+        <BuoyancyForce>1.2</BuoyancyForce>
+        <WaterResistance>0.8</WaterResistance>
+        <WaveResponse>1.5</WaveResponse>
+        
+        <!-- Deformation Profile -->
+        <DeformationProfile>
+            <OverallToughness>0.5</OverallToughness>
+            <ImpactThreshold>100.0</ImpactThreshold>
+            <CascadeMultiplier>1.3</CascadeMultiplier>
+            <StructuralIntegrity>0.7</StructuralIntegrity>
+            <MaterialType>Fiberglass_Hull</MaterialType>
+        </DeformationProfile>
+        
+        <!-- Weapon Mounts -->
+        <WeaponMounts>
+            <!-- No weapons for civilian boat -->
+        </WeaponMounts>
+    </Handling>
+
+</VehicleData>

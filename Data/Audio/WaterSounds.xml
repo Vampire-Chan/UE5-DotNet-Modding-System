@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WaterSounds>
+    <!-- ========== PURE C++ WATER AUDIO SYSTEM ========== -->
+    <WaterClasses>
+        <WaterClass name="ocean_water">
+            <WaterBodyType>Ocean</WaterBodyType>
+            <DefaultMaterial>/Game/Materials/Water/M_Ocean</DefaultMaterial>
+        </WaterClass>
+        <WaterClass name="lake_water">
+            <WaterBodyType>Lake</WaterBodyType>
+            <DefaultMaterial>/Game/Materials/Water/M_Lake</DefaultMaterial>
+        </WaterClass>
+        <WaterClass name="river_water">
+            <WaterBodyType>River</WaterBodyType>
+            <DefaultMaterial>/Game/Materials/Water/M_River</DefaultMaterial>
+        </WaterClass>
+    </WaterClasses>
+
+    <WaterSpeedMapping>
+        <SpeedCategory name="calm">
+            <WaveHeight>0.0-0.5</WaveHeight>
+            <WaterBodyStates>
+                <Ocean>
+                    <SoundFile>/Game/Audio/Water/Ocean/Ocean_Deep_Calm</SoundFile>
+                    <AudioFlags>LOOP SPATIAL_3D DISTANCE_FADE</AudioFlags>
+                    <Volume>0.6</Volume>
+                    <Pitch>0.9</Pitch>
+                </Ocean>
+            </WaterBodyStates>
+        </SpeedCategory>
+        <SpeedCategory name="gentle">
+            <WaveHeight>0.5-1.5</WaveHeight>
+            <WaterBodyStates>
+                <Ocean>
+                    <SoundFile>/Game/Audio/Water/Ocean/Ocean_Deep_Gentle</SoundFile>
+                    <AudioFlags>LOOP SPATIAL_3D DISTANCE_FADE</AudioFlags>
+                    <Volume>0.8</Volume>
+                    <Pitch>1.0</Pitch>
+                </Ocean>
+            </WaterBodyStates>
+        </SpeedCategory>
+        <SpeedCategory name="moderate">
+            <WaveHeight>1.5-3.0</WaveHeight>
+            <WaterBodyStates>
+                <Ocean>
+                    <SoundFile>/Game/Audio/Water/Ocean/Ocean_Deep_Moderate</SoundFile>
+                    <AudioFlags>LOOP SPATIAL_3D DISTANCE_FADE</AudioFlags>
+                    <Volume>1.0</Volume>
+                    <Pitch>1.1</Pitch>
+                </Ocean>
+            </WaterBodyStates>
+        </SpeedCategory>
+        <SpeedCategory name="rough">
+            <WaveHeight>3.0-6.0</WaveHeight>
+            <WaterBodyStates>
+                <Ocean>
+                    <SoundFile>/Game/Audio/Water/Ocean/Ocean_Deep_Rough</SoundFile>
+                    <AudioFlags>LOOP SPATIAL_3D DISTANCE_FADE</AudioFlags>
+                    <Volume>1.3</Volume>
+                    <Pitch>1.2</Pitch>
+                </Ocean>
+            </WaterBodyStates>
+        </SpeedCategory>
+    </WaterSpeedMapping>
+
+    <WaterPhysicsEvents>
+        <WaterEntry>
+            <Small>
+                <SoundFile>/Game/Audio/Water/Interaction/Water_Entry_Small</SoundFile>
+                <AudioFlags>SPATIAL_3D RANDOMIZE_PITCH</AudioFlags>
+                <Volume>0.8</Volume>
+            </Small>
+            <Medium>
+                <SoundFile>/Game/Audio/Water/Interaction/Water_Entry_Medium</SoundFile>
+                <AudioFlags>SPATIAL_3D RANDOMIZE_PITCH</AudioFlags>
+                <Volume>1.0</Volume>
+            </Medium>
+            <Large>
+                <SoundFile>/Game/Audio/Water/Interaction/Water_Entry_Large</SoundFile>
+                <AudioFlags>SPATIAL_3D RANDOMIZE_PITCH</AudioFlags>
+                <Volume>1.3</Volume>
+            </Large>
+        </WaterEntry>
+        <WaterMovement>
+            <Swimming>
+                <SoundFile>/Game/Audio/Water/Interaction/Water_Swimming_Loop</SoundFile>
+                <AudioFlags>LOOP SPATIAL_3D</AudioFlags>
+                <Volume>0.7</Volume>
+            </Swimming>
+        </WaterMovement>
+        <Underwater>
+            <AmbientLoop>
+                <SoundFile>/Game/Audio/Water/Underwater/Underwater_Ambient_Loop</SoundFile>
+                <AudioFlags>LOOP SPATIAL_2D UNDERWATER</AudioFlags>
+                <Volume>0.6</Volume>
+            </AmbientLoop>
+        </Underwater>
+    </WaterPhysicsEvents>
+
+</WaterSounds>

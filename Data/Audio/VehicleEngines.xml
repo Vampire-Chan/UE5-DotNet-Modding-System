@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VehicleEngines>
+    <!-- ========== UE5 VEHICLE ENGINE AUDIO SYSTEM ========== -->
+    <!-- Pure C++ with TMap<FName, FVehicleEngineData> structures -->
+    <!-- Connected to Data/Vehicles/Vehicles.xml via EngineAudioID -->
+
+    <!-- ========== CARS ========== -->
+    <VehicleEngineType id="ENGINE_COMPACT">
+        <EngineSounds>
+            <SoundEntry key="EngineStart" asset="/Game/Audio/Vehicles/Engines/Compact/CompactStart"/>
+            <SoundEntry key="EngineStop" asset="/Game/Audio/Vehicles/Engines/Compact/CompactStop"/>
+            <SoundEntry key="IdleLoop" asset="/Game/Audio/Vehicles/Engines/Compact/CompactIdle"/>
+            <SoundEntry key="LowRPMLoop" asset="/Game/Audio/Vehicles/Engines/Compact/CompactLowRPM"/>
+            <SoundEntry key="MidRPMLoop" asset="/Game/Audio/Vehicles/Engines/Compact/CompactMidRPM"/>
+            <SoundEntry key="HighRPMLoop" asset="/Game/Audio/Vehicles/Engines/Compact/CompactHighRPM"/>
+            <SoundEntry key="Stall" asset="/Game/Audio/Vehicles/Engines/Generic/EngineStall"/>
+        </EngineSounds>
+    </VehicleEngineType>
+
+    <VehicleEngineType id="ENGINE_SPORTS">
+        <EngineSounds>
+            <SoundEntry key="EngineStart" asset="/Game/Audio/Vehicles/Engines/Sports/SportsStart"/>
+            <SoundEntry key="EngineStop" asset="/Game/Audio/Vehicles/Engines/Sports/SportsStop"/>
+            <SoundEntry key="IdleLoop" asset="/Game/Audio/Vehicles/Engines/Sports/SportsIdle"/>
+            <SoundEntry key="LowRPMLoop" asset="/Game/Audio/Vehicles/Engines/Sports/SportsLowRPM"/>
+            <SoundEntry key="MidRPMLoop" asset="/Game/Audio/Vehicles/Engines/Sports/SportsMidRPM"/>
+            <SoundEntry key="HighRPMLoop" asset="/Game/Audio/Vehicles/Engines/Sports/SportsHighRPM"/>
+            <SoundEntry key="Backfire" asset="/Game/Audio/Vehicles/Engines/Sports/SportsBackfire"/>
+            <SoundEntry key="Turbo" asset="/Game/Audio/Vehicles/Engines/Sports/SportsTurboWhistle"/>
+        </EngineSounds>
+    </VehicleEngineType>
+
+    <!-- ========== BIKES ========== -->
+    <VehicleEngineType id="ENGINE_BIKE_SPORT">
+        <EngineSounds>
+            <SoundEntry key="EngineStart" asset="/Game/Audio/Vehicles/Engines/Bike/BikeSportStart"/>
+            <SoundEntry key="EngineStop" asset="/Game/Audio/Vehicles/Engines/Bike/BikeSportStop"/>
+            <SoundEntry key="IdleLoop" asset="/Game/Audio/Vehicles/Engines/Bike/BikeSportIdle"/>
+            <SoundEntry key="LowRPMLoop" asset="/Game/Audio/Vehicles/Engines/Bike/BikeSportLowRPM"/>
+            <SoundEntry key="MidRPMLoop" asset="/Game/Audio/Vehicles/Engines/Bike/BikeSportMidRPM"/>
+            <SoundEntry key="HighRPMLoop" asset="/Game/Audio/Vehicles/Engines/Bike/BikeSportHighRPM"/>
+            <SoundEntry key="ExhaustPop" asset="/Game/Audio/Vehicles/Engines/Bike/BikeSportExhaustPop"/>
+            <SoundEntry key="ChainNoise" asset="/Game/Audio/Vehicles/Engines/Bike/BikeChainLoop"/>
+            <SoundEntry key="SuspensionBottomOut" asset="/Game/Audio/Vehicles/Engines/Bike/BikeSuspensionBottomOut"/>
+        </EngineSounds>
+    </VehicleEngineType>
+
+    <!-- ========== AIRCRAFT ========== -->
+    <VehicleEngineType id="ENGINE_PLANE_PROP">
+        <EngineSounds>
+            <SoundEntry key="EngineStart" asset="/Game/Audio/Vehicles/Engines/Plane/PropPlaneStart"/>
+            <SoundEntry key="EngineStop" asset="/Game/Audio/Vehicles/Engines/Plane/PropPlaneStop"/>
+            <SoundEntry key="IdleLoop" asset="/Game/Audio/Vehicles/Engines/Plane/PropPlaneIdle"/>
+            <SoundEntry key="LowRPMLoop" asset="/Game/Audio/Vehicles/Engines/Plane/PropPlaneLowRPM"/>
+            <SoundEntry key="HighRPMLoop" asset="/Game/Audio/Vehicles/Engines/Plane/PropPlaneHighRPM"/>
+            <SoundEntry key="PropellerWash" asset="/Game/Audio/Vehicles/Engines/Plane/PropWashLoop"/>
+            <SoundEntry key="LandingGear" asset="/Game/Audio/Vehicles/Engines/Plane/LandingGear"/>
+            <SoundEntry key="Flaps" asset="/Game/Audio/Vehicles/Engines/Plane/Flaps"/>
+            <SoundEntry key="Touchdown" asset="/Game/Audio/Vehicles/Engines/Plane/Touchdown"/>
+        </EngineSounds>
+    </VehicleEngineType>
+
+    <VehicleEngineType id="ENGINE_HELICOPTER">
+        <EngineSounds>
+            <SoundEntry key="EngineStart" asset="/Game/Audio/Vehicles/Engines/Heli/HeliTurbineStart"/>
+            <SoundEntry key="EngineStop" asset="/Game/Audio/Vehicles/Engines/Heli/HeliTurbineStop"/>
+            <SoundEntry key="IdleLoop" asset="/Game/Audio/Vehicles/Engines/Heli/HeliIdle"/>
+            <SoundEntry key="RotorWash" asset="/Game/Audio/Vehicles/Engines/Heli/RotorWashLoop"/>
+            <SoundEntry key="TailRotor" asset="/Game/Audio/Vehicles/Engines/Heli/TailRotorLoop"/>
+            <SoundEntry key="TurbineWhine" asset="/Game/Audio/Vehicles/Engines/Heli/TurbineWhineLoop"/>
+            <SoundEntry key="SkidScrape" asset="/Game/Audio/Vehicles/Engines/Heli/SkidScrape"/>
+        </EngineSounds>
+    </VehicleEngineType>
+
+    <!-- ========== VTOL AIRCRAFT ========== -->
+    <VehicleEngineType id="ENGINE_VTOL_ROTOR">
+        <EngineSounds>
+            <SoundEntry key="EngineStart" asset="/Game/Audio/Vehicles/Engines/VTOL/VTOLRotorStart"/>
+            <SoundEntry key="EngineStop" asset="/Game/Audio/Vehicles/Engines/VTOL/VTOLRotorStop"/>
+            <SoundEntry key="IdleLoop" asset="/Game/Audio/Vehicles/Engines/VTOL/VTOLRotorIdle"/>
+            <SoundEntry key="RotorWash" asset="/Game/Audio/Vehicles/Engines/VTOL/VTOLRotorWashLoop"/>
+            <SoundEntry key="TurbineWhine" asset="/Game/Audio/Vehicles/Engines/VTOL/VTOLTurbineWhineLoop"/>
+        </EngineSounds>
+    </VehicleEngineType>
+
+    <VehicleEngineType id="ENGINE_VTOL_JET">
+        <EngineSounds>
+            <SoundEntry key="EngineStart" asset="/Game/Audio/Vehicles/Engines/VTOL/VTOLJetStart"/>
+            <SoundEntry key="EngineStop" asset="/Game/Audio/Vehicles/Engines/VTOL/VTOLJetStop"/>
+            <SoundEntry key="IdleLoop" asset="/Game/Audio/Vehicles/Engines/VTOL/VTOLJetIdle"/>
+            <SoundEntry key="JetEngineWhine" asset="/Game/Audio/Vehicles/Engines/VTOL/VTOLJetWhineLoop"/>
+            <SoundEntry key="Afterburner" asset="/Game/Audio/Vehicles/Engines/VTOL/VTOLAfterburner"/>
+        </EngineSounds>
+    </VehicleEngineType>
+
+    <!-- ========== WATERCRAFT ========== -->
+    <VehicleEngineType id="ENGINE_BOAT">
+        <EngineSounds>
+            <SoundEntry key="EngineStart" asset="/Game/Audio/Vehicles/Engines/Boat/BoatStart"/>
+            <SoundEntry key="EngineStop" asset="/Game/Audio/Vehicles/Engines/Boat/BoatStop"/>
+            <SoundEntry key="IdleLoop" asset="/Game/Audio/Vehicles/Engines/Boat/BoatIdle"/>
+            <SoundEntry key="LowRPMLoop" asset="/Game/Audio/Vehicles/Engines/Boat/BoatLowRPM"/>
+            <SoundEntry key="HighRPMLoop" asset="/Game/Audio/Vehicles/Engines/Boat/BoatHighRPM"/>
+        </EngineSounds>
+    </VehicleEngineType>
+
+    <VehicleEngineType id="ENGINE_WATERBIKE">
+        <EngineSounds>
+            <SoundEntry key="EngineStart" asset="/Game/Audio/Vehicles/Engines/Jetski/JetskiStart"/>
+            <SoundEntry key="EngineStop" asset="/Game/Audio/Vehicles/Engines/Jetski/JetskiStop"/>
+            <SoundEntry key="IdleLoop" asset="/Game/Audio/Vehicles/Engines/Jetski/JetskiIdle"/>
+            <SoundEntry key="LowRPMLoop" asset="/Game/Audio/Vehicles/Engines/Jetski/JetskiLowRPM"/>
+            <SoundEntry key="HighRPMLoop" asset="/Game/Audio/Vehicles/Engines/Jetski/JetskiHighRPM"/>
+        </EngineSounds>
+    </VehicleEngineType>
+
+</VehicleEngines>

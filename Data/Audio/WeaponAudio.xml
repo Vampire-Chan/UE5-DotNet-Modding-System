@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WeaponAudio>
+    <!-- ========== MELEE WEAPON SOUNDS ========== -->
+    <MeleeWeapons>
+        <Weapon type="UNARMED">
+            <WeaponID>UNARMED</WeaponID>
+            <SoundCategory>MELEE</SoundCategory>
+            <Sounds>
+                <Hit>
+                    <SoundFile>/Game/Audio/Weapons/Melee/Unarmed/punch_hit_01</SoundFile>
+                    <AudioFlags>SPATIAL_3D RANDOMIZE_PITCH DISTANCE_FADE</AudioFlags>
+                    <AlternateSounds>
+                        <Sound>/Game/Audio/Weapons/Melee/Unarmed/punch_hit_02</Sound>
+                        <Sound>/Game/Audio/Weapons/Melee/Unarmed/punch_hit_03</Sound>
+                    </AlternateSounds>
+                </Hit>
+                <Swing>
+                    <SoundFile>/Game/Audio/Weapons/Melee/Unarmed/punch_swing_01</SoundFile>
+                    <AudioFlags>SPATIAL_3D RANDOMIZE_PITCH</AudioFlags>
+                    <AlternateSounds>
+                        <Sound>/Game/Audio/Weapons/Melee/Unarmed/punch_swing_02</Sound>
+                    </AlternateSounds>
+                </Swing>
+                <Miss>
+                    <SoundFile>/Game/Audio/Weapons/Melee/Unarmed/punch_miss_01</SoundFile>
+                    <AudioFlags>SPATIAL_3D LOW_PRIORITY</AudioFlags>
+                    <AlternateSounds>
+                        <Sound>/Game/Audio/Weapons/Melee/Unarmed/punch_miss_02</Sound>
+                    </AlternateSounds>
+                </Miss>
+                <Block>
+                    <SoundFile>/Game/Audio/Weapons/Melee/Unarmed/punch_block_01</SoundFile>
+                    <AudioFlags>SPATIAL_3D HIGH_PRIORITY</AudioFlags>
+                </Block>
+            </Sounds>
+            <AudioProperties>
+                <Volume>0.8</Volume>
+                <PitchVariation>0.2</PitchVariation>
+                <MaxDistance>15.0</MaxDistance>
+            </AudioProperties>
+        </Weapon>
+
+        <Weapon type="BASEBALLBAT">
+            <WeaponID>BASEBALLBAT</WeaponID>
+            <SoundCategory>MELEE</SoundCategory>
+            <Sounds>
+                <Hit>
+                    <SoundFile>/Game/Audio/Weapons/Melee/BaseballBat/bat_hit_flesh_01</SoundFile>
+                    <AudioFlags>SPATIAL_3D RANDOMIZE_PITCH</AudioFlags>
+                    <AlternateSounds>
+                        <Sound>/Game/Audio/Weapons/Melee/BaseballBat/bat_hit_flesh_02</Sound>
+                        <Sound>/Game/Audio/Weapons/Melee/BaseballBat/bat_hit_flesh_03</Sound>
+                    </AlternateSounds>
+                </Hit>
+                <Swing>
+                    <SoundFile>/Game/Audio/Weapons/Melee/BaseballBat/bat_swing_01</SoundFile>
+                    <AudioFlags>SPATIAL_3D RANDOMIZE_PITCH</AudioFlags>
+                    <AlternateSounds>
+                        <Sound>/Game/Audio/Weapons/Melee/BaseballBat/bat_swing_02</Sound>
+                        <Sound>/Game/Audio/Weapons/Melee/BaseballBat/bat_swing_03</Sound>
+                    </AlternateSounds>
+                </Swing>
+            </Sounds>
+        </Weapon>
+
+        <Weapon type="KNIFE">
+            <WeaponID>KNIFE</WeaponID>
+            <SoundCategory>MELEE</SoundCategory>
+            <Sounds>
+                <Slash>
+                    <SoundFile>/Game/Audio/Weapons/Melee/Knife/knife_slash_01</SoundFile>
+                    <AudioFlags>SPATIAL_3D RANDOMIZE_PITCH</AudioFlags>
+                    <AlternateSounds>
+                        <Sound>/Game/Audio/Weapons/Melee/Knife/knife_slash_02</Sound>
+                        <Sound>/Game/Audio/Weapons/Melee/Knife/knife_slash_03</Sound>
+                    </AlternateSounds>
+                </Slash>
+                <Swing>
+                    <SoundFile>/Game/Audio/Weapons/Melee/Knife/knife_swing_01</SoundFile>
+                    <AudioFlags>SPATIAL_3D RANDOMIZE_PITCH</AudioFlags>
+                    <AlternateSounds>
+                        <Sound>/Game/Audio/Weapons/Melee/Knife/knife_swing_02</Sound>
+                    </AlternateSounds>
+                </Swing>
+            </Sounds>
+        </Weapon>
+    </MeleeWeapons>
+
+    <!-- ========== HANDGUN SOUNDS ========== -->
+    <HandgunWeapons>
+        <Weapon type="PISTOL">
+            <WeaponID>PISTOL</WeaponID>
+            <SoundCategory>HANDGUN</SoundCategory>
+            <Sounds>
+                <Fire>
+                    <SoundFile>/Game/Audio/Weapons/Handguns/Pistol/pistol_fire_01</SoundFile>
+                    <AudioFlags>SPATIAL_3D RANDOMIZE_PITCH</AudioFlags>
+                    <AlternateSounds>
+                        <Sound>/Game/Audio/Weapons/Handguns/Pistol/pistol_fire_02</Sound>
+                        <Sound>/Game/Audio/Weapons/Handguns/Pistol/pistol_fire_03</Sound>
+                        <Sound>/Game/Audio/Weapons/Handguns/Pistol/pistol_fire_04</Sound>
+                    </AlternateSounds>
+                </Fire>
+                <Reload>
+                    <SoundFile>/Game/Audio/Weapons/Handguns/Pistol/pistol_mag_out</SoundFile>
+                    <AudioFlags>SPATIAL_3D</AudioFlags>
+                </Reload>
+            </Sounds>
+        </Weapon>
+    </HandgunWeapons>
+
+</WeaponAudio>

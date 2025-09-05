@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Ped and the Propname are defined here! -->
+<!-- Ped Types: Player0, Player1, Male, Female, Cop, Fire, Medic, Gang_name, Player2, Player3, Dog, Shark, Bird, Cat -->
+<Peds>
+    <!-- Definition for the Player Character (Niko) -->
+    <Ped Name="PlayerNiko" Type="Player0" BaseSkeleton="/Game/Characters/PlayerNiko/SKEL_PlayerNiko" PerceptionInfo="DEFAULT_PERCEPTION" CombatInfo="DEFAULT" RelationshipGroup="PLAYER">
+        <PropType>PlayerNiko</PropType> <!-- Base folder for this character's modular assets -->
+        <AnimationGroup>player_movement</AnimationGroup> <!-- Animation group name matching actual content folder -->
+        <VoicePack>Niko_Voice</VoicePack> <!-- Placeholder for character voice lines dictionary -->
+        <DefaultVariation>Default</DefaultVariation> <!-- Reference to a variation set in PedVariations.xml for spawning -->
+    </Ped>
+
+    <!-- AI Versions using same PlayerNiko assets -->
+    <Ped Name="PlayerNiko_AI1" Type="Player0" BaseSkeleton="/Game/Characters/PlayerNiko/SKEL_PlayerNiko" PerceptionInfo="DEFAULT_PERCEPTION" CombatInfo="DEFAULT" RelationshipGroup="FRIENDLY">
+        <PropType>PlayerNiko</PropType> <!-- Same assets as PlayerNiko -->
+        <AnimationGroup>player_movement</AnimationGroup> <!-- Same animation group -->
+        <VoicePack>Niko_Voice</VoicePack>
+        <DefaultVariation>Default</DefaultVariation>
+    </Ped>
+
+    <Ped Name="PlayerNiko_AI2" Type="Player0" BaseSkeleton="/Game/Characters/PlayerNiko/SKEL_PlayerNiko" PerceptionInfo="DEFAULT_PERCEPTION" CombatInfo="DEFAULT" RelationshipGroup="FRIENDLY">
+        <PropType>PlayerNiko</PropType> <!-- Same assets as PlayerNiko -->
+        <AnimationGroup>player_movement</AnimationGroup> <!-- Same animation group -->
+        <VoicePack>Niko_Voice</VoicePack>
+        <DefaultVariation>Default</DefaultVariation>
+    </Ped>
+
+    <!-- Example: Generic Male NPC -->
+    <Ped Name="Male_Citizen" Type="Male" BaseSkeleton="/Game/Characters/Generic/SKEL_Male" PerceptionInfo="DEFAULT_PERCEPTION" CombatInfo="DEFAULT" RelationshipGroup="CIVILIAN">
+        <PropFolder>Generic_Male</PropFolder>
+        <AnimationGroup>M@Move</AnimationGroup> <!-- Different animation set for citizens -->
+        <VoicePack>Male_Voice</VoicePack>
+        <DefaultVariation>Male_Casual</DefaultVariation>
+    </Ped>
+
+    <!-- Example: Female NPC -->
+    <Ped Name="Female_Citizen" Type="Female" BaseSkeleton="/Game/Characters/Generic/SKEL_Female" PerceptionInfo="DEFAULT_PERCEPTION" CombatInfo="DEFAULT" RelationshipGroup="CIVILIAN">
+        <PropFolder>Generic_Female</PropFolder>
+        <AnimationGroup>F@Move</AnimationGroup> <!-- Shares same animations as male citizen -->
+        <VoicePack>Female_Voice</VoicePack>
+        <DefaultVariation>Female_Casual</DefaultVariation>
+    </Ped>
+
+    <!-- Example: Cop with different animation set -->
+    <Ped Name="Cop" Type="Cop" BaseSkeleton="/Game/Characters/Cop/SKEL_Cop" PerceptionInfo="DEFAULT_PERCEPTION" CombatInfo="COP" RelationshipGroup="COP">
+        <PropFolder>NPC_Cop</PropFolder>
+        <AnimationGroup>Move_Cop</AnimationGroup> <!-- Different walking style for authority figures -->
+        <VoicePack>Cop_Voice</VoicePack>
+        <DefaultVariation>Cop_Uniform</DefaultVariation>
+    </Ped>
+
+    <!-- Define the Props here the name and the mesh. Other data to be modified from PedPropMesh.xml -->
+    <PedProp Name="NikoProp" BaseSkeleton="/Game/Props/Hats/Niko_Hat"/>
+</Peds>

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VehicleParking>
+    <!-- ========== UE5 VEHICLE PARKING SYSTEM ========== -->
+    <!-- Connected to WPL files via ParkingID references -->
+    <!-- Connected to Vehicles.xml via VehicleID references -->
+    <!-- Connected to Objects.xml for parking objects (barriers, meters, etc.) -->
+    
+    <!-- ========== PARKING ZONE DEFINITIONS ========== -->
+    <ParkingZones>
+        <!-- Downtown District Parking -->
+        <ParkingZone id="PARKING_DOWNTOWN_01" type="street_parking" wpl="WPL_Downtown_01">
+            <ZoneName>Downtown Street Parking - Block 1</ZoneName>
+            <ParkingType>STREET</ParkingType>
+            <MaxVehicles>25</MaxVehicles>
+            <RespawnCooldown>120.0</RespawnCooldown>  <!-- 2 minutes -->
+            <ZoneBounds>
+                <Min x="-950.0" y="-950.0" z="-5.0"/>
+                <Max x="950.0" y="950.0" z="5.0"/>
+            </ZoneBounds>
+            
+            <!-- Individual Parking Spots -->
+            <ParkingSpots>
+                <Spot id="SPOT_DT01_001" enabled="true">
+                    <Position x="145.2" y="203.5" z="0.0"/>
+                    <Rotation x="0.0" y="0.0" z="90.0"/>
+                    <SpotType>PARALLEL</SpotType>
+                    <VehicleFilter>COMPACT|SEDAN|SPORTS</VehicleFilter>  <!-- Bitwise flags from Vehicles.xml -->
+                    <RespawnTimer>120.0</RespawnTimer>
+                    <LastSpawnTime>0.0</LastSpawnTime>
+                    <CurrentVehicle>null</CurrentVehicle>
+                </Spot>
+                
+                <Spot id="SPOT_DT01_002" enabled="true">
+                    <Position x="150.8" y="203.5" z="0.0"/>
+                    <Rotation x="0.0" y="0.0" z="90.0"/>
+                    <SpotType>PARALLEL</SpotType>
+                    <VehicleFilter>COMPACT|SEDAN</VehicleFilter>
+                    <RespawnTimer>90.0</RespawnTimer>
+                    <LastSpawnTime>0.0</LastSpawnTime>
+                    <CurrentVehicle>null</CurrentVehicle>
+                </Spot>
+                
+                <Spot id="SPOT_DT01_003" enabled="true">
+                    <Position x="156.4" y="203.5" z="0.0"/>
+                    <Rotation x="0.0" y="0.0" z="90.0"/>
+                    <SpotType>PARALLEL</SpotType>
+                    <VehicleFilter>SUV|TRUCK</VehicleFilter>
+                    <RespawnTimer>180.0</RespawnTimer>  <!-- Longer for larger vehicles -->
+                    <LastSpawnTime>0.0</LastSpawnTime>
+                    <CurrentVehicle>null</CurrentVehicle>
+                </Spot>
+            </ParkingSpots>
+            
+            <!-- Parking Objects (meters, barriers, etc.) -->
+            <ParkingObjects>
+                <Object id="PARK_METER_01" object_ref="parking_meter" wpl_ref="WPL_Downtown_01">
+                    <Position x="144.0" y="205.0" z="0.0"/>
+                    <Rotation x="0.0" y="0.0" z="0.0"/>
+                    <DestructionCooldown>300.0</DestructionCooldown>  <!-- 5 minutes to respawn if destroyed -->
+                    <IsDestroyed>false</IsDestroyed>
+                    <LastDestroyedTime>0.0</LastDestroyedTime>
+                    <AttachedAudio>parking_meter_beep</AttachedAudio>  <!-- References Audio.xml -->
+                </Object>
+                
+                <Object id="BARRIER_01" object_ref="concrete_barrier" wpl_ref="WPL_Downtown_01">
+                    <Position x="140.0" y="200.0" z="0.0"/>
+                    <Rotation x="0.0" y="0.0" z="45.0"/>
+                    <DestructionCooldown>600.0</DestructionCooldown>  <!-- 10 minutes for barriers -->
+                    <IsDestroyed>false</IsDestroyed>
+                    <LastDestroyedTime>0.0</LastDestroyedTime>
+                    <AttachedAudio>null</AttachedAudio>
+                </Object>
+            </ParkingObjects>
+            
+            <!-- Vehicle Spawn Pool for this zone -->
+            <VehicleSpawnPool>
+                <VehicleEntry vehicle_id="schafter" weight="30" class_filter="SEDAN"/>  <!-- References Vehicles.xml -->
+                <VehicleEntry vehicle_id="adder" weight="5" class_filter="SPORTS"/>
+                <VehicleEntry vehicle_id="baller" weight="20" class_filter="SUV"/>
+                <VehicleEntry vehicle_id="police" weight="10" class_filter="POLICE"/>
+                <VehicleEntry vehicle_id="barracks" weight="15" class_filter="MILITARY"/>
+            </VehicleSpawnPool>
+        </ParkingZone>
+        
+        <!-- Parking Garage -->
+        <ParkingZone id="PARKING_GARAGE_01" type="garage_parking" wpl="WPL_Downtown_01">
+            <ZoneName>Downtown Parking Garage - Level 1</ZoneName>
+            <ParkingType>GARAGE</ParkingType>
+            <MaxVehicles>50</MaxVehicles>
+            <RespawnCooldown>60.0</RespawnCooldown>  <!-- Faster respawn in garages -->
+            <ZoneBounds>
+                <Min x="130.0" y="200.0" z="-15.0"/>
+                <Max x="180.0" y="250.0" z="-5.0"/>
+            </ZoneBounds>
+            
+            <ParkingSpots>
+                <Spot id="SPOT_GAR01_001" enabled="true">
+                    <Position x="135.0" y="205.0" z="-10.0"/>
+                    <Rotation x="0.0" y="0.0" z="0.0"/>
+                    <SpotType>PERPENDICULAR</SpotType>
+                    <VehicleFilter>ALL</VehicleFilter>
+                    <RespawnTimer>60.0</RespawnTimer>
+                    <LastSpawnTime>0.0</LastSpawnTime>
+                    <CurrentVehicle>null</CurrentVehicle>
+                </Spot>
+                
+                <Spot id="SPOT_GAR01_002" enabled="true">
+                    <Position x="140.0" y="205.0" z="-10.0"/>
+                    <Rotation x="0.0" y="0.0" z="0.0"/>
+                    <SpotType>PERPENDICULAR</SpotType>
+                    <VehicleFilter>ALL</VehicleFilter>
+                    <RespawnTimer>60.0</RespawnTimer>
+                    <LastSpawnTime>0.0</LastSpawnTime>
+                    <CurrentVehicle>null</CurrentVehicle>
+                </Spot>
+            </ParkingSpots>
+            
+            <ParkingObjects>
+                <Object id="GARAGE_PILLAR_01" object_ref="concrete_pillar" wpl_ref="WPL_Downtown_01">
+                    <Position x="137.5" y="210.0" z="-10.0"/>
+                    <Rotation x="0.0" y="0.0" z="0.0"/>
+                    <DestructionCooldown>900.0</DestructionCooldown>  <!-- 15 minutes for structural elements -->
+                    <IsDestroyed>false</IsDestroyed>
+                    <LastDestroyedTime>0.0</LastDestroyedTime>
+                    <AttachedAudio>garage_ambient</AttachedAudio>
+                </Object>
+            </ParkingObjects>
+            
+            <VehicleSpawnPool>
+                <VehicleEntry vehicle_id="schafter" weight="25" class_filter="SEDAN"/>
+                <VehicleEntry vehicle_id="adder" weight="15" class_filter="SPORTS"/>
+                <VehicleEntry vehicle_id="baller" weight="20" class_filter="SUV"/>
+                <VehicleEntry vehicle_id="police_cruiser" weight="5" class_filter="POLICE"/>
+                <VehicleEntry vehicle_id="taxi" weight="10" class_filter="SERVICE"/>
+            </VehicleSpawnPool>
+        </ParkingZone>
+    </ParkingZones>
+    
+    <!-- ========== GLOBAL PARKING SETTINGS ========== -->
+    <GlobalSettings>
+        <DefaultRespawnCooldown>120.0</DefaultRespawnCooldown>
+        <DefaultDestructionCooldown>300.0</DefaultDestructionCooldown>
+        <MaxActiveVehicles>200</MaxActiveVehicles>
+        <ParkingPersistence>true</ParkingPersistence>  <!-- Save parking state between sessions -->
+        <AutoCleanupTime>1800.0</AutoCleanupTime>  <!-- 30 minutes -->
+        
+        <!-- Vehicle Class Modifiers -->
+        <ClassModifiers>
+            <Modifier class="SPORTS" respawn_multiplier="1.5" destruction_multiplier="0.8"/>
+            <Modifier class="EMERGENCY" respawn_multiplier="0.5" destruction_multiplier="2.0"/>
+            <Modifier class="PUBLIC" respawn_multiplier="2.0" destruction_multiplier="1.5"/>
+        </ClassModifiers>
+    </GlobalSettings>
+    
+    <!-- ========== DESTRUCTION SYSTEM INTEGRATION ========== -->
+    <DestructionSystem>
+        <!-- Links to Objects.xml for destructible objects -->
+        <DestructibleObjects>
+            <ObjectType name="parking_meter" destruction_time="5.0" respawn_cooldown="300.0"/>
+            <ObjectType name="concrete_barrier" destruction_time="15.0" respawn_cooldown="600.0"/>
+            <ObjectType name="street_lamp" destruction_time="8.0" respawn_cooldown="480.0"/>
+            <ObjectType name="traffic_cone" destruction_time="1.0" respawn_cooldown="60.0"/>
+            <ObjectType name="fire_hydrant" destruction_time="12.0" respawn_cooldown="720.0"/>
+            <ObjectType name="concrete_pillar" destruction_time="25.0" respawn_cooldown="900.0"/>
+        </DestructibleObjects>
+        
+        <!-- Destruction Effects -->
+        <DestructionEffects>
+            <Effect object="parking_meter" 
+                    particle="/Game/Effects/Destruction/ParkingMeterDestroy" 
+                    audio="destruction_small_metal"
+                    debris="/Game/Objects/Debris/ParkingMeterDebris"/>
+            <Effect object="concrete_barrier" 
+                    particle="/Game/Effects/Destruction/ConcreteDestroy" 
+                    audio="destruction_concrete"
+                    debris="/Game/Objects/Debris/ConcreteDebris"/>
+            <Effect object="street_lamp" 
+                    particle="/Game/Effects/Destruction/ElectricDestroy" 
+                    audio="destruction_electric"
+                    debris="/Game/Objects/Debris/StreetLampDebris"/>
+        </DestructionEffects>
+    </DestructionSystem>
+</VehicleParking>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Manifest for runtime .pak file mounting.
+  - Path: The absolute directory path where the .pak file is located.
+  - Name: The full name of the .pak file, including the .pak extension.
+  - MountOrder: Lower numbers are mounted first. This is important for overriding assets.
+  - Basically the mount order will make: higher number means highest priority to be loaded.
+-->
+<PakfileManifest>
+  <Pakfile Path="D:/UnrealProjs/Game/Content/Paks/" Name="core_assets.pak" MountOrder="0" />
+  <Pakfile Path="D:/UnrealProjs/Game/Mods/SuperCar/" Name="super_car_mod.pak" MountOrder="10" />
+  <Pakfile Path="D:/UnrealProjs/Game/Mods/NewCity/" Name="new_city_mod.pak" MountOrder="20" />
+</PakfileManifest>

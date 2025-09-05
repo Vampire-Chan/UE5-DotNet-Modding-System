@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Particle Effects are stored in ParticleEffects.pak folder instead, so even for adding more and new assets for effects, either create new Pak Files or add to the exisitng one.
+     So no need to give the path name, just the name will work like: Wind, Rain, Lightning etc.. 
+     
+     For Audio again it's that just do: AudiobankName:Audioname. ex: WeatherSFX:Lightning-->
+<WeatherData>
+    <Weather Name="Sunny">
+        <Properties WindSpeed="5.0" Cloudiness="0.1" CloudSpeed="1.0" LightningIntensity="0.0" />
+        <Assets>
+            <!-- No special assets for sunny weather -->
+        </Assets>
+    </Weather>
+    <Weather Name="Windy">
+        <Properties WindSpeed="20.0" Cloudiness="0.3" CloudSpeed="2.5" LightningIntensity="0.0" />
+        <Assets>
+            <Asset Type="ParticleEffect" Name="Wind.Wind" SpawnType="WindEffect" ImpactType="None" />
+        </Assets>
+    </Weather>
+    <Weather Name="Cloudy">
+        <Properties WindSpeed="10.0" Cloudiness="0.8" CloudSpeed="1.2" LightningIntensity="0.0" />
+        <Assets>
+            <!-- No special assets for cloudy weather -->
+        </Assets>
+    </Weather>
+    <Weather Name="Rainy">
+        <Properties WindSpeed="15.0" Cloudiness="0.9" RainAmount="0.5" CloudSpeed="1.5" LightningIntensity="0.1" />
+        <Assets>
+            <Asset Type="ParticleEffect" Name="Rain" SpawnType="Gravity" ImpactType="Splash" />
+            <Asset Type="Sound" Name="WeatherSFX:Rain" />
+        </Assets>
+    </Weather>
+    <Weather Name="Stormy">
+        <Properties WindSpeed="25.0" Cloudiness="1.0" RainAmount="1.0" LightningFrequency="0.5" CloudSpeed="2.0" LightningIntensity="0.9" />
+        <Assets>
+            <Asset Type="ParticleEffect" Name="Rain" SpawnType="Gravity" ImpactType="Splash" />
+            <Asset Type="ParticleEffect" Name="Lightning" SpawnType="Lightning" ImpactType="None" />
+            <Asset Type="Sound" Name="WeatherSFX:Storm" />
+            <Asset Type="Sound" Name="WeatherSFX:Thunder" UseWith="Lightning" />
+        </Assets>
+    </Weather>
+    <Weather Name="Hot">
+        <Properties WindSpeed="2.0" Cloudiness="0.0" CloudSpeed="0.5" LightningIntensity="0.0" />
+        <Assets>
+            <!-- No special assets for hot weather -->
+        </Assets>
+    </Weather>
+    <Weather Name="Cold">
+        <Properties WindSpeed="5.0" Cloudiness="0.5" CloudSpeed="0.8" LightningIntensity="0.0" />
+        <Assets>
+            <Asset Type="ParticleEffect" Name="Snow" SpawnType="Gravity" ImpactType="None" />
+        </Assets>
+    </Weather>
+</WeatherData>

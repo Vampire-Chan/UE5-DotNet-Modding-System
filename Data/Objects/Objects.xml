@@ -1,0 +1,1170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ObjectData>
+    <!-- ========== SMALL DESTRUCTIBLE OBJECTS ========== -->
+    <Object name="traffic_cone">
+        <SkeletonPath>Content/Objects/Traffic/SK_TrafficCone</SkeletonPath>
+        <ObjectType>furniture</ObjectType>
+        <Category>small_furniture</Category>
+        
+        <PhysicsProperties>
+            <Mass>2.5</Mass>
+            <Friction>0.7</Friction>
+            <Restitution>0.3</Restitution>
+            <LinearDamping>0.1</LinearDamping>
+            <AngularDamping>0.05</AngularDamping>
+            <CanBePickedUp>true</CanBePickedUp>
+            <CanBeThrown>true</CanBeThrown>
+        </PhysicsProperties>
+        
+        <Flags>1001</Flags>
+        <MonetaryValue>25</MonetaryValue>
+        
+        <!-- VehicleParking.xml integration -->
+        <DestructionSettings>
+            <DestructionTime>1.0</DestructionTime>
+            <RespawnCooldown>60.0</RespawnCooldown>
+            <DestructionEffect>/Game/Effects/Destruction/PlasticDestroy</DestructionEffect>
+            <DestructionAudio>destruction_plastic</DestructionAudio>
+            <DebrisObject>/Game/Objects/Debris/PlasticDebris</DebrisObject>
+        </DestructionSettings>
+    </Object>
+
+    <?xml version="1.0" encoding="UTF-8"?>
+<ObjectData>
+    <!-- ========== SMALL DESTRUCTIBLE OBJECTS ========== -->
+    <Object name="traffic_cone">
+        <SkeletonPath>Content/Objects/Traffic/SK_TrafficCone</SkeletonPath>
+        <ObjectType>furniture</ObjectType>
+        <Category>small_furniture</Category>
+        <PhysicsProperties>
+            <Mass>2.5</Mass>
+            <Friction>0.7</Friction>
+            <Restitution>0.3</Restitution>
+            <LinearDamping>0.1</LinearDamping>
+            <AngularDamping>0.05</AngularDamping>
+            <CanBePickedUp>true</CanBePickedUp>
+            <CanBeThrown>true</CanBeThrown>
+        </PhysicsProperties>
+        <Flags>1001</Flags>
+        <MonetaryValue>25</MonetaryValue>
+        <DestructionSettings>
+            <DestructionTime>1.0</DestructionTime>
+            <RespawnCooldown>60.0</RespawnCooldown>
+            <DestructionEffect>/Game/Effects/Destruction/PlasticDestroy</DestructionEffect>
+            <DestructionAudio>destruction_plastic</DestructionAudio>
+            <DebrisObject>/Game/Objects/Debris/PlasticDebris</DebrisObject>
+        </DestructionSettings>
+    </Object>
+
+    <Object name="bar_stool">
+        <SkeletonPath>Content/Objects/Furniture/SK_BarStool</SkeletonPath>
+        <ObjectType>furniture</ObjectType>
+        <Category>medium_destructible</Category>
+        <PhysicsProperties>
+            <Mass>12.0</Mass>
+            <Friction>0.6</Friction>
+            <Restitution>0.2</Restitution>
+            <LinearDamping>0.2</LinearDamping>
+            <AngularDamping>0.3</AngularDamping>
+            <CanBePickedUp>true</CanBePickedUp>
+            <CanBeThrown>true</CanBeThrown>
+        </PhysicsProperties>
+        <Flags>1020</Flags>
+        <MonetaryValue>150</MonetaryValue>
+    </Object>
+
+    <Object name="wooden_crate">
+        <SkeletonPath>Content/Objects/Containers/SK_WoodenCrate</SkeletonPath>
+        <ObjectType>container</ObjectType>
+        <Category>small_destructible</Category>
+        <PhysicsProperties>
+            <Mass>25.0</Mass>
+            <Friction>0.8</Friction>
+            <Restitution>0.2</Restitution>
+            <LinearDamping>0.2</LinearDamping>
+            <AngularDamping>0.3</AngularDamping>
+            <CanBePickedUp>true</CanBePickedUp>
+            <CanBeThrown>true</CanBeThrown>
+        </PhysicsProperties>
+        <Flags>1050</Flags>
+        <MonetaryValue>75</MonetaryValue>
+    </Object>
+
+    <Object name="office_chair">
+        <SkeletonPath>Content/Objects/Furniture/SK_OfficeChair</SkeletonPath>
+        <ObjectType>furniture</ObjectType>
+        <Category>medium_destructible</Category>
+        <PhysicsProperties>
+            <Mass>18.0</Mass>
+            <Friction>0.5</Friction>
+            <Restitution>0.3</Restitution>
+            <LinearDamping>0.15</LinearDamping>
+            <AngularDamping>0.25</AngularDamping>
+            <CanBePickedUp>true</CanBePickedUp>
+            <CanBeThrown>true</CanBeThrown>
+        </PhysicsProperties>
+        <Flags>1030</Flags>
+        <MonetaryValue>300</MonetaryValue>
+    </Object>
+
+    <Object name="stop_sign">
+        <SkeletonPath>Content/Objects/Traffic/SK_StopSign</SkeletonPath>
+        <ObjectType>traffic_sign</ObjectType>
+        <Category>medium_destructible</Category>
+        <PhysicsProperties>
+            <Mass>45.0</Mass>
+            <Friction>0.7</Friction>
+            <Restitution>0.1</Restitution>
+            <LinearDamping>0.3</LinearDamping>
+            <AngularDamping>0.5</AngularDamping>
+            <CanBePickedUp>false</CanBePickedUp>
+            <CanBeThrown>false</CanBeThrown>
+        </PhysicsProperties>
+        <Flags>2010</Flags>
+        <MonetaryValue>120</MonetaryValue>
+    </Object>
+
+    <Object name="fire_hydrant">
+        <SkeletonPath>Content/Objects/City/SK_FireHydrant</SkeletonPath>
+        <MeshPath>auto</MeshPath>
+        <ObjectType>city_infrastructure</ObjectType>
+        <Category>medium_destructible</Category>
+        <Health>
+            <MaxHealth>180.0</MaxHealth>
+            <HealthRegenRate>0.0</HealthRegenRate>
+            <CriticalHealthThreshold>50.0</CriticalHealthThreshold>
+            <DestructionThreshold>0.0</DestructionThreshold>
+        </Health>
+        <DamageProofs>
+            <BulletProof>false</BulletProof>
+            <FireProof>true</FireProof>
+            <ExplosionProof>false</ExplosionProof>
+            <CollisionProof>false</CollisionProof>
+            <MeleeProof>false</MeleeProof>
+        </DamageProofs>
+        <DamageMultipliers>
+            <BulletDamage>0.3</BulletDamage>
+            <ExplosionDamage>1.8</ExplosionDamage>
+            <FireDamage>0.0</FireDamage>
+            <CollisionDamage>1.2</CollisionDamage>
+            <MeleeDamage>0.1</MeleeDamage>
+        </DamageMultipliers>
+        <DeformationProfile>
+            <DeformationStartThreshold>80.0</DeformationStartThreshold>
+            <MaxDeformation>0.4</MaxDeformation>
+            <DeformationRate>0.15</DeformationRate>
+            <ElasticRecovery>0.05</ElasticRecovery>
+            <MaterialType>Cast_Iron</MaterialType>
+            <CascadeEffect>true</CascadeEffect>
+        </DeformationProfile>
+        <SpecialEffects>
+            <WaterSpray>
+                <TriggerOnDamage>true</TriggerOnDamage>
+                <HealthThreshold>100.0</HealthThreshold>
+                <SprayForce>850.0</SprayForce>
+                <SprayDuration>15.0</SprayDuration>
+                <WaterPressure>45.0</WaterPressure>
+            </WaterSpray>
+        </SpecialEffects>
+        <PhysicsProperties>
+            <Mass>85.0</Mass>
+            <Friction>0.9</Friction>
+            <Restitution>0.1</Restitution>
+            <LinearDamping>0.3</LinearDamping>
+            <AngularDamping>0.8</AngularDamping>
+            <CanBePickedUp>false</CanBePickedUp>
+            <CanBeThrown>false</CanBeThrown>
+        </PhysicsProperties>
+        <Flags>2050</Flags>
+        <MonetaryValue>800</MonetaryValue>
+        <DestructionSettings>
+            <DestructionTime>12.0</DestructionTime>
+            <RespawnCooldown>720.0</RespawnCooldown>
+            <DestructionEffect>/Game/Effects/Destruction/HydrantDestroy</DestructionEffect>
+            <DestructionAudio>destruction_hydrant</DestructionAudio>
+            <DebrisObject>/Game/Objects/Debris/HydrantDebris</DebrisObject>
+        </DestructionSettings>
+    </Object>
+
+    <!-- ========== LARGE STRUCTURAL OBJECTS ========== -->
+    <Object name="concrete_barrier">
+        <SkeletonPath>Content/Objects/Barriers/SK_ConcreteBarrier</SkeletonPath>
+        <MeshPath>auto</MeshPath>
+        <ObjectType>barrier</ObjectType>
+        <Category>large_structural</Category>
+        <Health>
+            <MaxHealth>850.0</MaxHealth>
+            <HealthRegenRate>0.0</HealthRegenRate>
+            <CriticalHealthThreshold>200.0</CriticalHealthThreshold>
+            <DestructionThreshold>0.0</DestructionThreshold>
+        </Health>
+        <DamageProofs>
+            <BulletProof>true</BulletProof>
+            <FireProof>true</FireProof>
+            <ExplosionProof>false</ExplosionProof>
+            <CollisionProof>false</CollisionProof>
+            <MeleeProof>true</MeleeProof>
+        </DamageProofs>
+        <DamageMultipliers>
+            <BulletDamage>0.05</BulletDamage>
+            <ExplosionDamage>1.5</ExplosionDamage>
+            <FireDamage>0.0</FireDamage>
+            <CollisionDamage>0.8</CollisionDamage>
+            <MeleeDamage>0.0</MeleeDamage>
+        </DamageMultipliers>
+        <DeformationProfile>
+            <DeformationStartThreshold>300.0</DeformationStartThreshold>
+            <MaxDeformation>0.2</MaxDeformation>
+            <DeformationRate>0.05</DeformationRate>
+            <ElasticRecovery>0.0</ElasticRecovery>
+            <MaterialType>Reinforced_Concrete</MaterialType>
+            <CascadeEffect>true</CascadeEffect>
+        </DeformationProfile>
+        <FragmentationPattern>
+            <FragmentCount>12</FragmentCount>
+            <FragmentMass>15.0</FragmentMass>
+            <FragmentSpeed>8.0</FragmentSpeed>
+            <FragmentLifetime>30.0</FragmentLifetime>
+        </FragmentationPattern>
+        <PhysicsProperties>
+            <Mass>450.0</Mass>
+            <Friction>0.95</Friction>
+            <Restitution>0.05</Restitution>
+            <LinearDamping>0.8</LinearDamping>
+            <AngularDamping>0.9</AngularDamping>
+            <CanBePickedUp>false</CanBePickedUp>
+            <CanBeThrown>false</CanBeThrown>
+        </PhysicsProperties>
+        <Flags>4100</Flags>
+        <MonetaryValue>1200</MonetaryValue>
+        <DestructionSettings>
+            <DestructionTime>15.0</DestructionTime>
+            <RespawnCooldown>600.0</RespawnCooldown>
+            <DestructionEffect>/Game/Effects/Destruction/ConcreteDestroy</DestructionEffect>
+            <DestructionAudio>destruction_concrete</DestructionAudio>
+            <DebrisObject>/Game/Objects/Debris/ConcreteDebris</DebrisObject>
+        </DestructionSettings>
+    </Object>
+
+    <!-- ========== ELECTRONIC OBJECTS ========== -->
+    <Object name="street_lamp">
+        <SkeletonPath>Content/Objects/Lighting/SK_StreetLamp_Modern</SkeletonPath>
+        <MeshPath>auto</MeshPath>
+        <ObjectType>lighting</ObjectType>
+        <Category>electronic_infrastructure</Category>
+        <Health>
+            <MaxHealth>120.0</MaxHealth>
+            <HealthRegenRate>0.0</HealthRegenRate>
+            <CriticalHealthThreshold>30.0</CriticalHealthThreshold>
+            <DestructionThreshold>0.0</DestructionThreshold>
+        </Health>
+        <DamageProofs>
+            <BulletProof>false</BulletProof>
+            <FireProof>false</FireProof>
+            <ExplosionProof>false</ExplosionProof>
+            <CollisionProof>false</CollisionProof>
+            <MeleeProof>false</MeleeProof>
+        </DamageProofs>
+        <DamageMultipliers>
+            <BulletDamage>1.2</BulletDamage>
+            <ExplosionDamage>2.5</ExplosionDamage>
+            <FireDamage>1.8</FireDamage>
+            <CollisionDamage>1.5</CollisionDamage>
+            <MeleeDamage>0.8</MeleeDamage>
+        </DamageMultipliers>
+        <DeformationProfile>
+            <DeformationStartThreshold>40.0</DeformationStartThreshold>
+            <MaxDeformation>0.6</MaxDeformation>
+            <DeformationRate>0.25</DeformationRate>
+            <ElasticRecovery>0.1</ElasticRecovery>
+            <MaterialType>Aluminum_Pole</MaterialType>
+            <CascadeEffect>true</CascadeEffect>
+        </DeformationProfile>
+        <ElectricalSystem>
+            <PowerConsumption>85.0</PowerConsumption>
+            <ShortCircuitThreshold>75.0</ShortCircuitThreshold>
+            <SparkEffect>true</SparkEffect>
+            <ElectricalDamageRadius>3.5</ElectricalDamageRadius>
+            <PowerOutageRadius>25.0</PowerOutageRadius>
+        </ElectricalSystem>
+        <LightingSystem>
+            <LightIntensity>1200.0</LightIntensity>
+            <LightRadius>12.0</LightRadius>
+            <FlickerOnDamage>true</FlickerOnDamage>
+            <AutomaticNightActivation>true</AutomaticNightActivation>
+        </LightingSystem>
+        <PhysicsProperties>
+            <Mass>35.0</Mass>
+            <Friction>0.6</Friction>
+            <Restitution>0.2</Restitution>
+            <LinearDamping>0.2</LinearDamping>
+            <AngularDamping>0.3</AngularDamping>
+            <CanBePickedUp>false</CanBePickedUp>
+            <CanBeThrown>false</CanBeThrown>
+        </PhysicsProperties>
+        <Flags>3020</Flags>
+        <MonetaryValue>450</MonetaryValue>
+        <DestructionSettings>
+            <DestructionTime>8.0</DestructionTime>
+            <RespawnCooldown>480.0</RespawnCooldown>
+            <DestructionEffect>/Game/Effects/Destruction/ElectricDestroy</DestructionEffect>
+            <DestructionAudio>destruction_electric</DestructionAudio>
+            <DebrisObject>/Game/Objects/Debris/StreetLampDebris</DebrisObject>
+        </DestructionSettings>
+    </Object>
+
+    <!-- ========== VEGETATION OBJECTS ========== -->
+    <Object name="palm_tree_large">
+        <SkeletonPath>Content/Objects/Vegetation/SK_PalmTree_Large</SkeletonPath>
+        <MeshPath>auto</MeshPath>
+        <ObjectType>vegetation</ObjectType>
+        <Category>large_vegetation</Category>
+        <Health>
+            <MaxHealth>300.0</MaxHealth>
+            <HealthRegenRate>2.0</HealthRegenRate>
+            <CriticalHealthThreshold>80.0</CriticalHealthThreshold>
+            <DestructionThreshold>0.0</DestructionThreshold>
+        </Health>
+        <DamageProofs>
+            <BulletProof>false</BulletProof>
+            <FireProof>false</FireProof>
+            <ExplosionProof>false</ExplosionProof>
+            <CollisionProof>false</CollisionProof>
+            <MeleeProof>false</MeleeProof>
+        </DamageProofs>
+        <DamageMultipliers>
+            <BulletDamage>0.4</BulletDamage>
+            <ExplosionDamage>1.8</ExplosionDamage>
+            <FireDamage>3.5</FireDamage>
+            <CollisionDamage>1.2</CollisionDamage>
+            <MeleeDamage>1.0</MeleeDamage>
+        </DamageMultipliers>
+        <DeformationProfile>
+            <DeformationStartThreshold>50.0</DeformationStartThreshold>
+            <MaxDeformation>0.7</MaxDeformation>
+            <DeformationRate>0.2</DeformationRate>
+            <ElasticRecovery>0.3</ElasticRecovery>
+            <MaterialType>Living_Wood</MaterialType>
+            <CascadeEffect>false</CascadeEffect>
+        </DeformationProfile>
+        <VegetationSpecific>
+            <SwayInWind>true</SwayInWind>
+            <WindResistance>0.8</WindResistance>
+            <SeasonalChanges>false</SeasonalChanges>
+            <DropsCoconuts>true</DropsCoconuts>
+            <CoconutDropChance>0.15</CoconutDropChance>
+            <FireSpreadRate>0.7</FireSpreadRate>
+        </VegetationSpecific>
+        <PhysicsProperties>
+            <Mass>280.0</Mass>
+            <Friction>0.8</Friction>
+            <Restitution>0.3</Restitution>
+            <LinearDamping>0.4</LinearDamping>
+            <AngularDamping>0.6</AngularDamping>
+            <CanBePickedUp>false</CanBePickedUp>
+            <CanBeThrown>false</CanBeThrown>
+        </PhysicsProperties>
+        <Flags>5001</Flags>
+        <MonetaryValue>150</MonetaryValue>
+    </Object>
+
+    <!-- ========== CONTAINERS & STORAGE ========== -->
+    <Object name="dumpster_metal">
+        <SkeletonPath>Content/Objects/Urban/SK_Dumpster_Metal</SkeletonPath>
+        <MeshPath>auto</MeshPath>
+        <ObjectType>container</ObjectType>
+        <Category>storage_container</Category>
+        <Health>
+            <MaxHealth>450.0</MaxHealth>
+            <HealthRegenRate>0.0</HealthRegenRate>
+            <CriticalHealthThreshold>120.0</CriticalHealthThreshold>
+            <DestructionThreshold>0.0</DestructionThreshold>
+        </Health>
+        <DamageProofs>
+            <BulletProof>false</BulletProof>
+            <FireProof>false</FireProof>
+            <ExplosionProof>false</ExplosionProof>
+            <CollisionProof>false</CollisionProof>
+            <MeleeProof>false</MeleeProof>
+        </DamageProofs>
+        <DamageMultipliers>
+            <BulletDamage>0.6</BulletDamage>
+            <ExplosionDamage>1.4</ExplosionDamage>
+            <FireDamage>1.2</FireDamage>
+            <CollisionDamage>0.9</CollisionDamage>
+            <MeleeDamage>0.3</MeleeDamage>
+        </DamageMultipliers>
+        <DeformationProfile>
+            <DeformationStartThreshold>100.0</DeformationStartThreshold>
+            <MaxDeformation>0.5</MaxDeformation>
+            <DeformationRate>0.18</DeformationRate>
+            <ElasticRecovery>0.05</ElasticRecovery>
+            <MaterialType>Sheet_Metal</MaterialType>
+            <CascadeEffect>false</CascadeEffect>
+        </DeformationProfile>
+        <ContainerSystem>
+            <CanOpenClose>true</CanOpenClose>
+            <RequiresKey>false</RequiresKey>
+            <StorageCapacity>50</StorageCapacity>
+            <ContainsRandomLoot>true</ContainsRandomLoot>
+            <LootRarity>common</LootRarity>
+            <SearchTime>3.5</SearchTime>
+        </ContainerSystem>
+        <PhysicsProperties>
+            <Mass>120.0</Mass>
+            <Friction>0.7</Friction>
+            <Restitution>0.15</Restitution>
+            <LinearDamping>0.3</LinearDamping>
+            <AngularDamping>0.4</AngularDamping>
+            <CanBePickedUp>false</CanBePickedUp>
+            <CanBeThrown>false</CanBeThrown>
+        </PhysicsProperties>
+        <Flags>6050</Flags>
+        <MonetaryValue>200</MonetaryValue>
+    </Object>
+
+    <!-- ========== EXPLOSIVE OBJECTS ========== -->
+    <Object name="gas_station_pump">
+        <SkeletonPath>Content/Objects/Industrial/SK_GasStationPump</SkeletonPath>
+        <MeshPath>auto</MeshPath>
+        <ObjectType>fuel_dispenser</ObjectType>
+        <Category>explosive_infrastructure</Category>
+        <Health>
+            <MaxHealth>250.0</MaxHealth>
+            <HealthRegenRate>0.0</HealthRegenRate>
+            <CriticalHealthThreshold>75.0</CriticalHealthThreshold>
+            <DestructionThreshold>0.0</DestructionThreshold>
+        </Health>
+        <DamageProofs>
+            <BulletProof>false</BulletProof>
+            <FireProof>false</FireProof>
+            <ExplosionProof>false</ExplosionProof>
+            <CollisionProof>false</CollisionProof>
+            <MeleeProof>false</MeleeProof>
+        </DamageProofs>
+        <DamageMultipliers>
+            <BulletDamage>1.5</BulletDamage>
+            <ExplosionDamage>3.0</ExplosionDamage>
+            <FireDamage>4.0</FireDamage>
+            <CollisionDamage>1.8</CollisionDamage>
+            <MeleeDamage>0.8</MeleeDamage>
+        </DamageMultipliers>
+        <DeformationProfile>
+            <DeformationStartThreshold>60.0</DeformationStartThreshold>
+            <MaxDeformation>0.8</MaxDeformation>
+            <DeformationRate>0.4</DeformationRate>
+            <ElasticRecovery>0.0</ElasticRecovery>
+            <MaterialType>Fuel_Dispenser_Metal</MaterialType>
+            <CascadeEffect>true</CascadeEffect>
+        </DeformationProfile>
+        <ExplosiveSystem>
+            <CanExplode>true</CanExplode>
+            <ExplosionTriggerHealth>50.0</ExplosionTriggerHealth>
+            <ExplosionDelay>2.5</ExplosionDelay>
+            <ExplosionRadius>15.0</ExplosionRadius>
+            <ExplosionForce>8500.0</ExplosionForce>
+            <FuelLeakThreshold>150.0</FuelLeakThreshold>
+            <FuelLeakRate>5.0</FuelLeakRate>
+            <ChainExplosionRadius>25.0</ChainExplosionRadius>
+        </ExplosiveSystem>
+        <PhysicsProperties>
+            <Mass>180.0</Mass>
+            <Friction>0.8</Friction>
+            <Restitution>0.1</Restitution>
+            <LinearDamping>0.5</LinearDamping>
+            <AngularDamping>0.7</AngularDamping>
+            <CanBePickedUp>false</CanBePickedUp>
+            <CanBeThrown>false</CanBeThrown>
+        </PhysicsProperties>
+        <Flags>7200</Flags>
+        <MonetaryValue>2500</MonetaryValue>
+    </Object>
+
+    <!-- ========== PARKING-RELATED OBJECTS ========== -->
+    <Object name="parking_meter">
+        <SkeletonPath>Content/Objects/Urban/SK_ParkingMeter</SkeletonPath>
+        <ObjectType>payment_device</ObjectType>
+        <Category>small_destructible</Category>
+        <PhysicsProperties>
+            <Mass>45.0</Mass>
+            <Friction>0.8</Friction>
+            <Restitution>0.1</Restitution>
+            <LinearDamping>0.3</LinearDamping>
+            <AngularDamping>0.5</AngularDamping>
+            <CanBePickedUp>false</CanBePickedUp>
+            <CanBeThrown>false</CanBeThrown>
+        </PhysicsProperties>
+        <Flags>8010</Flags>
+        <MonetaryValue>750</MonetaryValue>
+        <DestructionSettings>
+            <DestructionTime>5.0</DestructionTime>
+            <RespawnCooldown>300.0</RespawnCooldown>
+            <DestructionEffect>/Game/Effects/Destruction/ParkingMeterDestroy</DestructionEffect>
+            <DestructionAudio>destruction_small_metal</DestructionAudio>
+            <DebrisObject>/Game/Objects/Debris/ParkingMeterDebris</DebrisObject>
+        </DestructionSettings>
+        <AttachedAudio>parking_meter_beep</AttachedAudio>
+    </Object>
+
+    <Object name="concrete_pillar">
+        <SkeletonPath>Content/Objects/Structural/SK_ConcretePillar</SkeletonPath>
+        <ObjectType>structural</ObjectType>
+        <Category>large_structural</Category>
+        <PhysicsProperties>
+            <Mass>2500.0</Mass>
+            <Friction>0.95</Friction>
+            <Restitution>0.02</Restitution>
+            <LinearDamping>0.9</LinearDamping>
+            <AngularDamping>0.95</AngularDamping>
+            <CanBePickedUp>false</CanBePickedUp>
+            <CanBeThrown>false</CanBeThrown>
+        </PhysicsProperties>
+        <Flags>9500</Flags>
+        <MonetaryValue>5000</MonetaryValue>
+        <DestructionSettings>
+            <DestructionTime>25.0</DestructionTime>
+            <RespawnCooldown>900.0</RespawnCooldown>
+            <DestructionEffect>/Game/Effects/Destruction/ConcreteDestroy</DestructionEffect>
+            <DestructionAudio>destruction_concrete</DestructionAudio>
+            <DebrisObject>/Game/Objects/Debris/ConcreteDebris</DebrisObject>
+        </DestructionSettings>
+        <AttachedAudio>garage_ambient</AttachedAudio>
+    </Object>
+</ObjectData>
+
+
+    <Object name="bar_stool">
+        <SkeletonPath>Content/Objects/Furniture/SK_BarStool</SkeletonPath>
+        <ObjectType>furniture</ObjectType>
+        <Category>medium_destructible</Category>
+        
+        <PhysicsProperties>
+            <Mass>12.0</Mass>
+            <Friction>0.6</Friction>
+            <Restitution>0.2</Restitution>
+            <LinearDamping>0.2</LinearDamping>
+            <AngularDamping>0.3</AngularDamping>
+            <CanBePickedUp>true</CanBePickedUp>
+            <CanBeThrown>true</CanBeThrown>
+        </PhysicsProperties>
+        
+        <Flags>1020</Flags>
+        <MonetaryValue>150</MonetaryValue>
+    </Object>
+
+    <!-- ========== LARGE STRUCTURAL OBJECTS ========== -->
+    <Object name="concrete_barrier">
+        <SkeletonPath>Content/Objects/Barriers/SK_ConcreteBarrier</SkeletonPath>
+        <ObjectType>barrier</ObjectType>
+        <Category>large_structural</Category>
+        
+        <PhysicsProperties>
+            <Mass>450.0</Mass>
+            <Friction>0.95</Friction>
+            <Restitution>0.05</Restitution>
+            <LinearDamping>0.8</LinearDamping>
+            <AngularDamping>0.9</AngularDamping>
+            <CanBePickedUp>false</CanBePickedUp>
+            <CanBeThrown>false</CanBeThrown>
+        </PhysicsProperties>
+        
+        <Flags>4100</Flags>
+        <MonetaryValue>1200</MonetaryValue>
+        
+        <!-- VehicleParking.xml integration -->
+        <DestructionSettings>
+            <DestructionTime>15.0</DestructionTime>
+            <RespawnCooldown>600.0</RespawnCooldown>
+            <DestructionEffect>/Game/Effects/Destruction/ConcreteDestroy</DestructionEffect>
+            <DestructionAudio>destruction_concrete</DestructionAudio>
+            <DebrisObject>/Game/Objects/Debris/ConcreteDebris</DebrisObject>
+        </DestructionSettings>
+    </Object>
+
+    <!-- ========== ELECTRONIC OBJECTS ========== -->
+    <Object name="street_lamp">
+        <SkeletonPath>Content/Objects/Lighting/SK_StreetLamp_Modern</SkeletonPath>
+        <ObjectType>lighting</ObjectType>
+        <Category>electronic_infrastructure</Category>
+        
+        <PhysicsProperties>
+            <Mass>35.0</Mass>
+            <Friction>0.6</Friction>
+            <Restitution>0.2</Restitution>
+            <LinearDamping>0.2</LinearDamping>
+            <AngularDamping>0.3</AngularDamping>
+            <CanBePickedUp>false</CanBePickedUp>
+            <CanBeThrown>false</CanBeThrown>
+        </PhysicsProperties>
+        
+        <Flags>3020</Flags>
+        <MonetaryValue>450</MonetaryValue>
+        
+        <!-- VehicleParking.xml integration -->
+        <DestructionSettings>
+            <DestructionTime>8.0</DestructionTime>
+            <RespawnCooldown>480.0</RespawnCooldown>
+            <DestructionEffect>/Game/Effects/Destruction/ElectricDestroy</DestructionEffect>
+            <DestructionAudio>destruction_electric</DestructionAudio>
+            <DebrisObject>/Game/Objects/Debris/StreetLampDebris</DebrisObject>
+        </DestructionSettings>
+    </Object>
+
+    <!-- ========== VEGETATION OBJECTS ========== -->
+    <Object name="palm_tree_large">
+        <SkeletonPath>Content/Objects/Vegetation/SK_PalmTree_Large</SkeletonPath>
+        <ObjectType>vegetation</ObjectType>
+        <Category>large_vegetation</Category>
+        
+        <PhysicsProperties>
+            <Mass>280.0</Mass>
+            <Friction>0.8</Friction>
+            <Restitution>0.3</Restitution>
+            <LinearDamping>0.4</LinearDamping>
+            <AngularDamping>0.6</AngularDamping>
+            <CanBePickedUp>false</CanBePickedUp>
+            <CanBeThrown>false</CanBeThrown>
+        </PhysicsProperties>
+        
+        <Flags>5001</Flags>
+        <MonetaryValue>150</MonetaryValue>
+    </Object>
+
+    <!-- ========== CONTAINERS & STORAGE ========== -->
+    <Object name="dumpster_metal">
+        <SkeletonPath>Content/Objects/Urban/SK_Dumpster_Metal</SkeletonPath>
+        <ObjectType>container</ObjectType>
+        <Category>storage_container</Category>
+        
+        <PhysicsProperties>
+            <Mass>120.0</Mass>
+            <Friction>0.7</Friction>
+            <Restitution>0.15</Restitution>
+            <LinearDamping>0.3</LinearDamping>
+            <AngularDamping>0.4</AngularDamping>
+            <CanBePickedUp>false</CanBePickedUp>
+            <CanBeThrown>false</CanBeThrown>
+        </PhysicsProperties>
+        
+        <Flags>6050</Flags>
+        <MonetaryValue>200</MonetaryValue>
+    </Object>
+
+    <!-- ========== EXPLOSIVE OBJECTS ========== -->
+    <Object name="gas_station_pump">
+        <SkeletonPath>Content/Objects/Industrial/SK_GasStationPump</SkeletonPath>
+        <ObjectType>fuel_dispenser</ObjectType>
+        <Category>explosive_infrastructure</Category>
+        
+        <PhysicsProperties>
+            <Mass>180.0</Mass>
+            <Friction>0.8</Friction>
+            <Restitution>0.1</Restitution>
+            <LinearDamping>0.5</LinearDamping>
+            <AngularDamping>0.7</AngularDamping>
+            <CanBePickedUp>false</CanBePickedUp>
+            <CanBeThrown>false</CanBeThrown>
+        </PhysicsProperties>
+        
+        <Flags>7200</Flags>
+        <MonetaryValue>2500</MonetaryValue>
+    </Object>
+
+    <!-- ========== ADDITIONAL COMMON OBJECTS ========== -->
+    <Object name="wooden_crate">
+        <SkeletonPath>Content/Objects/Containers/SK_WoodenCrate</SkeletonPath>
+        <ObjectType>container</ObjectType>
+        <Category>small_destructible</Category>
+        
+        <PhysicsProperties>
+            <Mass>25.0</Mass>
+            <Friction>0.8</Friction>
+            <Restitution>0.2</Restitution>
+            <LinearDamping>0.2</LinearDamping>
+            <AngularDamping>0.3</AngularDamping>
+            <CanBePickedUp>true</CanBePickedUp>
+            <CanBeThrown>true</CanBeThrown>
+        </PhysicsProperties>
+        
+        <Flags>1050</Flags>
+        <MonetaryValue>75</MonetaryValue>
+    </Object>
+
+    <Object name="office_chair">
+        <SkeletonPath>Content/Objects/Furniture/SK_OfficeChair</SkeletonPath>
+        <ObjectType>furniture</ObjectType>
+        <Category>medium_destructible</Category>
+        
+        <PhysicsProperties>
+            <Mass>18.0</Mass>
+            <Friction>0.5</Friction>
+            <Restitution>0.3</Restitution>
+            <LinearDamping>0.15</LinearDamping>
+            <AngularDamping>0.25</AngularDamping>
+            <CanBePickedUp>true</CanBePickedUp>
+            <CanBeThrown>true</CanBeThrown>
+        </PhysicsProperties>
+        
+        <Flags>1030</Flags>
+        <MonetaryValue>300</MonetaryValue>
+    </Object>
+
+    <!-- ========== PARKING-RELATED OBJECTS ========== -->
+    <Object name="parking_meter">
+        <SkeletonPath>Content/Objects/Urban/SK_ParkingMeter</SkeletonPath>
+        <ObjectType>payment_device</ObjectType>
+        <Category>small_destructible</Category>
+        
+        <PhysicsProperties>
+            <Mass>45.0</Mass>
+            <Friction>0.8</Friction>
+            <Restitution>0.1</Restitution>
+            <LinearDamping>0.3</LinearDamping>
+            <AngularDamping>0.5</AngularDamping>
+            <CanBePickedUp>false</CanBePickedUp>
+            <CanBeThrown>false</CanBeThrown>
+        </PhysicsProperties>
+        
+        <Flags>8010</Flags>
+        <MonetaryValue>750</MonetaryValue>
+        
+        <!-- Destruction settings for VehicleParking.xml integration -->
+        <DestructionSettings>
+            <DestructionTime>5.0</DestructionTime>
+            <RespawnCooldown>300.0</RespawnCooldown>
+            <DestructionEffect>/Game/Effects/Destruction/ParkingMeterDestroy</DestructionEffect>
+            <DestructionAudio>destruction_small_metal</DestructionAudio>
+            <DebrisObject>/Game/Objects/Debris/ParkingMeterDebris</DebrisObject>
+        </DestructionSettings>
+        
+        <!-- Audio attachment for VehicleParking.xml -->
+        <AttachedAudio>parking_meter_beep</AttachedAudio>
+    </Object>
+
+    <Object name="concrete_pillar">
+        <SkeletonPath>Content/Objects/Structural/SK_ConcretePillar</SkeletonPath>
+        <ObjectType>structural</ObjectType>
+        <Category>large_structural</Category>
+        
+        <PhysicsProperties>
+            <Mass>2500.0</Mass>
+            <Friction>0.95</Friction>
+            <Restitution>0.02</Restitution>
+            <LinearDamping>0.9</LinearDamping>
+            <AngularDamping>0.95</AngularDamping>
+            <CanBePickedUp>false</CanBePickedUp>
+            <CanBeThrown>false</CanBeThrown>
+        </PhysicsProperties>
+        
+        <Flags>9500</Flags>
+        <MonetaryValue>5000</MonetaryValue>
+        
+        <DestructionSettings>
+            <DestructionTime>25.0</DestructionTime>
+            <RespawnCooldown>900.0</RespawnCooldown>
+            <DestructionEffect>/Game/Effects/Destruction/ConcreteDestroy</DestructionEffect>
+            <DestructionAudio>destruction_concrete</DestructionAudio>
+            <DebrisObject>/Game/Objects/Debris/ConcreteDebris</DebrisObject>
+        </DestructionSettings>
+        
+        <AttachedAudio>garage_ambient</AttachedAudio>
+    </Object>
+
+    <Object name="stop_sign">
+        <SkeletonPath>Content/Objects/Traffic/SK_StopSign</SkeletonPath>
+        <ObjectType>traffic_sign</ObjectType>
+        <Category>medium_destructible</Category>
+        
+        <PhysicsProperties>
+            <Mass>45.0</Mass>
+            <Friction>0.7</Friction>
+            <Restitution>0.1</Restitution>
+            <LinearDamping>0.3</LinearDamping>
+            <AngularDamping>0.5</AngularDamping>
+            <CanBePickedUp>false</CanBePickedUp>
+            <CanBeThrown>false</CanBeThrown>
+        </PhysicsProperties>
+        
+        <Flags>2010</Flags>
+        <MonetaryValue>120</MonetaryValue>
+    </Object>
+</ObjectData>
+
+    <Object name="fire_hydrant">
+        <SkeletonPath>Content/Objects/City/SK_FireHydrant</SkeletonPath>
+        <MeshPath>auto</MeshPath>
+        <ObjectType>city_infrastructure</ObjectType>
+        <Category>medium_destructible</Category>
+        
+        <Health>
+            <MaxHealth>180.0</MaxHealth>
+            <HealthRegenRate>0.0</HealthRegenRate>
+            <CriticalHealthThreshold>50.0</CriticalHealthThreshold>
+            <DestructionThreshold>0.0</DestructionThreshold>
+        </Health>
+        
+        <DamageProofs>
+            <BulletProof>false</BulletProof>
+            <FireProof>true</FireProof>
+            <ExplosionProof>false</ExplosionProof>
+            <CollisionProof>false</CollisionProof>
+            <MeleeProof>false</MeleeProof>
+        </DamageProofs>
+        
+        <DamageMultipliers>
+            <BulletDamage>0.3</BulletDamage>
+            <ExplosionDamage>1.8</ExplosionDamage>
+            <FireDamage>0.0</FireDamage>
+            <CollisionDamage>1.2</CollisionDamage>
+            <MeleeDamage>0.1</MeleeDamage>
+        </DamageMultipliers>
+        
+        <DeformationProfile>
+            <DeformationStartThreshold>80.0</DeformationStartThreshold>
+            <MaxDeformation>0.4</MaxDeformation>
+            <DeformationRate>0.15</DeformationRate>
+            <ElasticRecovery>0.05</ElasticRecovery>
+            <MaterialType>Cast_Iron</MaterialType>
+            <CascadeEffect>true</CascadeEffect>
+        </DeformationProfile>
+        
+        <SpecialEffects>
+            <WaterSpray>
+                <TriggerOnDamage>true</TriggerOnDamage>
+                <HealthThreshold>100.0</HealthThreshold>
+                <SprayForce>850.0</SprayForce>
+                <SprayDuration>15.0</SprayDuration>
+                <WaterPressure>45.0</WaterPressure>
+            </WaterSpray>
+        </SpecialEffects>
+        
+        <PhysicsProperties>
+            <Mass>85.0</Mass>
+            <Friction>0.9</Friction>
+            <Restitution>0.1</Restitution>
+            <LinearDamping>0.3</LinearDamping>
+            <AngularDamping>0.8</AngularDamping>
+            <CanBePickedUp>false</CanBePickedUp>
+            <CanBeThrown>false</CanBeThrown>
+        </PhysicsProperties>
+        
+        <Flags>2050</Flags>
+        <MonetaryValue>800</MonetaryValue>
+    </Object>
+
+    <!-- ========== LARGE STRUCTURAL OBJECTS ========== -->
+    <Object name="concrete_barrier">
+        <SkeletonPath>Content/Objects/Barriers/SK_ConcreteBarrier</SkeletonPath>
+        <MeshPath>auto</MeshPath>
+        <ObjectType>barrier</ObjectType>
+        <Category>large_structural</Category>
+        
+        <Health>
+            <MaxHealth>850.0</MaxHealth>
+            <HealthRegenRate>0.0</HealthRegenRate>
+            <CriticalHealthThreshold>200.0</CriticalHealthThreshold>
+            <DestructionThreshold>0.0</DestructionThreshold>
+        </Health>
+        
+        <DamageProofs>
+            <BulletProof>true</BulletProof>
+            <FireProof>true</FireProof>
+            <ExplosionProof>false</ExplosionProof>
+            <CollisionProof>false</CollisionProof>
+            <MeleeProof>true</MeleeProof>
+        </DamageProofs>
+        
+        <DamageMultipliers>
+            <BulletDamage>0.05</BulletDamage>
+            <ExplosionDamage>1.5</ExplosionDamage>
+            <FireDamage>0.0</FireDamage>
+            <CollisionDamage>0.8</CollisionDamage>
+            <MeleeDamage>0.0</MeleeDamage>
+        </DamageMultipliers>
+        
+        <DeformationProfile>
+            <DeformationStartThreshold>300.0</DeformationStartThreshold>
+            <MaxDeformation>0.2</MaxDeformation>
+            <DeformationRate>0.05</DeformationRate>
+            <ElasticRecovery>0.0</ElasticRecovery>
+            <MaterialType>Reinforced_Concrete</MaterialType>
+            <CascadeEffect>true</CascadeEffect>
+        </DeformationProfile>
+        
+        <FragmentationPattern>
+            <FragmentCount>12</FragmentCount>
+            <FragmentMass>15.0</FragmentMass>
+            <FragmentSpeed>8.0</FragmentSpeed>
+            <FragmentLifetime>30.0</FragmentLifetime>
+        </FragmentationPattern>
+        
+        <PhysicsProperties>
+            <Mass>450.0</Mass>
+            <Friction>0.95</Friction>
+            <Restitution>0.05</Restitution>
+            <LinearDamping>0.8</LinearDamping>
+            <AngularDamping>0.9</AngularDamping>
+            <CanBePickedUp>false</CanBePickedUp>
+            <CanBeThrown>false</CanBeThrown>
+        </PhysicsProperties>
+        
+        <Flags>4100</Flags>
+        <MonetaryValue>1200</MonetaryValue>
+    </Object>
+
+    <!-- ========== ELECTRONIC OBJECTS ========== -->
+    <Object name="street_lamp">
+        <SkeletonPath>Content/Objects/Lighting/SK_StreetLamp_Modern</SkeletonPath>
+        <MeshPath>auto</MeshPath>
+        <ObjectType>lighting</ObjectType>
+        <Category>electronic_infrastructure</Category>
+        
+        <Health>
+            <MaxHealth>120.0</MaxHealth>
+            <HealthRegenRate>0.0</HealthRegenRate>
+            <CriticalHealthThreshold>30.0</CriticalHealthThreshold>
+            <DestructionThreshold>0.0</DestructionThreshold>
+        </Health>
+        
+        <DamageProofs>
+            <BulletProof>false</BulletProof>
+            <FireProof>false</FireProof>
+            <ExplosionProof>false</ExplosionProof>
+            <CollisionProof>false</CollisionProof>
+            <MeleeProof>false</MeleeProof>
+        </DamageProofs>
+        
+        <DamageMultipliers>
+            <BulletDamage>1.2</BulletDamage>
+            <ExplosionDamage>2.5</ExplosionDamage>
+            <FireDamage>1.8</FireDamage>
+            <CollisionDamage>1.5</CollisionDamage>
+            <MeleeDamage>0.8</MeleeDamage>
+        </DamageMultipliers>
+        
+        <DeformationProfile>
+            <DeformationStartThreshold>40.0</DeformationStartThreshold>
+            <MaxDeformation>0.6</MaxDeformation>
+            <DeformationRate>0.25</DeformationRate>
+            <ElasticRecovery>0.1</ElasticRecovery>
+            <MaterialType>Aluminum_Pole</MaterialType>
+            <CascadeEffect>true</CascadeEffect>
+        </DeformationProfile>
+        
+        <ElectricalSystem>
+            <PowerConsumption>85.0</PowerConsumption>
+            <ShortCircuitThreshold>75.0</ShortCircuitThreshold>
+            <SparkEffect>true</SparkEffect>
+            <ElectricalDamageRadius>3.5</ElectricalDamageRadius>
+            <PowerOutageRadius>25.0</PowerOutageRadius>
+        </ElectricalSystem>
+        
+        <LightingSystem>
+            <LightIntensity>1200.0</LightIntensity>
+            <LightRadius>12.0</LightRadius>
+            <FlickerOnDamage>true</FlickerOnDamage>
+            <AutomaticNightActivation>true</AutomaticNightActivation>
+        </LightingSystem>
+        
+        <PhysicsProperties>
+            <Mass>35.0</Mass>
+            <Friction>0.6</Friction>
+            <Restitution>0.2</Restitution>
+            <LinearDamping>0.2</LinearDamping>
+            <AngularDamping>0.3</AngularDamping>
+            <CanBePickedUp>false</CanBePickedUp>
+            <CanBeThrown>false</CanBeThrown>
+        </PhysicsProperties>
+        
+        <Flags>3020</Flags>
+        <MonetaryValue>450</MonetaryValue>
+    </Object>
+
+    <!-- ========== VEGETATION OBJECTS ========== -->
+    <Object name="palm_tree_large">
+        <SkeletonPath>Content/Objects/Vegetation/SK_PalmTree_Large</SkeletonPath>
+        <MeshPath>auto</MeshPath>
+        <ObjectType>vegetation</ObjectType>
+        <Category>large_vegetation</Category>
+        
+        <Health>
+            <MaxHealth>300.0</MaxHealth>
+            <HealthRegenRate>2.0</HealthRegenRate>
+            <CriticalHealthThreshold>80.0</CriticalHealthThreshold>
+            <DestructionThreshold>0.0</DestructionThreshold>
+        </Health>
+        
+        <DamageProofs>
+            <BulletProof>false</BulletProof>
+            <FireProof>false</FireProof>
+            <ExplosionProof>false</ExplosionProof>
+            <CollisionProof>false</CollisionProof>
+            <MeleeProof>false</MeleeProof>
+        </DamageProofs>
+        
+        <DamageMultipliers>
+            <BulletDamage>0.4</BulletDamage>
+            <ExplosionDamage>1.8</ExplosionDamage>
+            <FireDamage>3.5</FireDamage>
+            <CollisionDamage>1.2</CollisionDamage>
+            <MeleeDamage>1.0</MeleeDamage>
+        </DamageMultipliers>
+        
+        <DeformationProfile>
+            <DeformationStartThreshold>50.0</DeformationStartThreshold>
+            <MaxDeformation>0.7</MaxDeformation>
+            <DeformationRate>0.2</DeformationRate>
+            <ElasticRecovery>0.3</ElasticRecovery>
+            <MaterialType>Living_Wood</MaterialType>
+            <CascadeEffect>false</CascadeEffect>
+        </DeformationProfile>
+        
+        <VegetationSpecific>
+            <SwayInWind>true</SwayInWind>
+            <WindResistance>0.8</WindResistance>
+            <SeasonalChanges>false</SeasonalChanges>
+            <DropsCoconuts>true</DropsCoconuts>
+            <CoconutDropChance>0.15</CoconutDropChance>
+            <FireSpreadRate>0.7</FireSpreadRate>
+        </VegetationSpecific>
+        
+        <PhysicsProperties>
+            <Mass>280.0</Mass>
+            <Friction>0.8</Friction>
+            <Restitution>0.3</Restitution>
+            <LinearDamping>0.4</LinearDamping>
+            <AngularDamping>0.6</AngularDamping>
+            <CanBePickedUp>false</CanBePickedUp>
+            <CanBeThrown>false</CanBeThrown>
+        </PhysicsProperties>
+        
+        <Flags>5001</Flags>
+        <MonetaryValue>150</MonetaryValue>
+    </Object>
+
+    <!-- ========== CONTAINERS & STORAGE ========== -->
+    <Object name="dumpster_metal">
+        <SkeletonPath>Content/Objects/Urban/SK_Dumpster_Metal</SkeletonPath>
+        <MeshPath>auto</MeshPath>
+        <ObjectType>container</ObjectType>
+        <Category>storage_container</Category>
+        
+        <Health>
+            <MaxHealth>450.0</MaxHealth>
+            <HealthRegenRate>0.0</HealthRegenRate>
+            <CriticalHealthThreshold>120.0</CriticalHealthThreshold>
+            <DestructionThreshold>0.0</DestructionThreshold>
+        </Health>
+        
+        <DamageProofs>
+            <BulletProof>false</BulletProof>
+            <FireProof>false</FireProof>
+            <ExplosionProof>false</ExplosionProof>
+            <CollisionProof>false</CollisionProof>
+            <MeleeProof>false</MeleeProof>
+        </DamageProofs>
+        
+        <DamageMultipliers>
+            <BulletDamage>0.6</BulletDamage>
+            <ExplosionDamage>1.4</ExplosionDamage>
+            <FireDamage>1.2</FireDamage>
+            <CollisionDamage>0.9</CollisionDamage>
+            <MeleeDamage>0.3</MeleeDamage>
+        </DamageMultipliers>
+        
+        <DeformationProfile>
+            <DeformationStartThreshold>100.0</DeformationStartThreshold>
+            <MaxDeformation>0.5</MaxDeformation>
+            <DeformationRate>0.18</DeformationRate>
+            <ElasticRecovery>0.05</ElasticRecovery>
+            <MaterialType>Sheet_Metal</MaterialType>
+            <CascadeEffect>false</CascadeEffect>
+        </DeformationProfile>
+        
+        <ContainerSystem>
+            <CanOpenClose>true</CanOpenClose>
+            <RequiresKey>false</RequiresKey>
+            <StorageCapacity>50</StorageCapacity>
+            <ContainsRandomLoot>true</ContainsRandomLoot>
+            <LootRarity>common</LootRarity>
+            <SearchTime>3.5</SearchTime>
+        </ContainerSystem>
+        
+        <PhysicsProperties>
+            <Mass>120.0</Mass>
+            <Friction>0.7</Friction>
+            <Restitution>0.15</Restitution>
+            <LinearDamping>0.3</LinearDamping>
+            <AngularDamping>0.4</AngularDamping>
+            <CanBePickedUp>false</CanBePickedUp>
+            <CanBeThrown>false</CanBeThrown>
+        </PhysicsProperties>
+        
+        <Flags>6050</Flags>
+        <MonetaryValue>200</MonetaryValue>
+    </Object>
+
+    <!-- ========== EXPLOSIVE OBJECTS ========== -->
+    <Object name="gas_station_pump">
+        <SkeletonPath>Content/Objects/Industrial/SK_GasStationPump</SkeletonPath>
+        <MeshPath>auto</MeshPath>
+        <ObjectType>fuel_dispenser</ObjectType>
+        <Category>explosive_infrastructure</Category>
+        
+        <Health>
+            <MaxHealth>250.0</MaxHealth>
+            <HealthRegenRate>0.0</HealthRegenRate>
+            <CriticalHealthThreshold>75.0</CriticalHealthThreshold>
+            <DestructionThreshold>0.0</DestructionThreshold>
+        </Health>
+        
+        <DamageProofs>
+            <BulletProof>false</BulletProof>
+            <FireProof>false</FireProof>
+            <ExplosionProof>false</ExplosionProof>
+            <CollisionProof>false</CollisionProof>
+            <MeleeProof>false</MeleeProof>
+        </DamageProofs>
+        
+        <DamageMultipliers>
+            <BulletDamage>1.5</BulletDamage>
+            <ExplosionDamage>3.0</ExplosionDamage>
+            <FireDamage>4.0</FireDamage>
+            <CollisionDamage>1.8</CollisionDamage>
+            <MeleeDamage>0.8</MeleeDamage>
+        </DamageMultipliers>
+        
+        <DeformationProfile>
+            <DeformationStartThreshold>60.0</DeformationStartThreshold>
+            <MaxDeformation>0.8</MaxDeformation>
+            <DeformationRate>0.4</DeformationRate>
+            <ElasticRecovery>0.0</ElasticRecovery>
+            <MaterialType>Fuel_Dispenser_Metal</MaterialType>
+            <CascadeEffect>true</CascadeEffect>
+        </DeformationProfile>
+        
+        <ExplosiveSystem>
+            <CanExplode>true</CanExplode>
+            <ExplosionTriggerHealth>50.0</ExplosionTriggerHealth>
+            <ExplosionDelay>2.5</ExplosionDelay>
+            <ExplosionRadius>15.0</ExplosionRadius>
+            <ExplosionForce>8500.0</ExplosionForce>
+            <FuelLeakThreshold>150.0</FuelLeakThreshold>
+            <FuelLeakRate>5.0</FuelLeakRate>
+            <ChainExplosionRadius>25.0</ChainExplosionRadius>
+        </ExplosiveSystem>
+        
+        <PhysicsProperties>
+            <Mass>180.0</Mass>
+            <Friction>0.8</Friction>
+            <Restitution>0.1</Restitution>
+            <LinearDamping>0.5</LinearDamping>
+            <AngularDamping>0.7</AngularDamping>
+            <CanBePickedUp>false</CanBePickedUp>
+            <CanBeThrown>false</CanBeThrown>
+        </PhysicsProperties>
+        
+        <Flags>7200</Flags>
+        <MonetaryValue>2500</MonetaryValue>
+    </Object>
+</ObjectData>

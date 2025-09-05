@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UIAudio>
+    <Sound name="ButtonClick">
+        <SoundFile>/Game/Audio/UI/button_click_01</SoundFile>
+        <AudioFlags>SPATIAL_2D</AudioFlags>
+    </Sound>
+    <Sound name="ButtonHover">
+        <SoundFile>/Game/Audio/UI/button_hover_01</SoundFile>
+        <AudioFlags>SPATIAL_2D</AudioFlags>
+    </Sound>
+    <Sound name="Notification">
+        <SoundFile>/Game/Audio/UI/notify</SoundFile>
+        <AudioFlags>SPATIAL_2D</AudioFlags>
+    </Sound>
+    <Sound name="HelpMessage">
+        <SoundFile>/Game/Audio/UI/help</SoundFile>
+        <AudioFlags>SPATIAL_2D</AudioFlags>
+    </Sound>
+</UIAudio>

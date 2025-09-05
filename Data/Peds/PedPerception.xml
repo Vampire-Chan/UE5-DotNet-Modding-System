@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PedPerceptionConfigs>
+
+    <!-- This file defines various perception configurations for peds. -->
+    <!-- Each config specifies sight, hearing, and field of view parameters. -->
+
+    <PerceptionConfig Name="DEFAULT_PERCEPTION" EncroachmentRange="25.0" EncroachmentCloseRange="4.0" SeeingRange="60.0" HearingRange="60.0" SeeingRangePeripheral="5.0" VisualFieldMinAzimuthAngle="-90.0" VisualFieldMaxAzimuthAngle="90.0" VisualFieldMinElevationAngle="-75.0" VisualFieldMaxElevationAngle="60.0" CentreFieldOfGazeMaxAngle="60.0" CanAlwaysSenseEncroachingPlayers="false" PerformEncroachmentChecksIn3D="false" />
+    <PerceptionConfig Name="BARNYARD_PERCEPTION" EncroachmentRange="3.0" EncroachmentCloseRange="1.5" SeeingRange="70.0" HearingRange="60.0" SeeingRangePeripheral="10.0" VisualFieldMinAzimuthAngle="-90.0" VisualFieldMaxAzimuthAngle="90.0" VisualFieldMinElevationAngle="-75.0" VisualFieldMaxElevationAngle="60.0" CentreFieldOfGazeMaxAngle="60.0" CanAlwaysSenseEncroachingPlayers="false" PerformEncroachmentChecksIn3D="false" />
+    <PerceptionConfig Name="BIRD_PERCEPTION" EncroachmentRange="25.0" EncroachmentCloseRange="4.0" SeeingRange="70.0" HearingRange="60.0" SeeingRangePeripheral="10.0" VisualFieldMinAzimuthAngle="-90.0" VisualFieldMaxAzimuthAngle="90.0" VisualFieldMinElevationAngle="-75.0" VisualFieldMaxElevationAngle="60.0" CentreFieldOfGazeMaxAngle="60.0" CanAlwaysSenseEncroachingPlayers="false" PerformEncroachmentChecksIn3D="false" />
+    <PerceptionConfig Name="SHARK_PERCEPTION" EncroachmentRange="25.0" EncroachmentCloseRange="4.0" SeeingRange="70.0" HearingRange="60.0" SeeingRangePeripheral="10.0" VisualFieldMinAzimuthAngle="-90.0" VisualFieldMaxAzimuthAngle="90.0" VisualFieldMinElevationAngle="-75.0" VisualFieldMaxElevationAngle="60.0" CentreFieldOfGazeMaxAngle="60.0" CanAlwaysSenseEncroachingPlayers="true" PerformEncroachmentChecksIn3D="false" />
+    <PerceptionConfig Name="FISH_PERCEPTION" EncroachmentRange="5.0" EncroachmentCloseRange="4.0" SeeingRange="60.0" HearingRange="60.0" SeeingRangePeripheral="5.0" VisualFieldMinAzimuthAngle="-90.0" VisualFieldMaxAzimuthAngle="90.0" VisualFieldMinElevationAngle="-75.0" VisualFieldMaxElevationAngle="60.0" CentreFieldOfGazeMaxAngle="60.0" CanAlwaysSenseEncroachingPlayers="false" PerformEncroachmentChecksIn3D="false" />
+    <PerceptionConfig Name="LARGE_FISH_PERCEPTION" EncroachmentRange="10.0" EncroachmentCloseRange="8.0" SeeingRange="60.0" HearingRange="60.0" SeeingRangePeripheral="5.0" VisualFieldMinAzimuthAngle="-90.0" VisualFieldMaxAzimuthAngle="90.0" VisualFieldMinElevationAngle="-75.0" VisualFieldMaxElevationAngle="60.0" CentreFieldOfGazeMaxAngle="60.0" CanAlwaysSenseEncroachingPlayers="true" PerformEncroachmentChecksIn3D="true" />
+
+</PedPerceptionConfigs>

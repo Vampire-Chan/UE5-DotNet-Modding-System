@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Vehicles>
+    <!-- ========== CARS ========== -->
+    
+    <!-- Sports Cars -->
+    <Vehicle name="adder" handling="adder_handling" type="car" class="sports" subclass="2door">
+        <InGameName>Truffade Adder</InGameName>
+        <ExplosionType>EXPLOSION_CAR</ExplosionType>
+        <AnimationDictionaries>
+            <FrontSeat dict="veh@low" />
+            <BackSeat dict="veh@low" />
+        </AnimationDictionaries>
+        <VehicleHealth>
+            <Body>1000.0</Body>
+            <Engine>1000.0</Engine>
+            <Fuel>100.0</Fuel>
+        </VehicleHealth>
+        <Flags>FLAG_SPORTS_CAR FLAG_EXPENSIVE FLAG_HIGH_SPEED FLAG_CAN_POPEXHAUST</Flags>
+        <EngineType>Petrol</EngineType>
+        <EngineAudioID>ENGINE_SPORTS</EngineAudioID>  <!-- Links to VehicleEngines.xml -->
+        <PlateType>Both</PlateType>
+        <WheelType>Sports</WheelType>
+    </Vehicle>
+</Vehicles>

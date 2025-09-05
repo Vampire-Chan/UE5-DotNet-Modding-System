@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PedAttributes>
+
+    <!-- Attribute profiles define the inherent capabilities and personality of a ped. Ped name is the same name from Peds.xml -->
+    <!-- This is distinct from their intelligence, which governs their reactions and decision-making. -->
+    <!-- The Name of the AttributeProfile should match the Name of the Ped in Peds.xml -->
+
+    <AttributeProfile Name="PlayerNiko" HealthInfo="Average" Stamina="150" Strength="80" Agility="70" DrivingSkill="70" FlyingSkill="50" WeaponSkill="60" Confidence="0.8" Patience="0.5" Generosity="0.4" LawAbidingness="0.5" VoicePack="Niko_Voice" DefaultWalkStyle="Confident" DefaultGestureStyle="Standard" />
+    <AttributeProfile Name="PlayerNiko_AI1" HealthInfo="Average" Stamina="150" Strength="80" Agility="70" DrivingSkill="70" FlyingSkill="50" WeaponSkill="60" Confidence="0.8" Patience="0.5" Generosity="0.4" LawAbidingness="0.5" VoicePack="Niko_Voice" DefaultWalkStyle="Confident" DefaultGestureStyle="Standard" />
+    <AttributeProfile Name="PlayerNiko_AI2" HealthInfo="Average" Stamina="150" Strength="80" Agility="70" DrivingSkill="70" FlyingSkill="50" WeaponSkill="60" Confidence="0.8" Patience="0.5" Generosity="0.4" LawAbidingness="0.5" VoicePack="Niko_Voice" DefaultWalkStyle="Confident" DefaultGestureStyle="Standard" />
+    <AttributeProfile Name="Male_Citizen" HealthInfo="Average" Stamina="100" Strength="50" Agility="50" DrivingSkill="30" FlyingSkill="5" WeaponSkill="25" Confidence="0.5" Patience="0.8" Generosity="0.5" LawAbidingness="0.9" VoicePack="Male_Average" DefaultWalkStyle="Casual" DefaultGestureStyle="Standard" />
+    <AttributeProfile Name="Female_Citizen" HealthInfo="Weak" Stamina="120" Strength="40" Agility="60" DrivingSkill="35" FlyingSkill="10" WeaponSkill="20" Confidence="0.6" Patience="0.7" Generosity="0.6" LawAbidingness="0.95" VoicePack="Female_Average" DefaultWalkStyle="Casual" DefaultGestureStyle="Standard" />
+    <AttributeProfile Name="Cop" HealthInfo="Strong" Stamina="200" Strength="100" Agility="80" DrivingSkill="80" FlyingSkill="40" WeaponSkill="85" Confidence="0.9" Patience="0.6" Generosity="0.2" LawAbidingness="1.0" VoicePack="Cop_Generic" DefaultWalkStyle="Confident" DefaultGestureStyle="Authoritative" />
+
+</PedAttributes>

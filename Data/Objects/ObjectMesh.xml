@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ObjectMeshData>
+    <!-- ========== SMALL DESTRUCTIBLE OBJECTS ========== -->
+    <ObjectMesh name="traffic_cone">
+        <SubParts>
+            <SubPart name="cone_body" bone="cone_body_bone" mesh="SM_Cone_Body">
+                <MaterialType>plastic_traffic</MaterialType>
+                <Health>
+                    <MaxHealth>30.0</MaxHealth>
+                    <DetachmentThreshold>8.0</DetachmentThreshold>
+                    <BreakThreshold>5.0</BreakThreshold>
+                </Health>
+                <DetachedPhysics>
+                    <Mass>1.8</Mass>
+                    <Friction>0.6</Friction>
+                    <Restitution>0.4</Restitution>
+                    <CanRealTimeFracture>true</CanRealTimeFracture>
+                    <FractureComplexity>low</FractureComplexity>
+                </DetachedPhysics>
+            </SubPart>
+            <SubPart name="cone_base" bone="base_bone" mesh="SM_Cone_Base">
+                <MaterialType>rubber_weighted</MaterialType>
+                <Health>
+                    <MaxHealth>50.0</MaxHealth>
+                    <DetachmentThreshold>15.0</DetachmentThreshold>
+                    <BreakThreshold>5.0</BreakThreshold>
+                </Health>
+                <DetachedPhysics>
+                    <Mass>0.7</Mass>
+                    <Friction>0.9</Friction>
+                    <Restitution>0.2</Restitution>
+                    <CanRealTimeFracture>false</CanRealTimeFracture>
+                </DetachedPhysics>
+            </SubPart>
+            <SubPart name="reflective_stripe" bone="stripe_bone" mesh="SM_Reflective_Stripe">
+                <MaterialType>reflective_tape</MaterialType>
+                <Health>
+                    <MaxHealth>8.0</MaxHealth>
+                    <DetachmentThreshold>3.0</DetachmentThreshold>
+                    <BreakThreshold>1.0</BreakThreshold>
+                </Health>
+                <DetachedPhysics>
+                    <Mass>0.02</Mass>
+                    <Friction>0.4</Friction>
+                    <Restitution>0.1</Restitution>
+                    <CanRealTimeFracture>false</CanRealTimeFracture>
+                </DetachedPhysics>
+            </SubPart>
+        </SubParts>
+        
+        <ChaosPhysics>
+            <DamageThreshold>15.0</DamageThreshold>
+            <CollisionGroup>small_debris</CollisionGroup>
+        </ChaosPhysics>
+    </ObjectMesh>
+</ObjectMeshData>

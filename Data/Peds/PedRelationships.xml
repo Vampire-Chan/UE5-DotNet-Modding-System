@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelationshipGroups>
+
+    <!-- This file defines the names of different relationship groups/factions. -->
+    <!-- The actual interaction rules between these groups will be defined in C++ or another data source. -->
+
+    <Group Name="CIVILIAN" />
+    <Group Name="COP" />
+    <Group Name="SWAT" />
+    <Group Name="ARMY" />
+    <Group Name="GANG_BALLAS" />
+    <Group Name="GANG_GROVE" />
+    <Group Name="PLAYER" />
+    <Group Name="ANIMAL" />
+
+</RelationshipGroups>

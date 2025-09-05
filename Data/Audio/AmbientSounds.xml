@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AmbientSounds>
+    <!-- ========== PURE C++ AMBIENT AUDIO SYSTEM CONFIGURATION FILE ========== -->
+    <!-- Sounds can be referenced by ID from WPL/IPL placement files -->
+    
+    <Environments>
+        <Environment type="CITY_STREET_DAY" id="city_day_ambient">
+            <SoundFile>/Game/Audio/Ambient/City/city_street_day_01</SoundFile>
+            <AudioFlags>LOOP | SPATIAL_3D | DISTANCE_FADE | EXTERIOR</AudioFlags>
+            <Volume>0.6</Volume>
+            <MaxDistance>150.0</MaxDistance>
+            <DefaultRadius>150.0</DefaultRadius>
+        </Environment>
+
+        <Environment type="CITY_STREET_NIGHT" id="city_night_ambient">
+            <SoundFile>/Game/Audio/Ambient/City/city_street_night_01</SoundFile>
+            <AudioFlags>LOOP | SPATIAL_3D | DISTANCE_FADE | EXTERIOR</AudioFlags>
+            <Volume>0.4</Volume>
+            <MaxDistance>120.0</MaxDistance>
+            <DefaultRadius>120.0</DefaultRadius>
+        </Environment>
+
+        <Environment type="INDUSTRIAL_FACTORY" id="factory_machinery">
+            <SoundFile>/Game/Audio/Ambient/Industrial/factory_machinery_01</SoundFile>
+            <AudioFlags>LOOP | SPATIAL_3D | REVERB_ENABLED | INTERIOR | ATTACHED_TO_OBJECT | STOP_ON_DESTROY</AudioFlags>
+            <Volume>0.8</Volume>
+            <MaxDistance>300.0</MaxDistance>
+            <DefaultRadius>300.0</DefaultRadius>
+        </Environment>
+
+        <Environment type="UNDERGROUND_TUNNEL" id="tunnel_ambience">
+            <SoundFile>/Game/Audio/Ambient/Underground/tunnel_drips_01</SoundFile>
+            <AudioFlags>LOOP | SPATIAL_3D | ECHO_ENABLED | INTERIOR | REVERB_ENABLED</AudioFlags>
+            <Volume>0.3</Volume>
+            <MaxDistance>80.0</MaxDistance>
+            <DefaultRadius>80.0</DefaultRadius>
+        </Environment>
+
+        <Environment type="NATURE_PARK" id="park_ambient">
+            <SoundFile>/Game/Audio/Ambient/Nature/park_birds_wind_01</SoundFile>
+            <AudioFlags>LOOP | SPATIAL_3D | DISTANCE_FADE | EXTERIOR</AudioFlags>
+            <Volume>0.5</Volume>
+            <MaxDistance>100.0</MaxDistance>
+            <DefaultRadius>100.0</DefaultRadius>
+        </Environment>
+
+        <Environment type="WATER_BEACH" id="beach_waves">
+            <SoundFile>/Game/Audio/Ambient/Water/beach_waves_01</SoundFile>
+            <AudioFlags>LOOP | SPATIAL_3D | DISTANCE_FADE | EXTERIOR</AudioFlags>
+            <Volume>0.7</Volume>
+            <MaxDistance>300.0</MaxDistance>
+            <DefaultRadius>300.0</DefaultRadius>
+        </Environment>
+
+        <Environment type="INDOOR_OFFICE" id="office_hum">
+            <SoundFile>/Game/Audio/Ambient/Indoor/office_hum_01</SoundFile>
+            <AudioFlags>LOOP | SPATIAL_3D | REVERB_ENABLED | INTERIOR | ATTACHED_TO_OBJECT | STOP_ON_DESTROY</AudioFlags>
+            <Volume>0.3</Volume>
+            <MaxDistance>50.0</MaxDistance>
+            <DefaultRadius>50.0</DefaultRadius>
+        </Environment>
+
+        <!-- Vehicle Engine Sounds for Attachment -->
+        <Environment type="CAR_ENGINE_IDLE" id="car_engine_idle">
+            <SoundFile>/Game/Audio/Vehicles/Engines/car_engine_idle_01</SoundFile>
+            <AudioFlags>LOOP | SPATIAL_3D | ATTACHED_TO_OBJECT | FOLLOW_OBJECT | STOP_ON_DESTROY</AudioFlags>
+            <Volume>0.6</Volume>
+            <MaxDistance>100.0</MaxDistance>
+            <DefaultRadius>50.0</DefaultRadius>
+        </Environment>
+
+        <Environment type="GENERATOR_HUM" id="generator_sound">
+            <SoundFile>/Game/Audio/Ambient/Mechanical/generator_hum_01</SoundFile>
+            <AudioFlags>LOOP | SPATIAL_3D | ATTACHED_TO_OBJECT | STOP_ON_DESTROY | REVERB_ENABLED</AudioFlags>
+            <Volume>0.8</Volume>
+            <MaxDistance>150.0</MaxDistance>
+            <DefaultRadius>100.0</DefaultRadius>
+        </Environment>
+    </Environments>
+</AmbientSounds>

@@ -1,0 +1,806 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WeaponData>
+    <!-- ========== MELEE WEAPONS ========== -->
+    <MeleeWeapons>
+        <Weapon type="UNARMED">
+            <BasicData>
+                <WeaponSlot>UNARMED</WeaponSlot>
+                <FireType>MELEE</FireType>
+                <DamageType>MELEE</DamageType>
+                <WeaponGroup>PUNCH_KICK</WeaponGroup>
+                <TargetRange>10.0</TargetRange>
+                <WeaponRange>1.6</WeaponRange>
+                <WeaponSkeleton>Content/Weapons/Melee/Skeleton/SK_Unarmed</WeaponSkeleton>
+            </BasicData>
+
+            <Damage>
+                <BaseDamage>25.0</BaseDamage>
+                <NetworkPlayerModifier>1.0</NetworkPlayerModifier>
+                <NetworkPedModifier>1.0</NetworkPedModifier>
+                <ArmorPiercing>true</ArmorPiercing>
+            </Damage>
+
+            <Combat>
+                <CanAim>true</CanAim>
+                <CanBlock>true</CanBlock>
+                <ComboCount>3</ComboCount>
+                <AttackSpeed>1.2</AttackSpeed>
+            </Combat>
+
+            <UE5Assets>
+                <WeaponMesh>Content/Weapons/Melee/Meshes/SM_Unarmed</WeaponMesh>
+                <WeaponMaterial>Content/Weapons/Melee/Materials/M_Unarmed</WeaponMaterial>
+                <MeleeAnimGroup1>punch_kick_core</MeleeAnimGroup1>
+                <MeleeAnimGroup2>punch_kick_extra</MeleeAnimGroup2>
+                <AudioReference>Data/Audio/WeaponAudio.xml#UNARMED</AudioReference>
+                <SoundClass>MeleeWeaponSoundClass</SoundClass>
+            </UE5Assets>
+
+            <Controller>
+                <RumbleDuration>60</RumbleDuration>
+                <RumbleIntensity>0.23</RumbleIntensity>
+            </Controller>
+
+            <Pickup>
+                <RegenTime>0</RegenTime>
+                <PickupMesh>None</PickupMesh>
+            </Pickup>
+        </Weapon>
+
+        <Weapon type="BASEBALLBAT">
+            <BasicData>
+                <WeaponSlot>MELEE</WeaponSlot>
+                <FireType>MELEE</FireType>
+                <DamageType>MELEE</DamageType>
+                <WeaponGroup>MELEE_WOOD</WeaponGroup>
+                <TargetRange>10.0</TargetRange>
+                <WeaponRange>2.2</WeaponRange>
+                <WeaponSkeleton>Content/Weapons/Melee/Skeleton/SK_BaseballBat</WeaponSkeleton>
+            </BasicData>
+
+            <Damage>
+                <BaseDamage>75.0</BaseDamage>
+                <NetworkPlayerModifier>1.5</NetworkPlayerModifier>
+                <NetworkPedModifier>1.2</NetworkPedModifier>
+                <ArmorPiercing>true</ArmorPiercing>
+            </Damage>
+
+            <Combat>
+                <CanAim>true</CanAim>
+                <CanBlock>false</CanBlock>
+                <ComboCount>2</ComboCount>
+                <AttackSpeed>0.8</AttackSpeed>
+                <MeleeClub>true</MeleeClub>
+            </Combat>
+
+            <UE5Assets>
+                <WeaponMesh>Content/Weapons/Melee/Meshes/SM_BaseballBat</WeaponMesh>
+                <WeaponMaterial>Content/Weapons/Melee/Materials/M_BaseballBat</WeaponMaterial>
+                <MeleeAnimGroup1>club_core</MeleeAnimGroup1>
+                <MeleeAnimGroup2>club_extra</MeleeAnimGroup2>
+                <AudioReference>Data/Audio/WeaponAudio.xml#BASEBALLBAT</AudioReference>
+                <SoundClass>MeleeWeaponSoundClass</SoundClass>
+                <AttachSocket>WeaponSocket</AttachSocket>
+            </UE5Assets>
+
+            <Controller>
+                <RumbleDuration>80</RumbleDuration>
+                <RumbleIntensity>0.4</RumbleIntensity>
+            </Controller>
+
+            <Pickup>
+                <RegenTime>120000</RegenTime>
+                <PickupMesh>Content/Weapons/Melee/Pickups/SM_BaseballBat_Pickup</PickupMesh>
+                <PickupSoundCue>Content/Audio/Weapons/SC_Weapon_Pickup</PickupSoundCue>
+            </Pickup>
+        </Weapon>
+
+        <Weapon type="KNIFE">
+            <BasicData>
+                <WeaponSlot>MELEE</WeaponSlot>
+                <FireType>MELEE</FireType>
+                <DamageType>MELEE</DamageType>
+                <WeaponGroup>MELEE_SHARP</WeaponGroup>
+                <TargetRange>10.0</TargetRange>
+                <WeaponRange>1.8</WeaponRange>
+                <WeaponSkeleton>Content/Weapons/Melee/Skeleton/SK_Knife</WeaponSkeleton>
+            </BasicData>
+
+            <Damage>
+                <BaseDamage>100.0</BaseDamage>
+                <NetworkPlayerModifier>2.0</NetworkPlayerModifier>
+                <NetworkPedModifier>1.8</NetworkPedModifier>
+                <ArmorPiercing>true</ArmorPiercing>
+                <InstantKillInMP>true</InstantKillInMP>
+            </Damage>
+
+            <Combat>
+                <CanAim>true</CanAim>
+                <CanBlock>false</CanBlock>
+                <ComboCount>4</ComboCount>
+                <AttackSpeed>1.5</AttackSpeed>
+                <MeleeBlade>true</MeleeBlade>
+            </Combat>
+
+            <UE5Assets>
+                <WeaponMesh>Content/Weapons/Melee/Meshes/SM_Knife</WeaponMesh>
+                <WeaponMaterial>Content/Weapons/Melee/Materials/M_Knife</WeaponMaterial>
+                <MeleeAnimGroup1>blade_core</MeleeAnimGroup1>
+                <MeleeAnimGroup2>blade_extra</MeleeAnimGroup2>
+                <AudioReference>Data/Audio/WeaponAudio.xml#KNIFE</AudioReference>
+                <SoundClass>MeleeWeaponSoundClass</SoundClass>
+                <AttachSocket>WeaponSocket</AttachSocket>
+            </UE5Assets>
+
+            <Controller>
+                <RumbleDuration>60</RumbleDuration>
+                <RumbleIntensity>0.1</RumbleIntensity>
+            </Controller>
+
+            <Pickup>
+                <RegenTime>120000</RegenTime>
+                <PickupMesh>Content/Weapons/Melee/Pickups/SM_Knife_Pickup</PickupMesh>
+                <PickupSoundCue>Content/Audio/Weapons/SC_Weapon_Pickup</PickupSoundCue>
+            </Pickup>
+        </Weapon>
+    </MeleeWeapons>
+
+    <!-- ========== HANDHELD FIREARMS ========== -->
+    <HandheldFirearms>
+        <Weapon type="PISTOL">
+            <BasicData>
+                <WeaponSlot>HANDGUN</WeaponSlot>
+                <FireType>INSTANT_HIT</FireType>
+                <DamageType>BULLET</DamageType>
+                <WeaponGroup>PISTOL_SMALL</WeaponGroup>
+                <TargetRange>45.0</TargetRange>
+                <WeaponRange>50.0</WeaponRange>
+                <ClipSize>17</ClipSize>
+                <AmmoMax>150</AmmoMax>
+                <TimeBetweenShots>333</TimeBetweenShots>
+                <WeaponSkeleton>Content/Weapons/Handguns/Skeleton/SK_Pistol</WeaponSkeleton>
+            </BasicData>
+
+            <Damage>
+                <BaseDamage>25.0</BaseDamage>
+                <NetworkPlayerModifier>3.0</NetworkPlayerModifier>
+                <NetworkPedModifier>1.0</NetworkPedModifier>
+                <PhysicsForce>50.0</PhysicsForce>
+            </Damage>
+
+            <Reload>
+                <ReloadTime>2000</ReloadTime>
+                <FastReloadTime>1800</FastReloadTime>
+                <CrouchReloadTime>2000</CrouchReloadTime>
+            </Reload>
+
+            <Aiming>
+                <Accuracy>0.5</Accuracy>
+                <AimOffset x="0.15" y="1.0" z="0.55"/>
+                <CrouchedAimOffset x="0.2" y="1.0" z="0.05"/>
+                <ReticuleStanding>0.65</ReticuleStanding>
+                <ReticuleDucked>0.55</ReticuleDucked>
+                <ReticuleScale>0.3</ReticuleScale>
+            </Aiming>
+
+            <UE5Assets>
+                <WeaponMesh>Content/Weapons/Handguns/Meshes/SM_Pistol</WeaponMesh>
+                <WeaponMaterial>Content/Weapons/Handguns/Materials/M_Pistol</WeaponMaterial>
+                <AnimGroup>gun@handgun</AnimGroup>
+                <MeleeAnimGroup1>firearm_core</MeleeAnimGroup1>
+                <MuzzleFlashEffect>Content/VFX/Weapons/VFX_Muzzle_Pistol_Small</MuzzleFlashEffect>
+                <ShellEjectEffect>Content/VFX/Weapons/VFX_Shell_Eject_Pistol</ShellEjectEffect>
+                <AudioReference>Data/Audio/WeaponAudio.xml#PISTOL</AudioReference>
+                <SoundClass>HandgunSoundClass</SoundClass>
+                <AttachSocket>WeaponSocket</AttachSocket>
+                <MuzzleSocket>MuzzleSocket</MuzzleSocket>
+                <EjectSocket>EjectSocket</EjectSocket>
+            </UE5Assets>
+
+            <Controller>
+                <RumbleDuration>110</RumbleDuration>
+                <RumbleIntensity>0.02</RumbleIntensity>
+            </Controller>
+
+            <Pickup>
+                <RegenTime>120000</RegenTime>
+                <AmmoOnStreet>30</AmmoOnStreet>
+                <PickupMesh>Content/Weapons/Handguns/Pickups/SM_Pistol_Pickup</PickupMesh>
+                <PickupSoundCue>Content/Audio/Weapons/SC_Weapon_Pickup</PickupSoundCue>
+            </Pickup>
+
+            <Flags>
+                <GUN>true</GUN>
+                <CAN_AIM>true</CAN_AIM>
+                <CAN_FREE_AIM>true</CAN_FREE_AIM>
+                <ANIM_RELOAD>true</ANIM_RELOAD>
+                <ANIM_CROUCH_FIRE>true</ANIM_CROUCH_FIRE>
+            </Flags>
+        </Weapon>
+
+        <Weapon type="DEAGLE">
+            <BasicData>
+                <WeaponSlot>HANDGUN</WeaponSlot>
+                <FireType>INSTANT_HIT</FireType>
+                <DamageType>BULLET</DamageType>
+                <WeaponGroup>PISTOL_LARGE</WeaponGroup>
+                <TargetRange>45.0</TargetRange>
+                <WeaponRange>50.0</WeaponRange>
+                <ClipSize>9</ClipSize>
+                <AmmoMax>90</AmmoMax>
+                <TimeBetweenShots>333</TimeBetweenShots>
+                <WeaponSkeleton>Content/Weapons/Handguns/Skeleton/SK_DesertEagle</WeaponSkeleton>
+            </BasicData>
+
+            <Damage>
+                <BaseDamage>40.0</BaseDamage>
+                <NetworkPlayerModifier>4.0</NetworkPlayerModifier>
+                <NetworkPedModifier>1.0</NetworkPedModifier>
+                <PhysicsForce>75.0</PhysicsForce>
+            </Damage>
+
+            <Reload>
+                <ReloadTime>2000</ReloadTime>
+                <FastReloadTime>1800</FastReloadTime>
+                <CrouchReloadTime>2000</CrouchReloadTime>
+            </Reload>
+
+            <Aiming>
+                <Accuracy>0.5</Accuracy>
+                <AimOffset x="0.15" y="1.0" z="0.55"/>
+                <CrouchedAimOffset x="0.2" y="1.0" z="0.05"/>
+                <ReticuleStanding>0.6</ReticuleStanding>
+                <ReticuleDucked>0.5</ReticuleDucked>
+                <ReticuleScale>0.3</ReticuleScale>
+            </Aiming>
+
+            <UE5Assets>
+                <WeaponMesh>Content/Weapons/Handguns/Meshes/SM_DesertEagle</WeaponMesh>
+                <WeaponMaterial>Content/Weapons/Handguns/Materials/M_DesertEagle</WeaponMaterial>
+                <AnimGroup>gun@deagle</AnimGroup>
+                <MeleeAnimGroup1>firearm_core</MeleeAnimGroup1>
+                <MuzzleFlashEffect>Content/VFX/Weapons/VFX_Muzzle_Pistol_Large</MuzzleFlashEffect>
+                <ShellEjectEffect>Content/VFX/Weapons/VFX_Shell_Eject_Pistol</ShellEjectEffect>
+                <AudioReference>Data/Audio/WeaponAudio.xml#DEAGLE</AudioReference>
+                <SoundClass>HandgunSoundClass</SoundClass>
+                <AttachSocket>WeaponSocket</AttachSocket>
+                <MuzzleSocket>MuzzleSocket</MuzzleSocket>
+                <EjectSocket>EjectSocket</EjectSocket>
+            </UE5Assets>
+
+            <Controller>
+                <RumbleDuration>150</RumbleDuration>
+                <RumbleIntensity>0.1</RumbleIntensity>
+            </Controller>
+
+            <Pickup>
+                <RegenTime>240000</RegenTime>
+                <AmmoOnStreet>30</AmmoOnStreet>
+                <PickupMesh>Content/Weapons/Handguns/Pickups/SM_DesertEagle_Pickup</PickupMesh>
+                <PickupSoundCue>Content/Audio/Weapons/SC_Weapon_Pickup</PickupSoundCue>
+            </Pickup>
+
+            <Flags>
+                <GUN>true</GUN>
+                <CAN_AIM>true</CAN_AIM>
+                <CAN_FREE_AIM>true</CAN_FREE_AIM>
+                <ANIM_RELOAD>true</ANIM_RELOAD>
+                <ANIM_CROUCH_FIRE>true</ANIM_CROUCH_FIRE>
+            </Flags>
+        </Weapon>
+
+        <Weapon type="SHOTGUN">
+            <BasicData>
+                <WeaponSlot>SHOTGUN</WeaponSlot>
+                <FireType>INSTANT_HIT</FireType>
+                <DamageType>BULLET</DamageType>
+                <WeaponGroup>SHOTGUN</WeaponGroup>
+                <TargetRange>35.0</TargetRange>
+                <WeaponRange>35.0</WeaponRange>
+                <ClipSize>8</ClipSize>
+                <AmmoMax>80</AmmoMax>
+                <TimeBetweenShots>1233</TimeBetweenShots>
+                <WeaponSkeleton>Content/Weapons/Shotguns/Skeleton/SK_Shotgun</WeaponSkeleton>
+            </BasicData>
+
+            <Damage>
+                <BaseDamage>20.0</BaseDamage>
+                <NetworkPlayerModifier>5.0</NetworkPlayerModifier>
+                <NetworkPedModifier>1.0</NetworkPedModifier>
+                <PhysicsForce>15.0</PhysicsForce>
+                <PelletCount>8</PelletCount>
+                <SpreadAngle>15.0</SpreadAngle>
+            </Damage>
+
+            <Reload>
+                <ReloadTime>2933</ReloadTime>
+                <FastReloadTime>2500</FastReloadTime>
+                <CrouchReloadTime>2933</CrouchReloadTime>
+                <PerShellReload>true</PerShellReload>
+            </Reload>
+
+            <Aiming>
+                <Accuracy>0.08</Accuracy>
+                <AimOffset x="0.16" y="1.0" z="0.44"/>
+                <CrouchedAimOffset x="0.16" y="1.0" z="0.0"/>
+                <ReticuleStanding>1.0</ReticuleStanding>
+                <ReticuleDucked>1.0</ReticuleDucked>
+                <ReticuleScale>0.0</ReticuleScale>
+            </Aiming>
+
+            <UE5Assets>
+                <WeaponMesh>Content/Weapons/Shotguns/Meshes/SM_Shotgun</WeaponMesh>
+                <WeaponMaterial>Content/Weapons/Shotguns/Materials/M_Shotgun</WeaponMaterial>
+                <AnimGroup>gun@shotgun</AnimGroup>
+                <MuzzleFlashEffect>Content/VFX/Weapons/VFX_Muzzle_Shotgun</MuzzleFlashEffect>
+                <ShellEjectEffect>Content/VFX/Weapons/VFX_Shell_Eject_Shotgun</ShellEjectEffect>
+                <AudioReference>Data/Audio/WeaponAudio.xml#SHOTGUN</AudioReference>
+                <SoundClass>ShotgunSoundClass</SoundClass>
+                <AttachSocket>WeaponSocket</AttachSocket>
+                <MuzzleSocket>MuzzleSocket</MuzzleSocket>
+                <EjectSocket>EjectSocket</EjectSocket>
+            </UE5Assets>
+
+            <Controller>
+                <RumbleDuration>200</RumbleDuration>
+                <RumbleIntensity>1.0</RumbleIntensity>
+            </Controller>
+
+            <Pickup>
+                <RegenTime>240000</RegenTime>
+                <AmmoOnStreet>16</AmmoOnStreet>
+                <PickupMesh>Content/Weapons/Shotguns/Pickups/SM_Shotgun_Pickup</PickupMesh>
+                <PickupSoundCue>Content/Audio/Weapons/SC_Weapon_Pickup</PickupSoundCue>
+            </Pickup>
+
+            <Flags>
+                <GUN>true</GUN>
+                <CAN_AIM>true</CAN_AIM>
+                <CAN_FREE_AIM>true</CAN_FREE_AIM>
+                <ANIM_RELOAD>true</ANIM_RELOAD>
+                <ANIM_CROUCH_FIRE>true</ANIM_CROUCH_FIRE>
+                <TWO_HANDED>true</TWO_HANDED>
+                <HIGHER_BREAK_FORCE>true</HIGHER_BREAK_FORCE>
+            </Flags>
+        </Weapon>
+
+        <Weapon type="AK47">
+            <BasicData>
+                <WeaponSlot>RIFLE</WeaponSlot>
+                <FireType>INSTANT_HIT</FireType>
+                <DamageType>BULLET</DamageType>
+                <WeaponGroup>RIFLE_ASSAULT</WeaponGroup>
+                <TargetRange>55.0</TargetRange>
+                <WeaponRange>65.0</WeaponRange>
+                <ClipSize>30</ClipSize>
+                <AmmoMax>300</AmmoMax>
+                <TimeBetweenShots>133</TimeBetweenShots>
+                <WeaponSkeleton>Content/Weapons/Rifles/Skeleton/SK_AK47</WeaponSkeleton>
+            </BasicData>
+
+            <Damage>
+                <BaseDamage>30.0</BaseDamage>
+                <NetworkPlayerModifier>2.0</NetworkPlayerModifier>
+                <NetworkPedModifier>1.0</NetworkPedModifier>
+                <PhysicsForce>75.0</PhysicsForce>
+            </Damage>
+
+            <Reload>
+                <ReloadTime>2066</ReloadTime>
+                <FastReloadTime>1166</FastReloadTime>
+                <CrouchReloadTime>2066</CrouchReloadTime>
+            </Reload>
+
+            <Aiming>
+                <Accuracy>0.5</Accuracy>
+                <AimOffset x="0.16" y="1.0" z="0.55"/>
+                <CrouchedAimOffset x="0.1" y="1.0" z="0.12"/>
+                <ReticuleStanding>0.6</ReticuleStanding>
+                <ReticuleDucked>0.5</ReticuleDucked>
+                <ReticuleScale>0.3</ReticuleScale>
+            </Aiming>
+
+            <UE5Assets>
+                <WeaponMesh>Content/Weapons/Rifles/Meshes/SM_AK47</WeaponMesh>
+                <WeaponMaterial>Content/Weapons/Rifles/Materials/M_AK47</WeaponMaterial>
+                <AnimGroup>gun@ak47</AnimGroup>
+                <FireRate>1.2</FireRate>
+                <BlindFireRate>1.2</BlindFireRate>
+                <MuzzleFlashEffect>Content/VFX/Weapons/VFX_Muzzle_Machine</MuzzleFlashEffect>
+                <ShellEjectEffect>Content/VFX/Weapons/VFX_Shell_Eject_Rifle</ShellEjectEffect>
+                <AudioReference>Data/Audio/WeaponAudio.xml#AK47</AudioReference>
+                <SoundClass>RifleSoundClass</SoundClass>
+                <AttachSocket>WeaponSocket</AttachSocket>
+                <MuzzleSocket>MuzzleSocket</MuzzleSocket>
+                <EjectSocket>EjectSocket</EjectSocket>
+            </UE5Assets>
+
+            <Controller>
+                <RumbleDuration>90</RumbleDuration>
+                <RumbleIntensity>0.1</RumbleIntensity>
+            </Controller>
+
+            <Pickup>
+                <RegenTime>480000</RegenTime>
+                <AmmoOnStreet>80</AmmoOnStreet>
+                <PickupMesh>Content/Weapons/Rifles/Pickups/SM_AK47_Pickup</PickupMesh>
+                <PickupSoundCue>Content/Audio/Weapons/SC_Weapon_Pickup</PickupSoundCue>
+            </Pickup>
+
+            <Flags>
+                <GUN>true</GUN>
+                <CAN_AIM>true</CAN_AIM>
+                <CAN_FREE_AIM>true</CAN_FREE_AIM>
+                <ANIM_RELOAD>true</ANIM_RELOAD>
+                <ANIM_CROUCH_FIRE>true</ANIM_CROUCH_FIRE>
+                <TWO_HANDED>true</TWO_HANDED>
+            </Flags>
+        </Weapon>
+
+        <Weapon type="SNIPERRIFLE">
+            <BasicData>
+                <WeaponSlot>SNIPER</WeaponSlot>
+                <FireType>DELAYED_HIT</FireType>
+                <DamageType>BULLET</DamageType>
+                <WeaponGroup>RIFLE_SNIPER</WeaponGroup>
+                <TargetRange>50.0</TargetRange>
+                <WeaponRange>1500.0</WeaponRange>
+                <ClipSize>10</ClipSize>
+                <AmmoMax>50</AmmoMax>
+                <TimeBetweenShots>400</TimeBetweenShots>
+                <WeaponSkeleton>Content/Weapons/Snipers/Skeleton/SK_SniperRifle</WeaponSkeleton>
+            </BasicData>
+
+            <Damage>
+                <BaseDamage>75.0</BaseDamage>
+                <HeadshotDamage>150.0</HeadshotDamage>
+                <NetworkPlayerModifier>2.0</NetworkPlayerModifier>
+                <NetworkPedModifier>1.0</NetworkPedModifier>
+                <PhysicsForce>100.0</PhysicsForce>
+            </Damage>
+
+            <Reload>
+                <ReloadTime>2066</ReloadTime>
+                <FastReloadTime>1800</FastReloadTime>
+                <CrouchReloadTime>2066</CrouchReloadTime>
+            </Reload>
+
+            <Aiming>
+                <Accuracy>10.0</Accuracy>
+                <AccuracyFPS>0.0</AccuracyFPS>
+                <AimOffset x="0.16" y="1.0" z="0.55"/>
+                <CrouchedAimOffset x="0.16" y="1.0" z="0.12"/>
+                <ReticuleStanding>0.6</ReticuleStanding>
+                <ReticuleDucked>0.5</ReticuleDucked>
+                <ReticuleScale>0.05</ReticuleScale>
+                <ScopeZoom>8.0</ScopeZoom>
+            </Aiming>
+
+            <UE5Assets>
+                <WeaponMesh>Content/Weapons/Snipers/Meshes/SM_SniperRifle</WeaponMesh>
+                <WeaponMaterial>Content/Weapons/Snipers/Materials/M_SniperRifle</WeaponMaterial>
+                <AnimGroup>gun@rifle</AnimGroup>
+                <MuzzleFlashEffect>Content/VFX/Weapons/VFX_Muzzle_Sniper</MuzzleFlashEffect>
+                <ShellEjectEffect>Content/VFX/Weapons/VFX_Shell_Eject_Rifle</ShellEjectEffect>
+                <AudioReference>Data/Audio/WeaponAudio.xml#SNIPERRIFLE</AudioReference>
+                <SoundClass>SniperSoundClass</SoundClass>
+                <AttachSocket>WeaponSocket</AttachSocket>
+                <MuzzleSocket>MuzzleSocket</MuzzleSocket>
+                <EjectSocket>EjectSocket</EjectSocket>
+                <ScopeWidget>Content/UI/Weapons/W_SniperScope</ScopeWidget>
+            </UE5Assets>
+
+            <Controller>
+                <RumbleDuration>120</RumbleDuration>
+                <RumbleIntensity>0.3</RumbleIntensity>
+            </Controller>
+
+            <Pickup>
+                <RegenTime>360000</RegenTime>
+                <AmmoOnStreet>20</AmmoOnStreet>
+                <PickupMesh>Content/Weapons/Snipers/Pickups/SM_SniperRifle_Pickup</PickupMesh>
+                <PickupSoundCue>Content/Audio/Weapons/SC_Weapon_Pickup</PickupSoundCue>
+            </Pickup>
+
+            <Flags>
+                <GUN>true</GUN>
+                <CAN_FREE_AIM>true</CAN_FREE_AIM>
+                <FIRST_PERSON>true</FIRST_PERSON>
+                <ANIM_RELOAD>true</ANIM_RELOAD>
+                <ANIM_CROUCH_FIRE>true</ANIM_CROUCH_FIRE>
+                <TWO_HANDED>true</TWO_HANDED>
+            </Flags>
+        </Weapon>
+    </HandheldFirearms>
+
+    <!-- ========== PROJECTILE WEAPONS ========== -->
+    <ProjectileWeapons>
+        <Weapon type="RLAUNCHER">
+            <BasicData>
+                <WeaponSlot>HEAVY</WeaponSlot>
+                <FireType>PROJECTILE</FireType>
+                <DamageType>EXPLOSIVE</DamageType>
+                <WeaponGroup>ROCKET</WeaponGroup>
+                <TargetRange>50.0</TargetRange>
+                <WeaponRange>100.0</WeaponRange>
+                <ClipSize>1</ClipSize>
+                <AmmoMax>8</AmmoMax>
+                <TimeBetweenShots>800</TimeBetweenShots>
+                <WeaponSkeleton>Content/Weapons/Heavy/Skeleton/SK_RocketLauncher</WeaponSkeleton>
+            </BasicData>
+
+            <Damage>
+                <BaseDamage>200.0</BaseDamage>
+                <ExplosionRadius>10.0</ExplosionRadius>
+                <NetworkPlayerModifier>2.0</NetworkPlayerModifier>
+                <NetworkPedModifier>1.0</NetworkPedModifier>
+            </Damage>
+
+            <Reload>
+                <ReloadTime>2066</ReloadTime>
+                <FastReloadTime>1800</FastReloadTime>
+                <CrouchReloadTime>2066</CrouchReloadTime>
+            </Reload>
+
+            <Aiming>
+                <Accuracy>1.0</Accuracy>
+                <AimOffset x="0.15" y="1.0" z="0.53"/>
+                <CrouchedAimOffset x="0.12" y="1.0" z="0.05"/>
+                <ReticuleStanding>1.0</ReticuleStanding>
+                <ReticuleDucked>1.0</ReticuleDucked>
+                <ReticuleScale>0.0</ReticuleScale>
+            </Aiming>
+
+            <Projectile>
+                <ProjectileClass>CRocketProjectile</ProjectileClass>
+                <ProjectileSpeed>2000.0</ProjectileSpeed>
+                <ProjectileGravity>0.8</ProjectileGravity>
+                <ExplosionClass>CRocketExplosion</ExplosionClass>
+                <LaunchOffset x="0.54" y="0.0" z="0.055"/>
+                <LaunchRotOffset x="0.0" y="0.0" z="-1.571"/>
+            </Projectile>
+
+            <UE5Assets>
+                <WeaponMesh>Content/Weapons/Heavy/Meshes/SM_RocketLauncher</WeaponMesh>
+                <WeaponMaterial>Content/Weapons/Heavy/Materials/M_RocketLauncher</WeaponMaterial>
+                <AnimGroup>gun@rocket</AnimGroup>
+                <MuzzleFlashEffect>Content/VFX/Weapons/VFX_Muzzle_Rocket</MuzzleFlashEffect>
+                <AudioReference>Data/Audio/WeaponAudio.xml#RLAUNCHER</AudioReference>
+                <SoundClass>HeavyWeaponSoundClass</SoundClass>
+                <AttachSocket>WeaponSocket</AttachSocket>
+                <MuzzleSocket>MuzzleSocket</MuzzleSocket>
+            </UE5Assets>
+
+            <Controller>
+                <RumbleDuration>200</RumbleDuration>
+                <RumbleIntensity>0.4</RumbleIntensity>
+            </Controller>
+
+            <Pickup>
+                <RegenTime>600000</RegenTime>
+                <AmmoOnStreet>4</AmmoOnStreet>
+                <PickupMesh>Content/Weapons/Heavy/Pickups/SM_RocketLauncher_Pickup</PickupMesh>
+                <PickupSoundCue>Content/Audio/Weapons/SC_Weapon_Pickup</PickupSoundCue>
+            </Pickup>
+
+            <Flags>
+                <GUN>true</GUN>
+                <HEAVY>true</HEAVY>
+                <CAN_FREE_AIM>true</CAN_FREE_AIM>
+                <ANIM_RELOAD>true</ANIM_RELOAD>
+                <ANIM_CROUCH_FIRE>true</ANIM_CROUCH_FIRE>
+                <CREATE_VISIBLE_ORDNANCE>true</CREATE_VISIBLE_ORDNANCE>
+                <TWO_HANDED>true</TWO_HANDED>
+                <KEEP_CAMERA_BEHIND>true</KEEP_CAMERA_BEHIND>
+            </Flags>
+        </Weapon>
+
+        <Weapon type="GRENADE">
+            <BasicData>
+                <WeaponSlot>THROWN</WeaponSlot>
+                <FireType>PROJECTILE</FireType>
+                <DamageType>EXPLOSIVE</DamageType>
+                <WeaponGroup>GRENADE</WeaponGroup>
+                <TargetRange>35.0</TargetRange>
+                <WeaponRange>35.0</WeaponRange>
+                <ClipSize>1</ClipSize>
+                <AmmoMax>25</AmmoMax>
+                <WeaponSkeleton>Content/Weapons/Thrown/Skeleton/SK_Grenade</WeaponSkeleton>
+            </BasicData>
+
+            <Damage>
+                <BaseDamage>150.0</BaseDamage>
+                <ExplosionRadius>8.0</ExplosionRadius>
+                <NetworkPlayerModifier>2.0</NetworkPlayerModifier>
+                <NetworkPedModifier>1.0</NetworkPedModifier>
+            </Damage>
+
+            <Aiming>
+                <Accuracy>1.0</Accuracy>
+                <AimOffset x="0.0" y="1.0" z="0.0"/>
+                <CrouchedAimOffset x="0.0" y="1.0" z="0.0"/>
+            </Aiming>
+
+            <Projectile>
+                <ProjectileClass>CGrenadeProjectile</ProjectileClass>
+                <ProjectileSpeed>800.0</ProjectileSpeed>
+                <ProjectileGravity>1.0</ProjectileGravity>
+                <FuseTime>5000</FuseTime>
+                <ExplosionClass>CGrenadeExplosion</ExplosionClass>
+                <PhysicsForce>33.0</PhysicsForce>
+                <VehicleVelocity>5.0</VehicleVelocity>
+            </Projectile>
+
+            <UE5Assets>
+                <WeaponMesh>Content/Weapons/Thrown/Meshes/SM_Grenade</WeaponMesh>
+                <WeaponMaterial>Content/Weapons/Thrown/Materials/M_Grenade</WeaponMaterial>
+                <AnimGroup>grenade</AnimGroup>
+                <AudioReference>Data/Audio/WeaponAudio.xml#GRENADE</AudioReference>
+                <SoundClass>ThrownWeaponSoundClass</SoundClass>
+                <AttachSocket>LeftHandSocket</AttachSocket>
+            </UE5Assets>
+
+            <Controller>
+                <RumbleDuration>50</RumbleDuration>
+                <RumbleIntensity>0.1</RumbleIntensity>
+            </Controller>
+
+            <Pickup>
+                <RegenTime>360000</RegenTime>
+                <AmmoOnStreet>8</AmmoOnStreet>
+                <PickupMesh>Content/Weapons/Thrown/Pickups/SM_Grenade_Pickup</PickupMesh>
+                <PickupSoundCue>Content/Audio/Weapons/SC_Weapon_Pickup</PickupSoundCue>
+            </Pickup>
+
+            <Flags>
+                <THROWN>true</THROWN>
+                <CAN_AIM>true</CAN_AIM>
+                <CAN_FREE_AIM>true</CAN_FREE_AIM>
+                <ANIM_RELOAD>true</ANIM_RELOAD>
+                <ANIM_CROUCH_FIRE>true</ANIM_CROUCH_FIRE>
+                <ADD_SMOKE_ON_EXPLOSION>true</ADD_SMOKE_ON_EXPLOSION>
+                <SILENCED>true</SILENCED>
+            </Flags>
+        </Weapon>
+    </ProjectileWeapons>
+
+    <!-- ========== MOUNTED WEAPONS ========== -->
+    <MountedWeapons>
+        <Weapon type="VEHICLE_MINIGUN">
+            <BasicData>
+                <WeaponSlot>MOUNTED</WeaponSlot>
+                <FireType>INSTANT_HIT</FireType>
+                <DamageType>BULLET</DamageType>
+                <WeaponGroup>MINIGUN</WeaponGroup>
+                <TargetRange>100.0</TargetRange>
+                <WeaponRange>400.0</WeaponRange>
+                <ClipSize>750</ClipSize>
+                <AmmoMax>2000</AmmoMax>
+                <TimeBetweenShots>36</TimeBetweenShots>
+                <MountType>VEHICLE</MountType>
+                <SkeletonPath>Content/Vehicles/Common/Skeleton/SK_VehicleWeapon</SkeletonPath>
+            </BasicData>
+
+            <Damage>
+                <BaseDamage>50.0</BaseDamage>
+                <NetworkPlayerModifier>2.0</NetworkPlayerModifier>
+                <NetworkPedModifier>1.0</NetworkPedModifier>
+                <PhysicsForce>500.0</PhysicsForce>
+                <VehicleDamageMultiplier>2.0</VehicleDamageMultiplier>
+            </Damage>
+
+            <Aiming>
+                <Accuracy>1.0</Accuracy>
+                <AimOffset x="0.0" y="1.0" z="0.0"/>
+                <CrouchedAimOffset x="0.0" y="1.0" z="0.0"/>
+                <HorizontalRange>180.0</HorizontalRange>
+                <VerticalRange>45.0</VerticalRange>
+                <TraversalSpeed>2.0</TraversalSpeed>
+            </Aiming>
+
+            <UE5Assets>
+                <WeaponMesh>Content/Weapons/Mounted/Meshes/SM_VehicleMinigun</WeaponMesh>
+                <WeaponMaterial>Content/Weapons/Mounted/Materials/M_VehicleMinigun</WeaponMaterial>
+                <MuzzleFlashEffect>Content/VFX/Weapons/VFX_Muzzle_Minigun</MuzzleFlashEffect>
+                <ShellEjectEffect>Content/VFX/Weapons/VFX_Shell_Eject_Heavy</ShellEjectEffect>
+                <SoundCue>Content/Audio/Weapons/Mounted/SC_VehicleMinigun_Fire</SoundCue>
+                <SoundClass>MountedWeaponSoundClass</SoundClass>
+                <MuzzleSocket>MuzzleSocket</MuzzleSocket>
+                <EjectSocket>EjectSocket</EjectSocket>
+                <MountSocket>WeaponMountSocket</MountSocket>
+            </UE5Assets>
+
+            <Controller>
+                <RumbleDuration>60</RumbleDuration>
+                <RumbleIntensity>0.3</RumbleIntensity>
+            </Controller>
+
+            <MountedData>
+                <RequiresVehicle>true</RequiresVehicle>
+                <VehicleTypes>
+                    <Type>HELICOPTER</Type>
+                    <Type>BOAT</Type>
+                    <Type>TRUCK</Type>
+                </VehicleTypes>
+                <OperatorSeat>GUNNER</OperatorSeat>
+                <CooldownTime>1.0</CooldownTime>
+                <OverheatTime>10.0</OverheatTime>
+            </MountedData>
+
+            <Flags>
+                <GUN>true</GUN>
+                <CAN_FREE_AIM>true</CAN_FREE_AIM>
+                <HEAVY>true</HEAVY>
+                <MOUNTED>true</MOUNTED>
+                <VEHICLE_WEAPON>true</VEHICLE_WEAPON>
+            </Flags>
+        </Weapon>
+
+        <Weapon type="STATIONARY_MG">
+            <BasicData>
+                <WeaponSlot>MOUNTED</WeaponSlot>
+                <FireType>INSTANT_HIT</FireType>
+                <DamageType>BULLET</DamageType>
+                <WeaponGroup>MACHINE_GUN</WeaponGroup>
+                <TargetRange>80.0</TargetRange>
+                <WeaponRange>300.0</WeaponRange>
+                <ClipSize>200</ClipSize>
+                <AmmoMax>1000</AmmoMax>
+                <TimeBetweenShots>80</TimeBetweenShots>
+                <MountType>STATIONARY</MountType>
+                <SkeletonPath>Content/Weapons/Mounted/Skeleton/SK_StationaryWeapon</SkeletonPath>
+            </BasicData>
+
+            <Damage>
+                <BaseDamage>40.0</BaseDamage>
+                <NetworkPlayerModifier>2.5</NetworkPlayerModifier>
+                <NetworkPedModifier>1.5</NetworkPedModifier>
+                <PhysicsForce>300.0</PhysicsForce>
+                <ArmorPiercing>true</ArmorPiercing>
+            </Damage>
+
+            <Aiming>
+                <Accuracy>0.8</Accuracy>
+                <AimOffset x="0.0" y="1.0" z="0.0"/>
+                <CrouchedAimOffset x="0.0" y="1.0" z="0.0"/>
+                <HorizontalRange>270.0</HorizontalRange>
+                <VerticalRange>60.0</VerticalRange>
+                <TraversalSpeed>1.5</TraversalSpeed>
+            </Aiming>
+
+            <UE5Assets>
+                <WeaponMesh>Content/Weapons/Mounted/Meshes/SM_StationaryMG</WeaponMesh>
+                <WeaponMaterial>Content/Weapons/Mounted/Materials/M_StationaryMG</WeaponMaterial>
+                <MuzzleFlashEffect>Content/VFX/Weapons/VFX_Muzzle_MachineGun</MuzzleFlashEffect>
+                <ShellEjectEffect>Content/VFX/Weapons/VFX_Shell_Eject_MG</ShellEjectEffect>
+                <SoundCue>Content/Audio/Weapons/Mounted/SC_StationaryMG_Fire</SoundCue>
+                <SoundClass>MountedWeaponSoundClass</SoundClass>
+                <MuzzleSocket>MuzzleSocket</MuzzleSocket>
+                <EjectSocket>EjectSocket</EjectSocket>
+                <MountSocket>StationaryMountSocket</MountSocket>
+            </UE5Assets>
+
+            <Controller>
+                <RumbleDuration>80</RumbleDuration>
+                <RumbleIntensity>0.2</RumbleIntensity>
+            </Controller>
+
+            <MountedData>
+                <RequiresVehicle>false</RequiresVehicle>
+                <IsStationary>true</IsStationary>
+                <OperatorSeat>GUNNER</OperatorSeat>
+                <CooldownTime>0.5</CooldownTime>
+                <OverheatTime>15.0</OverheatTime>
+                <InteractionDistance>2.0</InteractionDistance>
+            </MountedData>
+
+            <Flags>
+                <GUN>true</GUN>
+                <CAN_FREE_AIM>true</CAN_FREE_AIM>
+                <HEAVY>true</HEAVY>
+                <MOUNTED>true</MOUNTED>
+                <STATIONARY_WEAPON>true</STATIONARY_WEAPON>
+            </Flags>
+        </Weapon>
+    </MountedWeapons>
+</WeaponData>

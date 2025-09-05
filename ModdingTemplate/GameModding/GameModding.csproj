@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <OutputType>Library</OutputType>
+    <AssemblyName>GameModding</AssemblyName>
+    <RootNamespace>GameModding</RootNamespace>
+    <Platforms>x64</Platforms>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    
+    <!-- Output to game binaries directory where Game.exe is located -->
+    <OutputPath>..\..\Binaries\Win64\DotNet\</OutputPath>
+    <IntermediateOutputPath>obj\$(Configuration)\</IntermediateOutputPath>
+    
+    <!-- Assembly info -->
+    <AssemblyTitle>Game Modding API</AssemblyTitle>
+    <AssemblyDescription>Professional C# modding API for your game</AssemblyDescription>
+    <AssemblyCompany>Your Game Studio</AssemblyCompany>
+    <AssemblyProduct>Game Modding Framework</AssemblyProduct>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <FileVersion>1.0.0.0</FileVersion>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+
+</Project>

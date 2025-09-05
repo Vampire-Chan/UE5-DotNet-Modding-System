@@ -1,0 +1,4 @@
+<Shaders>
+    <ShaderPath FolderName="CharacterShaders">Characters/CharacterShaders</ShaderPath>
+    <!-- and so on.  -->
+</Shaders>

@@ -1,0 +1,728 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<InteriorPlacement>
+    <!-- ========== INTERIOR PLACEMENT METADATA ========== -->
+    <InteriorInfo>
+        <InteriorID>IPL_OfficeBuilding_01</InteriorID>
+        <InteriorName>Downtown Office Building - Floors 1-20</InteriorName>
+        <InteriorType>OFFICE_BUILDING</InteriorType>
+        <ParentObject>skyscraper_office_01</ParentObject>
+        <ParentWPL>WPL_Downtown_01</ParentWPL>
+        <FloorCount>20</FloorCount>
+        <LoadDistance>100.0</LoadDistance>
+        <UnloadDistance>150.0</UnloadDistance>
+        <StreamingMemoryBudget>128</StreamingMemoryBudget>
+    </InteriorInfo>
+
+    <!-- ========== INTERIOR BOUNDS ========== -->
+    <InteriorBounds>
+        <BoundingBox>
+            <Min x="-50.0" y="-50.0" z="0.0"/>
+            <Max x="50.0" y="50.0" z="200.0"/>
+        </BoundingBox>
+        <StreamingRadius>75.0</StreamingRadius>
+        <CullingRadius>125.0</CullingRadius>
+    </InteriorBounds>
+
+    <!-- ========== ENTRY/EXIT POINTS ========== -->
+    <EntryExitPoints>
+        <EntryPoint>
+            <Name>main_entrance</Name>
+            <InteriorPosition x="0.0" y="-45.0" z="2.0"/>
+            <ExteriorPosition x="148.0" y="195.0" z="2.0"/>
+            <ExteriorWPL>WPL_Downtown_01</ExteriorWPL>
+            <DoorType>AUTOMATIC_SLIDING</DoorType>
+            <RequiresKey>false</RequiresKey>
+            <IsLocked>false</IsLocked>
+            
+            <!-- COLLISION VALIDATION -->
+            <CollisionChecks>
+                <ValidEntryZone>
+                    <Position x="148.0" y="195.0" z="2.0"/>
+                    <Radius>3.0</Radius>
+                    <RequiredApproach>GROUND_LEVEL</RequiredApproach>
+                </ValidEntryZone>
+                <InteriorBoundary>
+                    <Position x="0.0" y="-45.0" z="2.0"/>
+                    <Radius>2.0</Radius>
+                    <ValidationRadius>50.0</ValidationRadius>
+                </InteriorBoundary>
+            </CollisionChecks>
+            
+            <!-- ANTI-CHEAT MEASURES -->
+            <SecurityValidation>
+                <EnforceProperEntry>true</EnforceProperEntry>
+                <TeleportDetection>true</TeleportDetection>
+                <NoClipDetection>true</NoClipDetection>
+                <MaxEntrySpeed>10.0</MaxEntrySpeed>
+                <RequiredDoorInteraction>true</RequiredDoorInteraction>
+                
+                <!-- MISSION/ADMIN EXCEPTIONS -->
+                <AllowMissionTeleports>true</AllowMissionTeleports>
+                <AllowAdminOverrides>true</AllowAdminOverrides>
+                <MissionTeleportCooldown>5.0</MissionTeleportCooldown>
+                <LogAuthorizedTeleports>true</LogAuthorizedTeleports>
+            </SecurityValidation>
+        </EntryPoint>
+        
+        <EntryPoint>
+            <Name>side_entrance</Name>
+            <InteriorPosition x="45.0" y="0.0" z="2.0"/>
+            <ExteriorPosition x="155.0" y="205.0" z="2.0"/>
+            <ExteriorWPL>WPL_Downtown_01</ExteriorWPL>
+            <DoorType>PUSH_PULL</DoorType>
+            <RequiresKey>false</RequiresKey>
+            <IsLocked>false</IsLocked>
+            
+            <!-- COLLISION VALIDATION -->
+            <CollisionChecks>
+                <ValidEntryZone>
+                    <Position x="155.0" y="205.0" z="2.0"/>
+                    <Radius>2.5</Radius>
+                    <RequiredApproach>GROUND_LEVEL</RequiredApproach>
+                </ValidEntryZone>
+                <InteriorBoundary>
+                    <Position x="45.0" y="0.0" z="2.0"/>
+                    <Radius>2.0</Radius>
+                    <ValidationRadius>50.0</ValidationRadius>
+                </InteriorBoundary>
+            </CollisionChecks>
+            
+            <!-- ANTI-CHEAT MEASURES -->
+            <SecurityValidation>
+                <EnforceProperEntry>true</EnforceProperEntry>
+                <TeleportDetection>true</TeleportDetection>
+                <NoClipDetection>true</NoClipDetection>
+                <MaxEntrySpeed>8.0</MaxEntrySpeed>
+                <RequiredDoorInteraction>true</RequiredDoorInteraction>
+            </SecurityValidation>
+        </EntryPoint>
+        
+        <EntryPoint>
+            <Name>parking_garage</Name>
+            <InteriorPosition x="0.0" y="40.0" z="-10.0"/>
+            <ExteriorPosition x="140.0" y="210.0" z="-8.0"/>
+            <ExteriorWPL>WPL_Downtown_01</ExteriorWPL>
+            <DoorType>GARAGE_DOOR</DoorType>
+            <RequiresKey>false</RequiresKey>
+            <IsLocked>false</IsLocked>
+            
+            <!-- COLLISION VALIDATION -->
+            <CollisionChecks>
+                <ValidEntryZone>
+                    <Position x="140.0" y="210.0" z="-8.0"/>
+                    <Radius>5.0</Radius>
+                    <RequiredApproach>VEHICLE_OR_GROUND</RequiredApproach>
+                </ValidEntryZone>
+                <InteriorBoundary>
+                    <Position x="0.0" y="40.0" z="-10.0"/>
+                    <Radius>4.0</Radius>
+                    <ValidationRadius>60.0</ValidationRadius>
+                </InteriorBoundary>
+            </CollisionChecks>
+            
+            <!-- ANTI-CHEAT MEASURES -->
+            <SecurityValidation>
+                <EnforceProperEntry>true</EnforceProperEntry>
+                <TeleportDetection>true</TeleportDetection>
+                <NoClipDetection>true</NoClipDetection>
+                <MaxEntrySpeed>15.0</MaxEntrySpeed>
+                <RequiredDoorInteraction>false</RequiredDoorInteraction>
+                <AllowsVehicleEntry>true</AllowsVehicleEntry>
+            </SecurityValidation>
+        </EntryPoint>
+    </EntryExitPoints>
+
+    <!-- ========== INTERIOR SECURITY SYSTEM ========== -->
+    <InteriorSecurity>
+        <!-- BOUNDARY VALIDATION -->
+        <BoundaryValidation>
+            <EnableCollisionChecks>true</EnableCollisionChecks>
+            <ValidatePlayerEntry>true</ValidatePlayerEntry>
+            <KickInvalidPlayers>true</KickInvalidPlayers>
+            <LogSuspiciousActivity>true</LogSuspiciousActivity>
+        </BoundaryValidation>
+        
+        <!-- TELEPORT DETECTION -->
+        <TeleportDetection>
+            <MaxAllowedDistance>20.0</MaxAllowedDistance>
+            <TimeWindow>1.0</TimeWindow>
+            <SuspiciousSpeedThreshold>50.0</SuspiciousSpeedThreshold>
+            <Action>VALIDATE_ENTRY_POINT</Action>
+        </TeleportDetection>
+        
+        <!-- NOCLIP DETECTION -->
+        <NoClipDetection>
+            <CheckCollisionMesh>true</CheckCollisionMesh>
+            <RequiredCollisionTypes>
+                <Type>WALL</Type>
+                <Type>FLOOR</Type>
+                <Type>CEILING</Type>
+            </RequiredCollisionTypes>
+            <Action>FORCE_VALID_POSITION</Action>
+        </NoClipDetection>
+        
+        <!-- VALID PLAYER STATES -->
+        <PlayerValidation>
+            <RequiredEntryValidation>true</RequiredEntryValidation>
+            <AllowedEntryMethods>
+                <Method>DOOR_TRIGGER</Method>
+                <Method>WINDOW_BREAK</Method>
+                <Method>ELEVATOR</Method>
+                <Method>MISSION_TELEPORT</Method>
+                <Method>ADMIN_TELEPORT</Method>
+            </AllowedEntryMethods>
+            <ForbiddenEntryMethods>
+                <Method>TELEPORT</Method>
+                <Method>NOCLIP</Method>
+                <Method>WALL_PHASE</Method>
+            </ForbiddenEntryMethods>
+            
+            <!-- MISSION SYSTEM -->
+            <MissionTeleportSystem>
+                <EnableMissionTeleports>true</EnableMissionTeleports>
+                <RequiresMissionID>true</RequiresMissionID>
+                <TeleportCooldown>5.0</TeleportCooldown>
+                <LogMissionTeleports>true</LogMissionTeleports>
+                <ValidMissionTypes>
+                    <Type>STORY_MISSION</Type>
+                    <Type>SIDE_MISSION</Type>
+                    <Type>EMERGENCY_RESPONSE</Type>
+                    <Type>ADMIN_OVERRIDE</Type>
+                </ValidMissionTypes>
+            </MissionTeleportSystem>
+            
+            <!-- ADMIN SYSTEM -->
+            <AdminOverrideSystem>
+                <EnableAdminOverrides>true</EnableAdminOverrides>
+                <AllowAdminNoclip>true</AllowAdminNoclip>
+                <AllowAdminTeleport>true</AllowAdminTeleport>
+                <LogAdminActions>true</LogAdminActions>
+                <RequireAdminAuth>true</RequireAdminAuth>
+            </AdminOverrideSystem>
+        </PlayerValidation>
+    </InteriorSecurity>
+
+    <!-- ========== COLLISION VALIDATION SYSTEM ========== -->
+    <CollisionValidation>
+        <!-- MESH COLLISION CHECKS -->
+        <MeshCollisionChecks>
+            <EnablePlayerMeshCollision>true</EnablePlayerMeshCollision>
+            <EnableVehicleMeshCollision>true</EnableVehicleMeshCollision>
+            <EnableObjectMeshCollision>true</EnableObjectMeshCollision>
+            
+            <!-- COLLISION LAYERS -->
+            <CollisionLayers>
+                <Layer name="INTERIOR_WALLS" enabled="true" blocking="true"/>
+                <Layer name="INTERIOR_FLOORS" enabled="true" blocking="true"/>
+                <Layer name="INTERIOR_CEILINGS" enabled="true" blocking="true"/>
+                <Layer name="FURNITURE" enabled="true" blocking="true"/>
+                <Layer name="DOORS" enabled="true" blocking="false"/>
+                <Layer name="WINDOWS" enabled="true" blocking="true"/>
+                <Layer name="INVISIBLE_BARRIERS" enabled="true" blocking="true"/>
+            </CollisionLayers>
+        </MeshCollisionChecks>
+        
+        <!-- PENETRATION DETECTION -->
+        <PenetrationDetection>
+            <CheckWallPenetration>true</CheckWallPenetration>
+            <CheckFloorPenetration>true</CheckFloorPenetration>
+            <CheckCeilingPenetration>true</CheckCeilingPenetration>
+            <MaxAllowedPenetration>0.5</MaxAllowedPenetration>
+            <PenetrationAction>FORCE_CORRECTION</PenetrationAction>
+        </PenetrationDetection>
+        
+        <!-- POSITION VALIDATION -->
+        <PositionValidation>
+            <ValidateOnEntry>true</ValidateOnEntry>
+            <ValidateOnMovement>true</ValidateOnMovement>
+            <ValidateOnTeleport>true</ValidateOnTeleport>
+            <ContinuousValidation>true</ContinuousValidation>
+            <ValidationFrequency>0.1</ValidationFrequency>
+        </PositionValidation>
+        
+        <!-- CORRECTION ACTIONS -->
+        <CorrectionActions>
+            <InvalidPositionAction>MOVE_TO_NEAREST_VALID</InvalidPositionAction>
+            <WallPenetrationAction>PUSH_TO_SURFACE</WallPenetrationAction>
+            <FloorPenetrationAction>RAISE_TO_FLOOR</FloorPenetrationAction>
+            <CeilingPenetrationAction>LOWER_TO_CEILING</CeilingPenetrationAction>
+            <TeleportViolationAction>RETURN_TO_ENTRY_POINT</TeleportViolationAction>
+        </CorrectionActions>
+        
+        <!-- EMERGENCY FALLBACKS -->
+        <EmergencyFallbacks>
+            <InvalidPositionFallback>
+                <Position x="0.0" y="-45.0" z="2.0"/>
+                <Description>Main entrance fallback</Description>
+            </InvalidPositionFallback>
+            <ExtremeViolationFallback>
+                <Position x="148.0" y="195.0" z="2.0"/>
+                <Description>Exterior position fallback</Description>
+                <ForceExterior>true</ForceExterior>
+            </ExtremeViolationFallback>
+        </EmergencyFallbacks>
+    </CollisionValidation>
+
+    <!-- ========== DOOR INTERACTION SYSTEM ========== -->
+    <DoorInteractionSystem>
+        <!-- DOOR TRIGGERS -->
+        <DoorTriggers>
+            <Trigger>
+                <Name>main_door_trigger</Name>
+                <Position x="148.0" y="195.0" z="2.0"/>
+                <TriggerRadius>3.0</TriggerRadius>
+                <RequiredInteraction>USE_KEY</RequiredInteraction>
+                <InteractionPrompt>Press [E] to enter building</InteractionPrompt>
+                <ValidatesEntry>true</ValidatesEntry>
+                <LogsEntry>true</LogsEntry>
+                <ConnectedEntryPoint>main_entrance</ConnectedEntryPoint>
+            </Trigger>
+            
+            <Trigger>
+                <Name>side_door_trigger</Name>
+                <Position x="155.0" y="205.0" z="2.0"/>
+                <TriggerRadius>2.5</TriggerRadius>
+                <RequiredInteraction>USE_KEY</RequiredInteraction>
+                <InteractionPrompt>Press [E] to enter side door</InteractionPrompt>
+                <ValidatesEntry>true</ValidatesEntry>
+                <LogsEntry>true</LogsEntry>
+                <ConnectedEntryPoint>side_entrance</ConnectedEntryPoint>
+            </Trigger>
+            
+            <Trigger>
+                <Name>garage_door_trigger</Name>
+                <Position x="140.0" y="210.0" z="-8.0"/>
+                <TriggerRadius>5.0</TriggerRadius>
+                <RequiredInteraction>PROXIMITY</RequiredInteraction>
+                <InteractionPrompt>Garage door opening...</InteractionPrompt>
+                <ValidatesEntry>true</ValidatesEntry>
+                <LogsEntry>true</LogsEntry>
+                <ConnectedEntryPoint>parking_garage</ConnectedEntryPoint>
+                <AllowsVehicles>true</AllowsVehicles>
+            </Trigger>
+        </DoorTriggers>
+        
+        <!-- ENTRY VALIDATION -->
+        <EntryValidation>
+            <RequireValidDoorTrigger>true</RequireValidDoorTrigger>
+            <LogAllEntryAttempts>true</LogAllEntryAttempts>
+            <BlockInvalidEntries>true</BlockInvalidEntries>
+            <KickRepeatedViolators>true</KickRepeatedViolators>
+            <MaxViolationsBeforeKick>3</MaxViolationsBeforeKick>
+        </EntryValidation>
+        
+        <!-- EXIT VALIDATION -->
+        <ExitValidation>
+            <RequireValidExitTrigger>true</RequireValidExitTrigger>
+            <LogAllExitAttempts>true</LogAllExitAttempts>
+            <BlockInvalidExits>false</BlockInvalidExits>
+            <AllowEmergencyExits>true</AllowEmergencyExits>
+        </ExitValidation>
+    </DoorInteractionSystem>
+
+    <!-- ========== FLOOR DEFINITIONS ========== -->
+    <Floors>
+        <!-- GROUND FLOOR - LOBBY -->
+        <Floor id="0">
+            <FloorName>Ground Floor - Lobby</FloorName>
+            <FloorHeight>0.0</FloorHeight>
+            <CeilingHeight>5.0</CeilingHeight>
+            <FloorType>LOBBY</FloorType>
+            
+            <!-- SANDBOX GAMEPLAY ELEMENTS -->
+            <SandboxElements>
+                <InteractionType>SOCIAL_HUB</InteractionType>
+                <PhysicsPlayground>true</PhysicsPlayground>
+                <AllowsVehicles>false</AllowsVehicles>
+                <DestructionLevel>PARTIAL</DestructionLevel>
+                <SpawnableProps>
+                    <Prop>chairs</Prop>
+                    <Prop>tables</Prop>
+                    <Prop>computers</Prop>
+                    <Prop>trash_cans</Prop>
+                </SpawnableProps>
+                <MaxPlayers>32</MaxPlayers>
+            </SandboxElements>
+            
+            <!-- DYNAMIC INTERACTIONS -->
+            <InteractionZones>
+                <Zone type="ELEVATOR_CALL" position="0,0,0" radius="5.0"/>
+                <Zone type="RECEPTION_DESK" position="0,-30,0" radius="3.0"/>
+                <Zone type="SEATING_AREA" position="20,20,0" radius="10.0"/>
+            </InteractionZones>
+            
+            <Furniture>
+                <Object>
+                    <ObjectName>reception_desk_01</ObjectName>
+                    <ObjectHash>0xB1A2C384</ObjectHash>
+                    <ObjectReference>Data/Objects/Objects.xml#reception_desk_01</ObjectReference>
+                    
+                    <Transform>
+                        <Position x="0.0" y="-30.0" z="0.0"/>
+                        <Rotation x="0.0" y="0.0" z="0.0"/>
+                        <Scale x="1.0" y="1.0" z="1.0"/>
+                    </Transform>
+                    
+                    <Flags>
+                        <IsStatic>true</IsStatic>
+                        <CastShadows>true</CastShadows>
+                        <ReceiveShadows>true</ReceiveShadows>
+                        <IsDestructible>false</IsDestructible>
+                        <HasCollision>true</HasCollision>
+                        <IsInteractable>true</IsInteractable>
+                    </Flags>
+                </Object>
+
+                <Object>
+                    <ObjectName>office_chair_01</ObjectName>
+                    <ObjectHash>0xC2B3D495</ObjectHash>
+                    <ObjectReference>Data/Objects/Objects.xml#office_chair_01</ObjectReference>
+                    
+                    <Transform>
+                        <Position x="0.0" y="-28.0" z="0.0"/>
+                        <Rotation x="0.0" y="0.0" z="180.0"/>
+                        <Scale x="1.0" y="1.0" z="1.0"/>
+                    </Transform>
+                    
+                    <Flags>
+                        <IsStatic>false</IsStatic>
+                        <CastShadows>true</CastShadows>
+                        <ReceiveShadows>true</ReceiveShadows>
+                        <IsDestructible>false</IsDestructible>
+                        <HasCollision>true</HasCollision>
+                        <IsMoveable>true</IsMoveable>
+                        <CanBePushed>true</CanBePushed>
+                    </Flags>
+                    
+                    <Animation>
+                        <AnimationType>CHAIR_SPIN</AnimationType>
+                        <InteractionRequired>true</InteractionRequired>
+                    </Animation>
+                </Object>
+
+                <Object>
+                    <ObjectName>elevator_doors_01</ObjectName>
+                    <ObjectHash>0xD3C4E5A6</ObjectHash>
+                    <ObjectReference>Data/Objects/Objects.xml#elevator_doors_01</ObjectReference>
+                    
+                    <Transform>
+                        <Position x="-40.0" y="0.0" z="0.0"/>
+                        <Rotation x="0.0" y="0.0" z="90.0"/>
+                        <Scale x="1.0" y="1.0" z="1.0"/>
+                    </Transform>
+                    
+                    <Flags>
+                        <IsStatic>true</IsStatic>
+                        <CastShadows>true</CastShadows>
+                        <ReceiveShadows>true</ReceiveShadows>
+                        <IsDestructible>false</IsDestructible>
+                        <HasCollision>true</HasCollision>
+                        <IsInteractable>true</IsInteractable>
+                        <IsElevator>true</IsElevator>
+                    </Flags>
+                    
+                    <Animation>
+                        <AnimationType>ELEVATOR_DOORS</AnimationType>
+                        <InteractionRequired>true</InteractionRequired>
+                        <OpenSpeed>2.0</OpenSpeed>
+                        <CloseSpeed>2.0</CloseSpeed>
+                    </Animation>
+                    
+                    <ElevatorSettings>
+                        <AccessibleFloors>
+                            <Floor>0</Floor>
+                            <Floor>5</Floor>
+                            <Floor>10</Floor>
+                            <Floor>15</Floor>
+                            <Floor>20</Floor>
+                        </AccessibleFloors>
+                        <TravelTime>3.0</TravelTime>
+                    </ElevatorSettings>
+                </Object>
+            </Furniture>
+        </Floor>
+
+        <!-- OFFICE FLOOR TEMPLATE -->
+        <Floor id="5">
+            <FloorName>5th Floor - Executive Offices</FloorName>
+            <FloorHeight>25.0</FloorHeight>
+            <CeilingHeight>30.0</CeilingHeight>
+            <FloorType>OFFICE</FloorType>
+            
+            <!-- SANDBOX GAMEPLAY ELEMENTS -->
+            <SandboxElements>
+                <InteractionType>DESTRUCTION_PLAYGROUND</InteractionType>
+                <PhysicsPlayground>true</PhysicsPlayground>
+                <AllowsVehicles>false</AllowsVehicles>
+                <DestructionLevel>FULL</DestructionLevel>
+                <SpawnableProps>
+                    <Prop>office_chairs</Prop>
+                    <Prop>desks</Prop>
+                    <Prop>computers</Prop>
+                    <Prop>filing_cabinets</Prop>
+                    <Prop>potted_plants</Prop>
+                    <Prop>office_supplies</Prop>
+                </SpawnableProps>
+                <MaxPlayers>16</MaxPlayers>
+                <AllowsWeapons>true</AllowsWeapons>
+                <AllowsExplosives>true</AllowsExplosives>
+            </SandboxElements>
+            
+            <!-- PHYSICS INTERACTIONS -->
+            <PhysicsZones>
+                <Zone type="BREAKABLE_WINDOWS" count="8" destructible="true"/>
+                <Zone type="MOVEABLE_FURNITURE" weight="light" pushable="true"/>
+                <Zone type="THROWABLE_OBJECTS" size="small" grabbable="true"/>
+            </PhysicsZones>
+            
+            <!-- MULTIPLAYER FEATURES -->
+            <MultiplayerFeatures>
+                <AllowsPropSpawning>true</AllowsPropSpawning>
+                <AllowsToolUse>true</AllowsToolUse>
+                <MaxPropsPerPlayer>50</MaxPropsPerPlayer>
+                <RespawnTime>30.0</RespawnTime>
+            </MultiplayerFeatures>
+            
+            <Furniture>
+                <Object>
+                    <ObjectName>office_desk_executive_01</ObjectName>
+                    <ObjectHash>0xE4D5F6B7</ObjectHash>
+                    <ObjectReference>Data/Objects/Objects.xml#office_desk_executive_01</ObjectReference>
+                    
+                    <Transform>
+                        <Position x="20.0" y="10.0" z="25.0"/>
+                        <Rotation x="0.0" y="0.0" z="45.0"/>
+                        <Scale x="1.0" y="1.0" z="1.0"/>
+                    </Transform>
+                    
+                    <Flags>
+                        <IsStatic>true</IsStatic>
+                        <CastShadows>true</CastShadows>
+                        <ReceiveShadows>true</ReceiveShadows>
+                        <IsDestructible>true</IsDestructible>
+                        <HasCollision>true</HasCollision>
+                        <IsInteractable>true</IsInteractable>
+                        <HasDrawers>true</HasDrawers>
+                    </Flags>
+                </Object>
+
+                <Object>
+                    <ObjectName>office_computer_01</ObjectName>
+                    <ObjectHash>0xF5E607C8</ObjectHash>
+                    <ObjectReference>Data/Objects/Objects.xml#office_computer_01</ObjectReference>
+                    
+                    <Transform>
+                        <Position x="18.0" y="8.0" z="25.8"/>
+                        <Rotation x="0.0" y="0.0" z="45.0"/>
+                        <Scale x="1.0" y="1.0" z="1.0"/>
+                    </Transform>
+                    
+                    <Flags>
+                        <IsStatic>true</IsStatic>
+                        <CastShadows>true</CastShadows>
+                        <ReceiveShadows>true</ReceiveShadows>
+                        <IsDestructible>true</IsDestructible>
+                        <HasCollision>true</HasCollision>
+                        <IsInteractable>true</IsInteractable>
+                        <IsElectronic>true</IsElectronic>
+                    </Flags>
+                    
+                    <Animation>
+                        <AnimationType>SCREEN_FLICKER</AnimationType>
+                        <FlickerRate>0.1</FlickerRate>
+                        <IsAlwaysOn>true</IsAlwaysOn>
+                    </Animation>
+                </Object>
+            </Furniture>
+        </Floor>
+
+        <!-- ROOFTOP ACCESS -->
+        <Floor id="20">
+            <FloorName>Rooftop Access</FloorName>
+            <FloorHeight>100.0</FloorHeight>
+            <CeilingHeight>105.0</CeilingHeight>
+            <FloorType>ROOFTOP</FloorType>
+            
+            <!-- SANDBOX GAMEPLAY ELEMENTS -->
+            <SandboxElements>
+                <InteractionType>VEHICLE_PLAYGROUND</InteractionType>
+                <PhysicsPlayground>true</PhysicsPlayground>
+                <AllowsVehicles>true</AllowsVehicles>
+                <AllowsHelicopters>true</AllowsHelicopters>
+                <DestructionLevel>FULL</DestructionLevel>
+                <SpawnableProps>
+                    <Prop>shipping_containers</Prop>
+                    <Prop>concrete_barriers</Prop>
+                    <Prop>ramps</Prop>
+                    <Prop>explosive_barrels</Prop>
+                </SpawnableProps>
+                <MaxPlayers>32</MaxPlayers>
+                <AllowsWeapons>true</AllowsWeapons>
+                <AllowsExplosives>true</AllowsExplosives>
+                <AllowsJumping>true</AllowsJumping>
+            </SandboxElements>
+            
+            <!-- STUNT/PHYSICS ZONES -->
+            <StuntZones>
+                <Zone type="HELICOPTER_LANDING" position="0,0,100" radius="15.0"/>
+                <Zone type="PARKOUR_AREA" position="30,30,100" radius="20.0"/>
+                <Zone type="JUMP_RAMP" position="-30,40,100" angle="45"/>
+                <Zone type="EXPLOSION_SAFE" position="0,-40,100" radius="25.0"/>
+            </StuntZones>
+            
+            <!-- MULTIPLAYER FEATURES -->
+            <MultiplayerFeatures>
+                <AllowsPropSpawning>true</AllowsPropSpawning>
+                <AllowsVehicleSpawning>true</AllowsVehicleSpawning>
+                <AllowsToolUse>true</AllowsToolUse>
+                <MaxPropsPerPlayer>100</MaxPropsPerPlayer>
+                <MaxVehiclesPerPlayer>5</MaxVehiclesPerPlayer>
+                <RespawnTime>10.0</RespawnTime>
+                <PvPEnabled>true</PvPEnabled>
+            </MultiplayerFeatures>
+            
+            <Furniture>
+                <Object>
+                    <ObjectName>rooftop_access_door_01</ObjectName>
+                    <ObjectHash>0x06F718D9</ObjectHash>
+                    <ObjectReference>Data/Objects/Objects.xml#rooftop_access_door_01</ObjectReference>
+                    
+                    <Transform>
+                        <Position x="0.0" y="40.0" z="100.0"/>
+                        <Rotation x="0.0" y="0.0" z="0.0"/>
+                        <Scale x="1.0" y="1.0" z="1.0"/>
+                    </Transform>
+                    
+                    <Flags>
+                        <IsStatic>true</IsStatic>
+                        <CastShadows>true</CastShadows>
+                        <ReceiveShadows>true</ReceiveShadows>
+                        <IsDestructible>false</IsDestructible>
+                        <HasCollision>true</HasCollision>
+                        <IsInteractable>true</IsInteractable>
+                        <RequiresKey>true</RequiresKey>
+                    </Flags>
+                    
+                    <Animation>
+                        <AnimationType>DOOR_SWING</AnimationType>
+                        <InteractionRequired>true</InteractionRequired>
+                    </Animation>
+                </Object>
+
+                <Object>
+                    <ObjectName>hvac_unit_01</ObjectName>
+                    <ObjectHash>0x1708290A</ObjectHash>
+                    <ObjectReference>Data/Objects/Objects.xml#hvac_unit_01</ObjectReference>
+                    
+                    <Transform>
+                        <Position x="-20.0" y="0.0" z="100.0"/>
+                        <Rotation x="0.0" y="0.0" z="0.0"/>
+                        <Scale x="1.0" y="1.0" z="1.0"/>
+                    </Transform>
+                    
+                    <Flags>
+                        <IsStatic>true</IsStatic>
+                        <CastShadows>true</CastShadows>
+                        <ReceiveShadows>true</ReceiveShadows>
+                        <IsDestructible>true</IsDestructible>
+                        <HasCollision>true</HasCollision>
+                        <IsElectronic>true</IsElectronic>
+                        <MakesNoise>true</MakesNoise>
+                    </Flags>
+                    
+                    <Animation>
+                        <AnimationType>FAN_ROTATION</AnimationType>
+                        <RotationSpeed>360.0</RotationSpeed>
+                        <IsAlwaysOn>true</IsAlwaysOn>
+                    </Animation>
+                </Object>
+            </Furniture>
+        </Floor>
+    </Floors>
+
+    <!-- ========== LIGHTING SETTINGS ========== -->
+    <LightingSettings>
+        <AmbientLight>
+            <Color r="0.3" g="0.3" b="0.35" a="1.0"/>
+            <Intensity>0.5</Intensity>
+        </AmbientLight>
+        
+        <WindowLighting>
+            <HasWindows>true</HasWindows>
+            <WindowLightIntensity>0.8</WindowLightIntensity>
+            <TimeOfDayEffect>true</TimeOfDayEffect>
+        </WindowLighting>
+        
+        <ArtificialLighting>
+            <OfficeFloorLighting>
+                <LightType>FLUORESCENT</LightType>
+                <Intensity>1.0</Intensity>
+                <Color r="0.9" g="0.95" b="1.0" a="1.0"/>
+                <FlickerChance>0.05</FlickerChance>
+            </OfficeFloorLighting>
+            
+            <LobbyLighting>
+                <LightType>MIXED</LightType>
+                <Intensity>1.2</Intensity>
+                <Color r="1.0" g="0.9" b="0.8" a="1.0"/>
+            </LobbyLighting>
+        </ArtificialLighting>
+    </LightingSettings>
+
+    <!-- ========== AUDIO SETTINGS ========== -->
+    <AudioSettings>
+        <AmbientSounds>
+            <InteriorAmbient>Content/Audio/Ambients/office_building_ambient.wav</InteriorAmbient>
+            <HVACAmbient>Content/Audio/Ambients/hvac_hum.wav</HVACAmbient>
+            <ElevatorAmbient>Content/Audio/Ambients/elevator_ambient.wav</ElevatorAmbient>
+        </AmbientSounds>
+        
+        <ReverbSettings>
+            <LobbyReverb>LARGE_HALL</LobbyReverb>
+            <OfficeReverb>MEDIUM_ROOM</OfficeReverb>
+            <RooftopReverb>OUTDOOR</RooftopReverb>
+        </ReverbSettings>
+    </AudioSettings>
+
+    <!-- ========== STREAMING SETTINGS ========== -->
+    <StreamingSettings>
+        <FloorLOD>
+            <LoadRadius>25.0</LoadRadius>
+            <UnloadRadius>50.0</UnloadRadius>
+            <MaxActiveFloors>3</MaxActiveFloors>
+        </FloorLOD>
+        
+        <FurnitureLOD>
+            <LoadRadius>15.0</LoadRadius>
+            <UnloadRadius>30.0</UnloadRadius>
+            <MaxActiveFurniture>50</MaxActiveFurniture>
+        </FurnitureLOD>
+    </StreamingSettings>
+
+    <!-- ========== SECURITY SETTINGS ========== -->
+    <SecuritySettings>
+        <RestrictedAreas>
+            <Area name="executive_floor" floors="15,16,17,18,19,20" requiresKeycard="true"/>
+            <Area name="rooftop" floors="20" requiresKey="true"/>
+        </RestrictedAreas>
+        
+        <SecurityCameras>
+            <Camera floor="0" position="0,0,4" rotation="0,0,0" coverageRadius="20.0"/>
+            <Camera floor="5" position="30,30,27" rotation="0,0,225" coverageRadius="15.0"/>
+        </SecurityCameras>
+    </SecuritySettings>
+
+    <!-- ========== DEPENDENCIES ========== -->
+    <Dependencies>
+        <RequiredFiles>
+            <File>Data/Objects/Objects.xml</File>
+            <File>Data/Objects/ObjectMesh.xml</File>
+            <File>Data/Audio/AmbientSounds.xml</File>
+        </RequiredFiles>
+        
+        <ParentWPL>WPL_Downtown_01</ParentWPL>
+        <ConnectedInteriors>
+            <Interior>IPL_Parking_Garage_01</Interior>
+        </ConnectedInteriors>
+    </Dependencies>
+</InteriorPlacement>

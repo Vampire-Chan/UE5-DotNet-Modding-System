@@ -1,0 +1,14 @@
+<PedPropMesh>
+<Prop Name="NikoProp">
+<!-- Continue the same for other component and it's sub component, use PropComponent for the Hat, Eyes, Ear etc.. -->
+		<PropComponent Name="Head" AltName="P_Head">
+			<Material Index="0" Name="M_Ped"/>
+		</PropComponent>
+		<PropComponent Name="Eyes" AltName="P_Eyes">
+			<Material Index="0" Name="M_Ped"/>
+		</PropComponent>
+		<PropComponent Name="Ears" AltName="P_Ears">
+			<Material Index="0" Name="M_Ped"/>
+		</PropComponent>
+        </Prop>
+        </PedPropMesh>

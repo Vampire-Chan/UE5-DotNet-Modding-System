@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Music>
+    <RadioStation name="FlashFM">
+        <Track id="1">
+            <Title>Self Control</Title>
+            <Artist>Laura Branigan</Artist>
+            <SoundFile>/Game/Audio/Music/Radio/FlashFM/self_control</SoundFile>
+        </Track>
+	<Track id="2">
+            <Title>Self Control</Title>
+            <Artist>Laura Branigan</Artist>
+            <SoundFile>/Game/Audio/Music/Radio/FlashFM/self_control</SoundFile>
+        </Track>
+<Track id="3">
+            <Title>Self Control</Title>
+            <Artist>Laura Branigan</Artist>
+            <SoundFile>/Game/Audio/Music/Radio/FlashFM/self_control</SoundFile>
+        </Track>
+    </RadioStation>
+	<RadioStation name="RadioCrazy">
+		<Track id="1">
+			<Title>Daddy Loves their Child</Title>
+			<Artist>Zhong Mao</Artist>
+			<SoundFile>/Game/Audio/Music/Radio/RadioCrazy/ChildPlay</SoundFile>
+		</Track>
+		<Track id="2">
+			<Title>Fight Zombie</Title>
+			<Artist>Trevor</Artist>
+			<SoundFile>/Game/Audio/Music/Radio/RadioCrazy/TrevorLifestyle</SoundFile>
+		</Track>
+		<Track id="3">
+			<Title>Self Control</Title>
+			<Artist>Laura Branigan</Artist>
+			<SoundFile>/Game/Audio/Music/Radio/FlashFM/self_control</SoundFile>
+		</Track>
+	</RadioStation>
+</Music>

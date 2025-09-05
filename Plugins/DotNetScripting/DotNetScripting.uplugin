@@ -1,0 +1,26 @@
+
+{
+    "FileVersion": 3,
+    "Version": 1,
+    "VersionName": "0.1",
+    "FriendlyName": "DotNet Scripting",
+    "Description": "A plugin to enable .NET scripting in Unreal Engine.",
+    "Category": "Scripting",
+    "CreatedBy": "Gemini",
+    "CreatedByURL": "",
+    "DocsURL": "",
+    "MarketplaceURL": "",
+    "SupportURL": "",
+    "CanContainContent": false,
+    "IsBetaVersion": true,
+    "IsExperimentalVersion": true,
+    "Installed": false,
+    "EngineVersion": "5.6.0",
+    "Modules": [
+        {
+            "Name": "DotNetScripting",
+            "Type": "Runtime",
+            "LoadingPhase": "Default"
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PedIntelligence>
+
+    <!-- Civilian Profiles -->
+    <Profile Name="Timid_Civilian" Archetype="Civilian" Temperament="Timid" PerceptionInfo="DEFAULT_PERCEPTION" CombatInfo="SCARED_ANIMAL" OnThreatDetected="Flee" OnTakingDamage="Flee" FleeDistance="6000" IdleBehavior="Wander" />
+    <Profile Name="Brave_Civilian" Archetype="Civilian" Temperament="Brave" PerceptionInfo="DEFAULT_PERCEPTION" CombatInfo="DEFAULT" OnThreatDetected="Attack" OnTakingDamage="Attack" FleeDistance="0" IdleBehavior="StandStill" />
+
+    <!-- Law Enforcement Profiles -->
+    <Profile Name="Patrolling_Cop" Archetype="Cop" Temperament="Brave" PerceptionInfo="DEFAULT_PERCEPTION" CombatInfo="COP" OnThreatDetected="Attack" OnTakingDamage="Attack" FleeDistance="0" IdleBehavior="Patrol" />
+
+    <!-- Gang Member Profiles -->
+    <Profile Name="Aggressive_Gang_Member" Archetype="Gang" Temperament="Aggressive" PerceptionInfo="DEFAULT_PERCEPTION" CombatInfo="GANG" OnThreatDetected="Attack" OnTakingDamage="Attack" FleeDistance="0" IdleBehavior="Wander" />
+
+</PedIntelligence>

@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <UseAppHost>false</UseAppHost>
+    <EnableDynamicLoading>true</EnableDynamicLoading>
+    <!-- Build to temp location first -->
+    <OutputPath>bin\$(Configuration)\</OutputPath>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+  </PropertyGroup>
+
+  <!-- Copy to game binaries after build -->
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <ItemGroup>
+      <OutputFiles Include="$(OutputPath)**\*.*" />
+    </ItemGroup>
+    <MakeDir Directories="$(MSBuildProjectDirectory)\..\..\..\Binaries\Win64\DotNet\Mods\" />
+    <Copy SourceFiles="@(OutputFiles)" DestinationFolder="$(MSBuildProjectDirectory)\..\..\..\Binaries\Win64\DotNet\Mods\" />
+  </Target>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\GameModding\GameModding.csproj" />
+  </ItemGroup>
+
+</Project>

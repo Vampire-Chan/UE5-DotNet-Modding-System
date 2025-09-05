@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VehicleMeshes>
+    
+    <!-- ========== CAR MESHES ========== -->
+    
+    <VehicleMesh name="adder">
+        <MainMesh path="/Game/Vehicles/Sports/Adder/Adder_Base" />
+        <SkeletonPath>/Game/Vehicles/Sports/Adder/SK_Adder</SkeletonPath>
+        
+        <!-- Auto-detected parts through bone hierarchy -->
+        <!-- Engine will automatically find: door_left, door_right, hood, trunk, etc. -->
+        
+        <!-- Material Assignments -->
+        <Materials>
+            <Material part="body" material="/Game/Materials/Vehicles/Sports_Car_Paint" />
+            <Material part="trim" material="/Game/Materials/Vehicles/Chrome_Trim" />
+            <Material part="glass_windshield" material="/Game/Materials/Vehicles/Windshield_Glass" />
+            <Material part="glass_windows" material="/Game/Materials/Vehicles/Window_Glass" />
+            <Material part="tires" material="/Game/Materials/Vehicles/Sports_Tire" />
+            <Material part="wheels" material="/Game/Materials/Vehicles/Alloy_Wheels" />
+            <Material part="lights_front" material="/Game/Materials/Vehicles/Headlight_Glass" />
+            <Material part="lights_rear" material="/Game/Materials/Vehicles/Taillight_Plastic" />
+            <Material part="interior" material="/Game/Materials/Vehicles/Sports_Interior" />
+            <Material part="engine" material="/Game/Materials/Vehicles/Engine_Block" />
+        </Materials>
+        
+        <!-- Deformation Zones (auto-mapped to bones) -->
+        <DeformationZones>
+            <Zone bone="hood" stiffness="0.3" max_displacement="60.0" />
+            <Zone bone="door_left" stiffness="0.25" max_displacement="70.0" />
+            <Zone bone="door_right" stiffness="0.25" max_displacement="70.0" />
+            <Zone bone="trunk" stiffness="0.3" max_displacement="50.0" />
+            <Zone bone="bumper_front" stiffness="0.1" max_displacement="80.0" />
+            <Zone bone="bumper_rear" stiffness="0.15" max_displacement="75.0" />
+            <Zone bone="roof" stiffness="0.8" max_displacement="20.0" />
+            <Zone bone="pillar_a_left" stiffness="0.9" max_displacement="15.0" />
+            <Zone bone="pillar_a_right" stiffness="0.9" max_displacement="15.0" />
+        </DeformationZones>
+        
+        <!-- Glass Components (auto-shatter system) -->
+        <GlassComponents>
+            <Glass bone="windshield" shatter_threshold="150.0" crack_threshold="75.0" />
+            <Glass bone="window_front_left" shatter_threshold="50.0" crack_threshold="25.0" />
+            <Glass bone="window_front_right" shatter_threshold="50.0" crack_threshold="25.0" />
+            <Glass bone="window_rear_left" shatter_threshold="50.0" crack_threshold="25.0" />
+            <Glass bone="window_rear_right" shatter_threshold="50.0" crack_threshold="25.0" />
+            <Glass bone="rear_windshield" shatter_threshold="100.0" crack_threshold="50.0" />
+        </GlassComponents>
+    </VehicleMesh>
+
+    <VehicleMesh name="baller">
+        <MainMesh path="/Game/Vehicles/SUV/Baller/Baller_Base" />
+        <SkeletonPath>/Game/Vehicles/SUV/Baller/SK_Baller</SkeletonPath>
+        
+        <Materials>
+            <Material part="body" material="/Game/Materials/Vehicles/SUV_Paint" />
+            <Material part="trim" material="/Game/Materials/Vehicles/Black_Plastic_Trim" />
+            <Material part="glass_windshield" material="/Game/Materials/Vehicles/Windshield_Glass" />
+            <Material part="glass_windows" material="/Game/Materials/Vehicles/Tinted_Glass" />
+            <Material part="tires" material="/Game/Materials/Vehicles/SUV_Tire" />
+            <Material part="wheels" material="/Game/Materials/Vehicles/SUV_Wheels" />
+            <Material part="bumpers" material="/Game/Materials/Vehicles/Plastic_Bumper" />
+            <Material part="roof_rails" material="/Game/Materials/Vehicles/Aluminum_Rails" />
+        </Materials>
+        
+        <DeformationZones>
+            <Zone bone="hood" stiffness="0.4" max_displacement="50.0" />
+            <Zone bone="door_left" stiffness="0.35" max_displacement="60.0" />
+            <Zone bone="door_right" stiffness="0.35" max_displacement="60.0" />
+            <Zone bone="tailgate" stiffness="0.4" max_displacement="45.0" />
+            <Zone bone="bumper_front" stiffness="0.2" max_displacement="70.0" />
+            <Zone bone="bumper_rear" stiffness="0.25" max_displacement="65.0" />
+            <Zone bone="roof" stiffness="0.85" max_displacement="25.0" />
+            <Zone bone="side_panel_left" stiffness="0.6" max_displacement="40.0" />
+            <Zone bone="side_panel_right" stiffness="0.6" max_displacement="40.0" />
+        </DeformationZones>
+        
+        <GlassComponents>
+            <Glass bone="windshield" shatter_threshold="200.0" crack_threshold="100.0" />
+            <Glass bone="window_front_left" shatter_threshold="75.0" crack_threshold="35.0" />
+            <Glass bone="window_front_right" shatter_threshold="75.0" crack_threshold="35.0" />
+            <Glass bone="window_rear_left" shatter_threshold="75.0" crack_threshold="35.0" />
+            <Glass bone="window_rear_right" shatter_threshold="75.0" crack_threshold="35.0" />
+            <Glass bone="rear_windshield" shatter_threshold="150.0" crack_threshold="75.0" />
+        </GlassComponents>
+    </VehicleMesh>
+
+    <!-- ========== MOTORCYCLE MESHES ========== -->
+    
+    <VehicleMesh name="akuma">
+        <MainMesh path="/Game/Vehicles/Bikes/Akuma/Akuma_Base" />
+        <SkeletonPath>/Game/Vehicles/Bikes/Akuma/SK_Akuma</SkeletonPath>
+        
+        <Materials>
+            <Material part="frame" material="/Game/Materials/Vehicles/Bike_Frame" />
+            <Material part="engine" material="/Game/Materials/Vehicles/Bike_Engine" />
+            <Material part="fuel_tank" material="/Game/Materials/Vehicles/Bike_Tank" />
+            <Material part="seat" material="/Game/Materials/Vehicles/Bike_Leather" />
+            <Material part="wheels" material="/Game/Materials/Vehicles/Bike_Wheels" />
+            <Material part="tires" material="/Game/Materials/Vehicles/Sport_Bike_Tire" />
+            <Material part="windscreen" material="/Game/Materials/Vehicles/Bike_Windscreen" />
+            <Material part="exhaust" material="/Game/Materials/Vehicles/Chrome_Exhaust" />
+        </Materials>
+        
+        <!-- Motorcycles have extreme vulnerability -->
+        <DeformationZones>
+            <Zone bone="frame_main" stiffness="0.6" max_displacement="30.0" />
+            <Zone bone="fuel_tank" stiffness="0.1" max_displacement="40.0" />
+            <Zone bone="front_fender" stiffness="0.05" max_displacement="60.0" />
+            <Zone bone="rear_fender" stiffness="0.05" max_displacement="50.0" />
+            <Zone bone="windscreen" stiffness="0.02" max_displacement="80.0" />
+            <Zone bone="exhaust" stiffness="0.3" max_displacement="45.0" />
+        </DeformationZones>
+        
+        <GlassComponents>
+            <Glass bone="windscreen" shatter_threshold="25.0" crack_threshold="10.0" />
+            <Glass bone="speedometer" shatter_threshold="15.0" crack_threshold="5.0" />
+        </GlassComponents>
+    </VehicleMesh>
+
+    <!-- ========== HELICOPTER MESHES ========== -->
+    
+    <VehicleMesh name="buzzard">
+        <MainMesh path="/Game/Vehicles/Helicopters/Buzzard/Buzzard_Base" />
+        <SkeletonPath>/Game/Vehicles/Helicopters/Buzzard/SK_Buzzard</SkeletonPath>
+        
+        <Materials>
+            <Material part="fuselage" material="/Game/Materials/Vehicles/Military_Armor" />
+            <Material part="cockpit_glass" material="/Game/Materials/Vehicles/Aircraft_Glass" />
+            <Material part="rotor_main" material="/Game/Materials/Vehicles/Carbon_Fiber" />
+            <Material part="rotor_tail" material="/Game/Materials/Vehicles/Carbon_Fiber" />
+            <Material part="landing_gear" material="/Game/Materials/Vehicles/Steel_Landing_Gear" />
+            <Material part="engine" material="/Game/Materials/Vehicles/Turbine_Engine" />
+            <Material part="weapon_mounts" material="/Game/Materials/Vehicles/Weapon_Mount" />
+        </Materials>
+        
+        <!-- Military aircraft - very resistant but critical points -->
+        <DeformationZones>
+            <Zone bone="fuselage_main" stiffness="0.9" max_displacement="15.0" />
+            <Zone bone="tail_boom" stiffness="0.85" max_displacement="20.0" />
+            <Zone bone="rotor_main_hub" stiffness="0.95" max_displacement="5.0" />
+            <Zone bone="rotor_tail_hub" stiffness="0.9" max_displacement="8.0" />
+            <Zone bone="landing_gear_left" stiffness="0.4" max_displacement="35.0" />
+            <Zone bone="landing_gear_right" stiffness="0.4" max_displacement="35.0" />
+            <Zone bone="cockpit" stiffness="0.8" max_displacement="12.0" />
+        </DeformationZones>
+        
+        <GlassComponents>
+            <Glass bone="cockpit_windscreen" shatter_threshold="300.0" crack_threshold="150.0" />
+            <Glass bone="cockpit_side_left" shatter_threshold="200.0" crack_threshold="100.0" />
+            <Glass bone="cockpit_side_right" shatter_threshold="200.0" crack_threshold="100.0" />
+        </GlassComponents>
+        
+        <!-- Critical Components for Flight -->
+        <CriticalComponents>
+            <Component bone="rotor_main_hub" failure_threshold="100.0" affects="flight_capability" />
+            <Component bone="rotor_tail_hub" failure_threshold="80.0" affects="yaw_control" />
+            <Component bone="engine" failure_threshold="200.0" affects="power" />
+            <Component bone="tail_boom" failure_threshold="300.0" affects="stability" />
+        </CriticalComponents>
+    </VehicleMesh>
+
+    <!-- ========== MILITARY VEHICLE MESHES ========== -->
+    
+    <VehicleMesh name="barracks">
+        <MainMesh path="/Game/Vehicles/Military/Barracks/Barracks_Base" />
+        <SkeletonPath>/Game/Vehicles/Military/Barracks/SK_Barracks</SkeletonPath>
+        
+        <Materials>
+            <Material part="armor_hull" material="/Game/Materials/Vehicles/Military_Armor_Plate" />
+            <Material part="wheels" material="/Game/Materials/Vehicles/Military_Wheels" />
+            <Material part="tires" material="/Game/Materials/Vehicles/Heavy_Duty_Tire" />
+            <Material part="glass_windshield" material="/Game/Materials/Vehicles/Bulletproof_Glass" />
+            <Material part="canvas_top" material="/Game/Materials/Vehicles/Military_Canvas" />
+            <Material part="exhaust" material="/Game/Materials/Vehicles/Military_Exhaust" />
+            <Material part="weapon_mount" material="/Game/Materials/Vehicles/Weapon_Mount" />
+        </Materials>
+        
+        <!-- Extremely tough military vehicle -->
+        <DeformationZones>
+            <Zone bone="armor_front" stiffness="0.95" max_displacement="8.0" />
+            <Zone bone="armor_side_left" stiffness="0.92" max_displacement="10.0" />
+            <Zone bone="armor_side_right" stiffness="0.92" max_displacement="10.0" />
+            <Zone bone="armor_rear" stiffness="0.9" max_displacement="12.0" />
+            <Zone bone="canvas_top" stiffness="0.1" max_displacement="60.0" />
+            <Zone bone="bumper_front" stiffness="0.8" max_displacement="15.0" />
+            <Zone bone="wheel_well_left" stiffness="0.7" max_displacement="20.0" />
+            <Zone bone="wheel_well_right" stiffness="0.7" max_displacement="20.0" />
+        </DeformationZones>
+        
+        <GlassComponents>
+            <Glass bone="windshield" shatter_threshold="500.0" crack_threshold="250.0" />
+            <Glass bone="window_side_left" shatter_threshold="400.0" crack_threshold="200.0" />
+            <Glass bone="window_side_right" shatter_threshold="400.0" crack_threshold="200.0" />
+        </GlassComponents>
+        
+        <CriticalComponents>
+            <Component bone="engine_block" failure_threshold="800.0" affects="mobility" />
+            <Component bone="transmission" failure_threshold="600.0" affects="drive_train" />
+            <Component bone="fuel_tank" failure_threshold="300.0" affects="fuel_system" />
+        </CriticalComponents>
+    </VehicleMesh>
+
+    <!-- ========== BOAT MESHES ========== -->
+    
+    <VehicleMesh name="jetmax">
+        <MainMesh path="/Game/Vehicles/Boats/Jetmax/Jetmax_Base" />
+        <SkeletonPath>/Game/Vehicles/Boats/Jetmax/SK_Jetmax</SkeletonPath>
+        
+        <Materials>
+            <Material part="hull" material="/Game/Materials/Vehicles/Fiberglass_Hull" />
+            <Material part="deck" material="/Game/Materials/Vehicles/Boat_Deck" />
+            <Material part="windscreen" material="/Game/Materials/Vehicles/Boat_Windscreen" />
+            <Material part="engine_cover" material="/Game/Materials/Vehicles/Engine_Cover" />
+            <Material part="seats" material="/Game/Materials/Vehicles/Marine_Vinyl" />
+            <Material part="steering_wheel" material="/Game/Materials/Vehicles/Boat_Steering" />
+            <Material part="propeller" material="/Game/Materials/Vehicles/Propeller_Metal" />
+        </Materials>
+        
+        <DeformationZones>
+            <Zone bone="bow" stiffness="0.3" max_displacement="50.0" />
+            <Zone bone="stern" stiffness="0.4" max_displacement="40.0" />
+            <Zone bone="hull_port" stiffness="0.5" max_displacement="35.0" />
+            <Zone bone="hull_starboard" stiffness="0.5" max_displacement="35.0" />
+            <Zone bone="engine_cover" stiffness="0.2" max_displacement="45.0" />
+            <Zone bone="windscreen" stiffness="0.05" max_displacement="70.0" />
+        </DeformationZones>
+        
+        <GlassComponents>
+            <Glass bone="windscreen" shatter_threshold="75.0" crack_threshold="35.0" />
+            <Glass bone="instrument_panel" shatter_threshold="50.0" crack_threshold="20.0" />
+        </GlassComponents>
+        
+        <CriticalComponents>
+            <Component bone="hull_bottom" failure_threshold="200.0" affects="buoyancy" />
+            <Component bone="engine" failure_threshold="150.0" affects="propulsion" />
+            <Component bone="propeller" failure_threshold="100.0" affects="thrust" />
+        </CriticalComponents>
+    </VehicleMesh>
+
+</VehicleMeshes>

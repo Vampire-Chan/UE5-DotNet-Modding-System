@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PedHealthConfigs>
+
+    <!-- This file defines various health configurations for peds. -->
+    <!-- Each config specifies health thresholds for different states (e.g., Fatigued, Injured). -->
+
+    <HealthConfig Name="Strong" DefaultHealth="200.0" DefaultArmour="0.0" FatiguedHealthThreshold="150.0" InjuredHealthThreshold="100.0" DyingHealthThreshold="100.0" HurtHealthThreshold="150.0" DogTakedownThreshold="150.0" MeleeCardinalFatalAttackCheck="false" />
+    <HealthConfig Name="Average" DefaultHealth="175.0" DefaultArmour="0.0" FatiguedHealthThreshold="137.5" InjuredHealthThreshold="100.0" DyingHealthThreshold="100.0" HurtHealthThreshold="125.0" DogTakedownThreshold="150.0" MeleeCardinalFatalAttackCheck="false" />
+    <HealthConfig Name="Weak" DefaultHealth="150.0" DefaultArmour="0.0" FatiguedHealthThreshold="125.0" InjuredHealthThreshold="100.0" DyingHealthThreshold="100.0" HurtHealthThreshold="135.0" DogTakedownThreshold="150.0" MeleeCardinalFatalAttackCheck="true" />
+    <HealthConfig Name="Animal" DefaultHealth="150.0" DefaultArmour="0.0" FatiguedHealthThreshold="125.0" InjuredHealthThreshold="100.0" DyingHealthThreshold="100.0" HurtHealthThreshold="135.0" DogTakedownThreshold="150.0" MeleeCardinalFatalAttackCheck="false" />
+    <HealthConfig Name="Armour" DefaultHealth="200.0" DefaultArmour="100.0" FatiguedHealthThreshold="120.0" InjuredHealthThreshold="100.0" DyingHealthThreshold="100.0" HurtHealthThreshold="150.0" DogTakedownThreshold="150.0" MeleeCardinalFatalAttackCheck="false" />
+    <HealthConfig Name="GULL" DefaultHealth="10.0" DefaultArmour="0.0" FatiguedHealthThreshold="3.0" InjuredHealthThreshold="2.0" DyingHealthThreshold="2.0" HurtHealthThreshold="4.0" DogTakedownThreshold="2.0" MeleeCardinalFatalAttackCheck="true" />
+    <HealthConfig Name="Fish" DefaultHealth="10.0" DefaultArmour="0.0" FatiguedHealthThreshold="3.0" InjuredHealthThreshold="2.0" DyingHealthThreshold="2.0" HurtHealthThreshold="4.0" DogTakedownThreshold="2.0" MeleeCardinalFatalAttackCheck="false" />
+    <HealthConfig Name="Rat" DefaultHealth="10.0" DefaultArmour="0.0" FatiguedHealthThreshold="3.0" InjuredHealthThreshold="2.0" DyingHealthThreshold="2.0" HurtHealthThreshold="4.0" DogTakedownThreshold="2.0" MeleeCardinalFatalAttackCheck="false" />
+    <HealthConfig Name="Shark" DefaultHealth="200.0" DefaultArmour="0.0" FatiguedHealthThreshold="150.0" InjuredHealthThreshold="100.0" DyingHealthThreshold="100.0" HurtHealthThreshold="150.0" DogTakedownThreshold="150.0" MeleeCardinalFatalAttackCheck="false" />
+    <HealthConfig Name="Humpback" DefaultHealth="800.0" DefaultArmour="0.0" FatiguedHealthThreshold="150.0" InjuredHealthThreshold="100.0" DyingHealthThreshold="100.0" HurtHealthThreshold="150.0" DogTakedownThreshold="150.0" MeleeCardinalFatalAttackCheck="false" Invincible="true" />
+
+</PedHealthConfigs>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AudioMaterials>
+    <!-- ========== MATERIAL IMPACT & INTERACTION SOUNDS ========== -->
+    <!-- Pure C++ system with bitwise flags for material-based audio. Give multiple soundfiletags for randomized soundplayback. -->
+    
+    <Materials>
+        
+        <!-- CONCRETE MATERIALS -->
+        <Material type="CONCRETE" id="concrete_standard">
+            <ImpactSounds>
+                    <SoundFile>/Game/Audio/Materials/Concrete/concrete_impact_heavy_01</SoundFile>
+                    <AudioFlags>SPATIAL_3D | REVERB_ENABLED | HIGH_PRIORITY</AudioFlags>
+                    <Volume>1.0</Volume>
+            </ImpactSounds>
+            
+            <DestructionSounds>
+                <Crack>
+                    <SoundFile>/Game/Audio/Materials/Concrete/concrete_crack_01</SoundFile>
+                    <AudioFlags>SPATIAL_3D | ECHO_ENABLED</AudioFlags>
+                </Crack>
+                <Break>
+                    <SoundFile>/Game/Audio/Materials/Concrete/concrete_break_01</SoundFile>
+                    <AudioFlags>SPATIAL_3D | REVERB_ENABLED | HIGH_PRIORITY</AudioFlags>
+                </Break>
+                <Crumble>
+                    <SoundFile>/Game/Audio/Materials/Concrete/concrete_crumble_01</SoundFile>
+                    <AudioFlags>SPATIAL_3D | DISTANCE_FADE</AudioFlags>
+                </Crumble>
+            </DestructionSounds>
+        </Material>
+
+        <!-- METAL MATERIALS -->
+        <Material type="METAL" id="metal_standard">
+            <ImpactSounds>
+                    <SoundFile>/Game/Audio/Materials/Metal/metal_clang_heavy_01</SoundFile>
+                    <AudioFlags>SPATIAL_3D | REVERB_ENABLED | HIGH_PRIORITY</AudioFlags>
+                    <Volume>1.0</Volume>
+            </ImpactSounds>
+            
+            <DestructionSounds>
+                <Bend>
+                    <SoundFile>/Game/Audio/Materials/Metal/metal_bend_01</SoundFile>
+                    <AudioFlags>SPATIAL_3D | RANDOMIZE_PITCH</AudioFlags>
+                </Bend>
+                <Snap>
+                    <SoundFile>/Game/Audio/Materials/Metal/metal_snap_01</SoundFile>
+                    <AudioFlags>SPATIAL_3D | HIGH_PRIORITY</AudioFlags>
+                </Snap>
+                <Scrape>
+                    <SoundFile>/Game/Audio/Materials/Metal/metal_scrape_01</SoundFile>
+                    <AudioFlags>SPATIAL_3D | DISTANCE_FADE</AudioFlags>
+                </Scrape>
+            </DestructionSounds>
+        </Material>
+
+        <!-- GLASS MATERIALS -->
+        <Material type="GLASS" id="glass_standard">
+            <ImpactSounds>
+                    <SoundFile>/Game/Audio/Materials/Glass/glass_shatter_01</SoundFile>
+                    <AudioFlags>SPATIAL_3D | REVERB_ENABLED | HIGH_PRIORITY</AudioFlags>
+                    <Volume>0.9</Volume>
+            </ImpactSounds>
+            
+            <DestructionSounds>
+                <Crack>
+                    <SoundFile>/Game/Audio/Materials/Glass/glass_crack_spread_01</SoundFile>
+                    <AudioFlags>SPATIAL_3D | RANDOMIZE_PITCH</AudioFlags>
+                </Crack>
+                <Shatter>
+                    <SoundFile>/Game/Audio/Materials/Glass/glass_shatter_full_01</SoundFile>
+                    <AudioFlags>SPATIAL_3D | REVERB_ENABLED | HIGH_PRIORITY</AudioFlags>
+                </Shatter>
+                <Fall>
+                    <SoundFile>/Game/Audio/Materials/Glass/glass_fall_01</SoundFile>
+                    <AudioFlags>SPATIAL_3D | DISTANCE_FADE</AudioFlags>
+                </Fall>
+            </DestructionSounds>
+        </Material>
+
+        <!-- WOOD MATERIALS -->
+        <Material type="WOOD" id="wood_standard">
+            <ImpactSounds>
+                    <SoundFile>/Game/Audio/Materials/Wood/wood_slam_01</SoundFile>
+                    <AudioFlags>SPATIAL_3D | REVERB_ENABLED</AudioFlags>
+                    <Volume>1.0</Volume>
+            </ImpactSounds>
+            
+            <DestructionSounds>
+                <Crack>
+                    <SoundFile>/Game/Audio/Materials/Wood/wood_crack_01</SoundFile>
+                    <AudioFlags>SPATIAL_3D | RANDOMIZE_PITCH</AudioFlags>
+                </Crack>
+                <Break>
+                    <SoundFile>/Game/Audio/Materials/Wood/wood_break_01</SoundFile>
+                    <AudioFlags>SPATIAL_3D | HIGH_PRIORITY</AudioFlags>
+                </Break>
+                <Splinter>
+                    <SoundFile>/Game/Audio/Materials/Wood/wood_splinter_01</SoundFile>
+                    <AudioFlags>SPATIAL_3D | DISTANCE_FADE</AudioFlags>
+                </Splinter>
+            </DestructionSounds>
+        </Material>
+
+        <!-- FABRIC/SOFT MATERIALS -->
+        <Material type="FABRIC" id="fabric_standard">
+            <ImpactSounds>
+                    <SoundFile>/Game/Audio/Materials/Fabric/fabric_thud_01</SoundFile>
+                    <AudioFlags>SPATIAL_3D</AudioFlags>
+                    <Volume>0.7</Volume>
+            </ImpactSounds>
+        </Material>
+
+        <!-- WATER MATERIALS -->
+        <Material type="WATER" id="water_standard">
+            <ImpactSounds>
+                    <SoundFile>/Game/Audio/Materials/Water/water_splash_big_01</SoundFile>
+                    <AudioFlags>SPATIAL_3D | REVERB_ENABLED</AudioFlags>
+                    <Volume>0.9</Volume>
+            </ImpactSounds>
+        </Material>
+
+    </Materials>
+
+    <!-- ========== MATERIAL INTERACTION MATRIX ========== -->
+    <InteractionMatrix>
+        <!-- Define sounds when different materials collide -->
+        <Interaction materialA="METAL" materialB="CONCRETE">
+            <SoundFile>/Game/Audio/Materials/Interactions/metal_on_concrete_01</SoundFile>
+            <AudioFlags>SPATIAL_3D | RANDOMIZE_PITCH</AudioFlags>
+        </Interaction>
+        
+        <Interaction materialA="GLASS" materialB="CONCRETE">
+            <SoundFile>/Game/Audio/Materials/Interactions/glass_on_concrete_01</SoundFile>
+            <AudioFlags>SPATIAL_3D | HIGH_PRIORITY</AudioFlags>
+        </Interaction>
+        
+        <Interaction materialA="WOOD" materialB="METAL">
+            <SoundFile>/Game/Audio/Materials/Interactions/wood_on_metal_01</SoundFile>
+            <AudioFlags>SPATIAL_3D | RANDOMIZE_PITCH</AudioFlags>
+        </Interaction>
+    </InteractionMatrix>
+
+</AudioMaterials>

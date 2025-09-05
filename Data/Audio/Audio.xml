@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AudioRegistry>
+    <!-- ========== AUDIO REGISTRY SYSTEM, Setup Files as given below. ========== -->
+    
+    <AudioTypes>
+        <!-- AMBIENT SOUNDS -->
+        <Type name="Ambient">
+            <FilePath priority="0">Data/Audio/AmbientSounds.xml</FilePath>
+            <FilePath priority="1">Data/Audio/AmbientSounds_Fix.xml</FilePath>
+            <FilePath priority="2">Data/Audio/AmbientSounds_Addon.xml</FilePath>
+        </Type>
+
+        <!-- WEAPON AUDIO -->
+        <Type name="Weapons">
+            <FilePath priority="0">Data/Audio/WeaponAudio.xml</FilePath>
+            <FilePath priority="1">Data/Audio/WeaponAudio_Fix.xml</FilePath>
+            <FilePath priority="2">Data/Audio/WeaponAudio_ModPack.xml</FilePath>
+        </Type>
+
+        <!-- MATERIAL SOUNDS -->
+        <Type name="Materials">
+            <FilePath priority="0">Data/Audio/AudioMaterials.xml</FilePath>
+            <FilePath priority="1">Data/Audio/AudioMaterials_Fix.xml</FilePath>
+        </Type>
+
+        <!-- SPEECH & DIALOGUE -->
+        <Type name="Speech">
+            <FilePath priority="0">Data/Audio/Speeches.xml</FilePath>
+            <FilePath priority="1">Data/Audio/Speeches_Languages.xml</FilePath>
+            <FilePath priority="2">Data/Audio/Speeches_Addon.xml</FilePath>
+        </Type>
+
+        <!-- VEHICLE AUDIO -->
+        <Type name="Vehicles">
+            <FilePath priority="0">Data/Audio/VehicleAudio.xml</FilePath>
+            <FilePath priority="1">Data/Audio/VehicleEngines.xml</FilePath>  <!-- UE5 engine system -->
+            <FilePath priority="2">Data/Audio/VehicleAudio_CarPack.xml</FilePath>
+            <FilePath priority="3">Data/Audio/VehicleAudio_MotorcyclePack.xml</FilePath>
+        </Type>
+
+        <!-- UI SOUNDS -->
+        <Type name="UI">
+            <FilePath priority="0">Data/Audio/UIAudio.xml</FilePath>
+            <FilePath priority="1">Data/Audio/UIAudio_Theme.xml</FilePath>
+        </Type>
+
+        <!-- MUSIC SYSTEM -->
+        <Type name="Music">
+            <FilePath priority="0">Data/Audio/Music.xml</FilePath>
+            <FilePath priority="1">Data/Audio/Music_RadioStations.xml</FilePath>
+            <FilePath priority="2">Data/Audio/Music_DynamicScore.xml</FilePath>
+        </Type>
+    </AudioTypes>
+
+    <!-- ========== GLOBAL POOL and UNBREAKABLE SETTINGS ========== -->
+    <GlobalSettings>
+        <MaxConcurrentSounds>64</MaxConcurrentSounds>
+        <AudioPoolSize>256</AudioPoolSize>
+        <AutoLoadOverrides>true</AutoLoadOverrides>
+        <SkipMissingFiles>true</SkipMissingFiles>
+    </GlobalSettings>
+
+</AudioRegistry>

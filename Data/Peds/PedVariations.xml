@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PedVariations>
+    <!-- Default appearance for Niko -->
+    <VariationSet Name="Default">
+        <!-- Head Component -->
+        <Component Type="Head" MeshIndex="0" TextureIndex="0" TextureRace="Uni"/> <!-- Refers to head_000 -->
+            
+        <!-- Upper Body Component -->
+        <Component Type="Upper" MeshIndex="0" TextureIndex="0" TextureRace="Uni"/> <!-- Refers to upper_000 -->
+
+		<PropComponent Type="Head" MeshIndex="0" TextureIndex="0" TextureRace="Uni"/> <!-- Refers to Prop Folders components -->
+        <!-- Add more components/props here -->
+    </VariationSet>
+
+    <!-- Add more VariationSet definitions here -->
+    <!--
+    <VariationSet Name="Niko_Casual">
+        <Component Type="UpperBody" MeshIndex="1"/>
+    </VariationSet>
+    -->
+</PedVariations>

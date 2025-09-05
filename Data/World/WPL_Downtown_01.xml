@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WorldPlacement>
+    <!-- ========== WORLD PLACEMENT METADATA ========== -->
+    <PlacementInfo>
+        <PlacementID>WPL_Downtown_01</PlacementID>
+        <PlacementName>Downtown District - Block 1</PlacementName>
+        <PlacementType>WORLD</PlacementType>
+        <Region>DOWNTOWN</Region>
+        <Priority>HIGH</Priority>
+        <LoadDistance>500.0</LoadDistance>
+        <UnloadDistance>600.0</UnloadDistance>
+        <StreamingMemoryBudget>256</StreamingMemoryBudget>
+        
+        <!-- Vehicle Parking Integration -->
+        <ParkingReference>Data/World/VehicleParking.xml#PARKING_DOWNTOWN_01</ParkingReference>
+        <ParkingReference>Data/World/VehicleParking.xml#PARKING_GARAGE_01</ParkingReference>
+    </PlacementInfo>
+
+    <!-- ========== PLACEMENT BOUNDS ========== -->
+    <PlacementBounds>
+        <BoundingBox>
+            <Min x="-1000.0" y="-1000.0" z="-50.0"/>
+            <Max x="1000.0" y="1000.0" z="200.0"/>
+        </BoundingBox>
+        <StreamingRadius>750.0</StreamingRadius>
+        <CullingRadius>1200.0</CullingRadius>
+    </PlacementBounds>
+
+    <!-- ========== BUILDING PLACEMENTS ========== -->
+    <Buildings>
+        <Building>
+            <ObjectName>skyscraper_office_01</ObjectName>
+            <ObjectHash>0x4A3B2C1D</ObjectHash>
+            <ObjectReference>Data/Objects/Objects.xml#skyscraper_office_01</ObjectReference>
+            
+            <Transform>
+                <Position x="150.5" y="200.3" z="0.0"/>
+                <Rotation x="0.0" y="0.0" z="45.0"/>
+                <Scale x="1.0" y="1.0" z="1.0"/>
+            </Transform>
+            
+            <Flags>
+                <IsStatic>true</IsStatic>
+                <CastShadows>true</CastShadows>
+                <ReceiveShadows>true</ReceiveShadows>
+                <IsDestructible>true</IsDestructible>
+                <HasCollision>true</HasCollision>
+                <HasInterior>true</HasInterior>
+                <IsLandmark>true</IsLandmark>
+            </Flags>
+            
+            <!-- ========== ATTACHED AUDIO SYSTEM ========== -->
+            <AttachedAudio>
+                <AudioReference>office_hum</AudioReference>  <!-- References AmbientSounds.xml by ID -->
+                <LocalOffset x="0.0" y="0.0" z="50.0" />    <!-- Offset from building center -->
+                <OverrideRadius>60.0</OverrideRadius>        <!-- Override default radius if needed -->
+            </AttachedAudio>
+            
+            <LODSettings>
+                <LOD0Distance>0.0</LOD0Distance>
+                <LOD1Distance>200.0</LOD1Distance>
+                <LOD2Distance>500.0</LOD2Distance>
+                <LOD3Distance>1000.0</LOD3Distance>
+                <CullDistance>1500.0</CullDistance>
+            </LODSettings>
+            
+            <InteriorConnection>
+                <InteriorFile>Data/Interiors/IPL_OfficeBuilding_01.xml</InteriorFile>
+                <EntryPoints>
+                    <Entry name="main_entrance" x="148.0" y="195.0" z="2.0"/>
+                    <Entry name="side_entrance" x="155.0" y="205.0" z="2.0"/>
+                    <Entry name="parking_garage" x="140.0" y="210.0" z="-8.0"/>
+                </EntryPoints>
+            </InteriorConnection>
+            
+            <Animation>
+                <AnimationType>NONE</AnimationType>
+            </Animation>
+        </Building>
+
+        <Building>
+            <ObjectName>apartment_complex_02</ObjectName>
+            <ObjectHash>0x5B4C3D2E</ObjectHash>
+            <ObjectReference>Data/Objects/Objects.xml#apartment_complex_02</ObjectReference>
+            
+            <Transform>
+                <Position x="-300.2" y="450.1" z="0.0"/>
+                <Rotation x="0.0" y="0.0" z="0.0"/>
+                <Scale x="1.0" y="1.0" z="1.0"/>
+            </Transform>
+            
+            <Flags>
+                <IsStatic>true</IsStatic>
+                <CastShadows>true</CastShadows>
+                <ReceiveShadows>true</ReceiveShadows>
+                <IsDestructible>false</IsDestructible>
+                <HasCollision>true</HasCollision>
+                <HasInterior>true</HasInterior>
+                <IsLandmark>false</IsLandmark>
+            </Flags>
+            
+            <LODSettings>
+                <LOD0Distance>0.0</LOD0Distance>
+                <LOD1Distance>150.0</LOD1Distance>
+                <LOD2Distance>400.0</LOD2Distance>
+                <LOD3Distance>800.0</LOD3Distance>
+                <CullDistance>1200.0</CullDistance>
+            </LODSettings>
+            
+            <InteriorConnection>
+                <InteriorFile>Data/Interiors/IPL_Apartment_Complex_02.xml</InteriorFile>
+                <EntryPoints>
+                    <Entry name="lobby_entrance" x="-298.0" y="445.0" z="2.0"/>
+                    <Entry name="back_entrance" x="-305.0" y="455.0" z="2.0"/>
+                </EntryPoints>
+            </InteriorConnection>
+        </Building>
+
+        <Building>
+            <ObjectName>gas_station_01</ObjectName>
+            <ObjectHash>0x6C5D4E3F</ObjectHash>
+            <ObjectReference>Data/Objects/Objects.xml#gas_station_01</ObjectReference>
+            
+            <Transform>
+                <Position x="800.0" y="-200.0" z="0.0"/>
+                <Rotation x="0.0" y="0.0" z="90.0"/>
+                <Scale x="1.0" y="1.0" z="1.0"/>
+            </Transform>
+            
+            <Flags>
+                <IsStatic>true</IsStatic>
+                <CastShadows>true</CastShadows>
+                <ReceiveShadows>true</ReceiveShadows>
+                <IsDestructible>true</IsDestructible>
+                <HasCollision>true</HasCollision>
+                <HasInterior>true</HasInterior>
+                <IsLandmark>false</IsLandmark>
+            </Flags>
+            
+            <InteriorConnection>
+                <InteriorFile>Data/Interiors/IPL_GasStation_01.xml</InteriorFile>
+                <EntryPoints>
+                    <Entry name="shop_entrance" x="795.0" y="-198.0" z="2.0"/>
+                </EntryPoints>
+            </InteriorConnection>
+            
+            <Animation>
+                <AnimationType>ROTATING_SIGN</AnimationType>
+                <AnimationSpeed>0.5</AnimationSpeed>
+                <AnimationAxis>Z</AnimationAxis>
+            </Animation>
+        </Building>
+    </Buildings>
+
+    <!-- ========== PROP PLACEMENTS ========== -->
+    <Props>
+        <Prop>
+            <ObjectName>street_lamp_01</ObjectName>
+            <ObjectHash>0x7D6E5F40</ObjectHash>
+            <ObjectReference>Data/Objects/Objects.xml#street_lamp_01</ObjectReference>
+            
+            <Transform>
+                <Position x="50.0" y="100.0" z="0.0"/>
+                <Rotation x="0.0" y="0.0" z="0.0"/>
+                <Scale x="1.0" y="1.0" z="1.0"/>
+            </Transform>
+            
+            <Flags>
+                <IsStatic>true</IsStatic>
+                <CastShadows>true</CastShadows>
+                <ReceiveShadows>true</ReceiveShadows>
+                <IsDestructible>true</IsDestructible>
+                <HasCollision>true</HasCollision>
+                <HasLighting>true</HasLighting>
+                <IsEmissive>true</IsEmissive>
+            </Flags>
+            
+            <Animation>
+                <AnimationType>FLICKERING_LIGHT</AnimationType>
+                <AnimationSpeed>2.0</AnimationSpeed>
+                <FlickerIntensity>0.1</FlickerIntensity>
+            </Animation>
+        </Prop>
+
+        <Prop>
+            <ObjectName>traffic_light_01</ObjectName>
+            <ObjectHash>0x8E7F6051</ObjectHash>
+            <ObjectReference>Data/Objects/Objects.xml#traffic_light_01</ObjectReference>
+            
+            <Transform>
+                <Position x="0.0" y="0.0" z="0.0"/>
+                <Rotation x="0.0" y="0.0" z="0.0"/>
+                <Scale x="1.0" y="1.0" z="1.0"/>
+            </Transform>
+            
+            <Flags>
+                <IsStatic>true</IsStatic>
+                <CastShadows>true</CastShadows>
+                <ReceiveShadows>true</ReceiveShadows>
+                <IsDestructible>true</IsDestructible>
+                <HasCollision>true</HasCollision>
+                <HasLighting>true</HasLighting>
+                <IsInteractable>true</IsInteractable>
+            </Flags>
+            
+            <Animation>
+                <AnimationType>TRAFFIC_CYCLE</AnimationType>
+                <CycleTime>30.0</CycleTime>
+                <RedDuration>15.0</RedDuration>
+                <YellowDuration>3.0</YellowDuration>
+                <GreenDuration>12.0</GreenDuration>
+            </Animation>
+        </Prop>
+
+        <Prop>
+            <ObjectName>dumpster_01</ObjectName>
+            <ObjectHash>0x9F8071652</ObjectHash>
+            <ObjectReference>Data/Objects/Objects.xml#dumpster_01</ObjectReference>
+            
+            <Transform>
+                <Position x="-150.0" y="80.0" z="0.0"/>
+                <Rotation x="0.0" y="0.0" z="25.0"/>
+                <Scale x="1.0" y="1.0" z="1.0"/>
+            </Transform>
+            
+            <Flags>
+                <IsStatic>false</IsStatic>
+                <CastShadows>true</CastShadows>
+                <ReceiveShadows>true</ReceiveShadows>
+                <IsDestructible>true</IsDestructible>
+                <HasCollision>true</HasCollision>
+                <IsMoveable>true</IsMoveable>
+                <CanBePushed>true</CanBePushed>
+            </Flags>
+            
+            <Physics>
+                <Mass>200.0</Mass>
+                <LinearDamping>0.1</LinearDamping>
+                <AngularDamping>0.1</AngularDamping>
+            </Physics>
+        </Prop>
+    </Props>
+
+    <!-- ========== VEGETATION PLACEMENTS ========== -->
+    <Vegetation>
+        <Tree>
+            <ObjectName>oak_tree_large_01</ObjectName>
+            <ObjectHash>0xA091B273</ObjectHash>
+            <ObjectReference>Data/Objects/Objects.xml#oak_tree_large_01</ObjectReference>
+            
+            <Transform>
+                <Position x="300.0" y="300.0" z="0.0"/>
+                <Rotation x="0.0" y="0.0" z="180.0"/>
+                <Scale x="1.2" y="1.2" z="1.0"/>
+            </Transform>
+            
+            <Flags>
+                <IsStatic>true</IsStatic>
+                <CastShadows>true</CastShadows>
+                <ReceiveShadows>true</ReceiveShadows>
+                <IsDestructible>true</IsDestructible>
+                <HasCollision>true</HasCollision>
+                <IsVegetation>true</IsVegetation>
+                <HasWind>true</HasWind>
+            </Flags>
+            
+            <Animation>
+                <AnimationType>WIND_SWAY</AnimationType>
+                <WindStrength>1.0</WindStrength>
+                <SwayFrequency>0.5</SwayFrequency>
+            </Animation>
+        </Tree>
+    </Vegetation>
+
+    <!-- ========== STREAMING SETTINGS ========== -->
+    <StreamingSettings>
+        <ChunkSize>64</ChunkSize>
+        <PreloadDistance>300.0</PreloadDistance>
+        <UnloadDelay>10.0</UnloadDelay>
+        <MemoryBudget>512</MemoryBudget>
+        <MaxConcurrentLoads>4</MaxConcurrentLoads>
+    </StreamingSettings>
+
+    <!-- ========== AMBIENT AUDIO ZONES ========== -->
+    <AmbientAudio>
+        <AudioZone>
+            <AudioReference>city_day_ambient</AudioReference>  <!-- References AmbientSounds.xml -->
+            <Position x="0.0" y="0.0" z="50.0" />
+            <Radius>400.0</Radius>
+            <TimeCondition>DAY</TimeCondition>  <!-- Only active during day -->
+        </AudioZone>
+        
+        <AudioZone>
+            <AudioReference>city_night_ambient</AudioReference>
+            <Position x="0.0" y="0.0" z="50.0" />
+            <Radius>400.0</Radius>
+            <TimeCondition>NIGHT</TimeCondition>  <!-- Only active during night -->
+        </AudioZone>
+    </AmbientAudio>
+
+    <!-- ========== DEPENDENCIES ========== -->
+    <Dependencies>
+        <RequiredFiles>
+            <File>Data/Objects/Objects.xml</File>
+            <File>Data/Objects/ObjectMesh.xml</File>
+            <File>Data/Audio/AmbientSounds.xml</File>  <!-- Audio dependency -->
+            <File>Data/Interiors/IPL_OfficeBuilding_01.xml</File>
+            <File>Data/Interiors/IPL_Apartment_Complex_02.xml</File>
+            <File>Data/Interiors/IPL_GasStation_01.xml</File>
+        </RequiredFiles>
+        
+        <AdjacentPlacements>
+            <Placement>WPL_Downtown_02</Placement>
+            <Placement>WPL_Industrial_01</Placement>
+        </AdjacentPlacements>
+    </Dependencies>
+</WorldPlacement>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AnimationGroups>
+    <Group name="PlayerNiko">
+        <Animation name="idle" path="/Game/Animations/player_movement/idle" />
+        <Animation name="walk" path="/Game/Animations/player_movement/walk" />
+        <Animation name="run" path="/Game/Animations/player_movement/run" />
+        <Animation name="crouch" path="/Game/Animations/crouch_movement/crouch_idle" />
+        <Animation name="jump" path="/Game/Animations/player_movement/jump" />
+    </Group>
+    
+    <Group name="Default">
+        <Animation name="idle" path="/Game/Animations/player_movement/idle" />
+        <Animation name="walk" path="/Game/Animations/player_movement/walk" />
+        <Animation name="run" path="/Game/Animations/player_movement/run" />
+    </Group>
+    
+    <Group name="AIPed">
+        <Animation name="idle" path="/Game/Animations/player_movement/idle" />
+        <Animation name="walk" path="/Game/Animations/player_movement/walk" />
+        <Animation name="run" path="/Game/Animations/player_movement/run" />
+    </Group>
+</AnimationGroups>

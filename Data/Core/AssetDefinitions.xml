@@ -1,0 +1,44 @@
+<Assets>
+    <!-- Core Systems -->
+    <DataAssetType="PakfileManifest" Path="Core/PakfileManifest.xml"/>
+    <DataAssetType="Shaders" Path="Core/Shaders.xml"/>
+
+    <!-- Audio System -->
+    <DataAssetType="AudioMaster" Path="Audio/Audio.xml"/>
+
+    <!-- Ped Data -->
+    <DataAssetType="PedData" Path="Peds/Peds.xml"/>
+    <DataAssetType="PedVariations" Path="Peds/PedVariations.xml"/>
+    <DataAssetType="PedMesh" Path="Peds/PedMesh.xml"/>
+    <DataAssetType="PedPropMesh" Path="Peds/PedPropMesh.xml"/>
+    <DataAssetType="PedAttributes" Path="Peds/PedAttributes.xml"/>
+    <DataAssetType="PedCombat" Path="Peds/PedCombat.xml"/>
+    <DataAssetType="PedHealth" Path="Peds/PedHealth.xml"/>
+    <DataAssetType="PedIntelligence" Path="Peds/PedIntelligence.xml"/>
+    <DataAssetType="PedPerception" Path="Peds/PedPerception.xml"/>
+    <DataAssetType="PedRelationships" Path="Peds/PedRelationships.xml"/>
+
+    <!-- Vehicle Data -->
+    <DataAssetType="VehicleData" Path="Vehicles/Vehicles.xml"/>
+    <DataAssetType="VehicleHandling" Path="Vehicles/VehicleData.xml"/>
+    <DataAssetType="VehicleMesh" Path="Vehicles/VehicleMesh.xml"/>
+    <DataAssetType="VehicleModConfig" Path="Vehicles/VehicleModConfig.xml"/>
+
+    <!-- Weapon Data -->
+    <DataAssetType="WeaponData" Path="Weapons/WeaponData.xml"/>
+    <DataAssetType="WeaponAttachments" Path="Weapons/WeaponAttachments.xml"/>
+
+    <!-- World & Environment -->
+    <DataAssetType="WorldPlacement" Path="World/WPL_Downtown_01.xml"/>
+    <DataAssetType="InteriorPlacement" Path="Interiors/IPL_OfficeBuilding_01.xml"/>
+    <DataAssetType="VehicleParking" Path="World/VehicleParking.xml"/>
+    <DataAssetType="TimeCycle" Path="World/TimeCycle.xml"/>
+    <DataAssetType="Weather" Path="World/Weather.xml"/>
+    
+    <!-- Animation Data -->
+    <DataAssetType="AnimationGroups" Path="Animations/AnimationGroups.xml"/>
+
+    <!-- Other Data -->
+    <DataAssetType="ObjectData" Path="Objects/Objects.xml"/>
+    <DataAssetType="ObjectMesh" Path="Objects/ObjectMesh.xml"/>
+</Assets>
