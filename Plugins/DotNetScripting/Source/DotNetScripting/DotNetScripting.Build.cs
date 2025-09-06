@@ -11,16 +11,27 @@ public class DotNetScripting : ModuleRules
             new string[]
             {
                 "Core",
+                "CoreUObject",
+                "Engine",
+                "UnrealEd",
+                "BlueprintGraph",
+                "KismetCompiler",
+                "GameplayTags",
+                "AIModule",
+                "NavigationSystem"
             }
         );
 
         PrivateDependencyModuleNames.AddRange(
             new string[]
             {
-                "CoreUObject",
-                "Engine",
                 "Slate",
                 "SlateCore",
+                "EditorStyle",
+                "EditorWidgets",
+                "ToolMenus",
+                "Projects",
+                "UMG"
             }
         );
 
